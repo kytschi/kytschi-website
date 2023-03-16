@@ -36,7 +36,7 @@ TABLE
                 PRINT "Want to check it out and get involved, click below..."
                 LINE BREAK
                 LINE BREAK
-                LINK "https://ironet.kytschi.com/kytschi/kytschBASIC", "Check the repo out", "nav-link-img", "_blank"
+                LINK "https://github.com/kytschi/kytschBASIC", "Check the repo out", "nav-link-img", "_blank"
                     IMAGE "/kytschi/imgs/noclick.gif", "Take me to the repo"
                 LINK CLOSE
             SWRITE CLOSE
