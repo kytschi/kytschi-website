@@ -1,0 +1,21 @@
+FOOTER
+	TABLE
+		TROW
+			TCELL
+				SWRITE "nav-link-img"
+					IMAGE "/kytschi/imgs/made_on_amiga01.gif", "Made on an Amiga"
+				SWRITE CLOSE
+			TCELL CLOSE
+			TCELL ,"footer-created"
+				SWRITE
+					PRINT "Created by Mike Welsh"
+				SWRITE CLOSE
+				SWRITE
+					LINK "https://kytschbasic.org","Checkout kytschBASIC",,"_blank"
+						PRINT "Checkout kytschBASIC"
+					LINK CLOSE
+				SWRITE CLOSE
+			TCELL CLOSE
+		TROW CLOSE
+	TABLE CLOSE
+FOOTER CLOSE

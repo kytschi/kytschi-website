@@ -1,0 +1,36 @@
+HEADER
+	HEADING 1
+		PRINT "How to build a successful website and get jobs"
+	HEADING CLOSE
+	HEADING 2
+		PRINT "by Mike Welsh"
+	HEADING CLOSE
+	SWRITE
+		PRINT "Menu", "h3"
+	SWRITE CLOSE
+	MENU
+		LINK "/","Go to the homepage","nav-link-img"
+			IMAGE "/kytschi/imgs/internet-roadkill.gif", "Free stuff"
+		LINK CLOSE
+		LINK "https://ironet.kytschi.com/explore/repos","Free stuff","nav-link-img", "_blank"
+			IMAGE "/kytschi/imgs/free-stuff.gif", "Free stuff"
+		LINK CLOSE
+		LINK "https://soundcloud.com/kytschi","Free music","nav-link-img", "_blank"
+			IMAGE "/kytschi/imgs/top50w.gif", "Free music"
+		LINK CLOSE
+		LINK "/kytschi/cv.pdf","Check out my CV","nav-link-img", "_blank"
+			IMAGE "/kytschi/imgs/cooltxt.gif", "View CV"
+		LINK CLOSE
+		LINK "/contact-me","Contact me","nav-link-img"
+			IMAGE "/kytschi/imgs/email.gif", "contact"
+		LINK CLOSE
+	MENU CLOSE
+HEADER CLOSE
+
+DIV ,"mobile"
+	SWRITE
+		PRINT "Put down that phone!"
+		LINE BREAK
+		PRINT "Please view me on real computer."
+	SWRITE CLOSE
+DIV CLOSE
