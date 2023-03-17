@@ -1,10 +1,10 @@
 LANG "en"
 HEAD
-	LOAD "$ROOT_FOLDER/project/shared/head"
+	LOAD "_ROOT/project/shared/head"
 	NAME "how to build the best website and get jobs | kytschi"
 HEAD CLOSE
 BODY
-	LOAD "$ROOT_FOLDER/project/shared/header"
+	LOAD "_ROOT/project/shared/header"
 	MAIN
 		HEADING 3
 			PRINT "Introduction"
@@ -115,9 +115,9 @@ BODY
 			TROW CLOSE
 		TABLE CLOSE
 
-		LOAD "$ROOT_FOLDER/project/portfolio/kytschbasic"
-		LOAD "$ROOT_FOLDER/project/portfolio/boutique_e_commerce"
-		LOAD "$ROOT_FOLDER/project/portfolio/dental_finder_backend"
+		LOAD "_ROOT/project/portfolio/kytschbasic"
+		LOAD "_ROOT/project/portfolio/boutique_e_commerce"
+		LOAD "_ROOT/project/portfolio/dental_finder_backend"
 				
 		TABLE "table-margin"
 			TROW
@@ -157,16 +157,16 @@ BODY
 			TROW CLOSE
 		TABLE CLOSE
 
-		LOAD "$ROOT_FOLDER/project/portfolio/everything_dental"
-		LOAD "$ROOT_FOLDER/project/portfolio/stock_system"
-		LOAD "$ROOT_FOLDER/project/portfolio/qr_code_scanner"
+		LOAD "_ROOT/project/portfolio/everything_dental"
+		LOAD "_ROOT/project/portfolio/stock_system"
+		LOAD "_ROOT/project/portfolio/qr_code_scanner"
 	
-		LOAD "$ROOT_FOLDER/project/portfolio/activecell"
-		LOAD "$ROOT_FOLDER/project/portfolio/bw_finder"
-		LOAD "$ROOT_FOLDER/project/portfolio/qst"
-		LOAD "$ROOT_FOLDER/project/portfolio/kytscha"
+		LOAD "_ROOT/project/portfolio/activecell"
+		LOAD "_ROOT/project/portfolio/bw_finder"
+		LOAD "_ROOT/project/portfolio/qst"
+		LOAD "_ROOT/project/portfolio/kytscha"
 
 	MAIN CLOSE
-	LOAD "$ROOT_FOLDER/project/shared/footer"
+	LOAD "_ROOT/project/shared/footer"
 BODY CLOSE
 END

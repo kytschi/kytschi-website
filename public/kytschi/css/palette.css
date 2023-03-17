@@ -58,6 +58,10 @@ body {
     margin-right: 10px;
 }
 
+button {
+    padding: 10px;
+}
+
 .nav-link {
     height: 40px;
 }
@@ -94,6 +98,28 @@ body {
     font-family: "Vintage", 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-weight: normal;
     text-align: center;
+}
+
+#contact input {
+    margin-bottom: 20px;
+}
+
+.contact_input p {
+    font-weight: bold;
+    margin-bottom: 5px !important;
+}
+
+.error {
+    margin-bottom: 60px;
+    border: 14px solid #e01d00;
+    color: #e01d00;
+    font-family: "Vintage", 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.error-text {
+    padding: 10px 40px;
+    font-weight: bold;
+    font-size: 24pt;
 }
 
 footer {
@@ -153,6 +179,12 @@ header {
 .image-wall-item img {
     max-width: 100%;
     border: 1px solid #000;
+}
+
+input, textarea {
+    float: left;
+    width: 100%;
+    font-size: 16pt;
 }
 
 .tech-used img {
@@ -216,7 +248,7 @@ table td img {
     font-size: 0;
 }
 
-.table-text p {
+.table-text p, .table-text table {
     padding: 0 40px 0 0;
 }
 
