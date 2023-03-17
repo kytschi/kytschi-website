@@ -5,6 +5,9 @@ FOOTER
 				SWRITE "nav-link-img"
 					IMAGE "/kytschi/imgs/made_on_amiga01.gif", "Made on an Amiga"
 				SWRITE CLOSE
+				SWRITE "nav-link-img"
+					IMAGE "/kytschi/imgs/nocookie.gif", "I don't use cookies"
+				SWRITE CLOSE
 			TCELL CLOSE
 			TCELL ,"footer-created"
 				SWRITE

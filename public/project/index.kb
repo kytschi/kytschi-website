@@ -158,6 +158,39 @@ BODY
 		TABLE CLOSE
 
 		LOAD "$ROOT_FOLDER/project/portfolio/everything_dental"
+		LOAD "$ROOT_FOLDER/project/portfolio/stock_system"
+		LOAD "$ROOT_FOLDER/project/portfolio/qr_code_scanner"
+		
+		TABLE "table-note"
+			TROW
+				TCELL "250px","table-text"
+					IMAGE "/kytschi/imgs/nono.png", "A quick tip!"
+				TCELL CLOSE
+				TCELL
+					SWRITE
+						PRINT "Don’t forget we offer the service for fake portfolios."
+					SWRITE CLOSE
+					SWRITE
+						PRINT "Impress that client with portfolios from all over the world features some of the top companies!"
+					SWRITE CLOSE
+					SWRITE
+						PRINT "Not Google though, they never called me back so they can go to hell!"
+					SWRITE CLOSE
+					SWRITE
+						PRINT "Simply fill in the card provided and send it to the address shown with an enclosed cheque for £2.99 for handling and shipping."
+					SWRITE CLOSE
+				TCELL CLOSE
+			TROW CLOSE
+		TABLE CLOSE
+		TABLE
+			TROW
+				TCELL "200px"
+					IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow", "arrow-small"
+				TCELL CLOSE
+			TROW CLOSE
+		TABLE CLOSE
+		LINE BREAK
+		LINE BREAK
 
 	MAIN CLOSE
 	LOAD "$ROOT_FOLDER/project/shared/footer"

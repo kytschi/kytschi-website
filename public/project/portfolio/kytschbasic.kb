@@ -51,19 +51,12 @@ LINE BREAK
 HEADING 3
     PRINT "The Tech Used"
 HEADING CLOSE
-DIV "image-wall"
-    DIV "image-wall-item"
-        IMAGE "/kytschi/imgs/portfolio/amigabasic.jpg", "AmigaBASIC"
-    DIV CLOSE
-    DIV "image-wall-item"
-        IMAGE "/kytschi/imgs/portfolio/html.png", "HTML5"
-    DIV CLOSE
-    DIV "image-wall-item"
-        IMAGE "/kytschi/imgs/portfolio/php.png", "PHP"
-    DIV CLOSE
-    DIV "image-wall-item"
-        IMAGE "/kytschi/imgs/portfolio/zephir.png", "Zephir lang"
-    DIV CLOSE
+DIV "tech-used"
+    IMAGE "/kytschi/imgs/html_learn_it_today.gif", "HTML5"
+    IMAGE "/kytschi/imgs/vcss.gif", "CSS3"
+    IMAGE "/kytschi/imgs/javascript.gif", "Javascript"
+    IMAGE "/kytschi/imgs/php.gif", "PHP"
+    IMAGE "/kytschi/imgs/zephir.jpg", "Zephir"
 DIV CLOSE
 TABLE
     TROW

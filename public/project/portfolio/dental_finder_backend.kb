@@ -95,31 +95,17 @@ LINE BREAK
 HEADING 3
     PRINT "The Tech Used"
 HEADING CLOSE
-DIV "image-wall"
-    DIV "image-wall-item"
-        IMAGE "/kytschi/imgs/portfolio/html.png", "HTML5"
-    DIV CLOSE
-    DIV "image-wall-item"
-        IMAGE "/kytschi/imgs/portfolio/php.png", "PHP"
-    DIV CLOSE
-    DIV "image-wall-item"
-        IMAGE "/kytschi/imgs/portfolio/linux.png", "Linux"
-    DIV CLOSE
-    DIV "image-wall-item"
-        IMAGE "/kytschi/imgs/portfolio/javascript.jpg", "Javascript"
-    DIV CLOSE
-    DIV "image-wall-item"
-        IMAGE "/kytschi/imgs/portfolio/mysql.png", "Mysql"
-    DIV CLOSE
-    DIV "image-wall-item"
-        IMAGE "/kytschi/imgs/portfolio/nginx.png", "Nginx"
-    DIV CLOSE
-    DIV "image-wall-item"
-        IMAGE "/kytschi/imgs/portfolio/vuejs.png", "Vue.js"
-    DIV CLOSE
-    DIV "image-wall-item"
-        IMAGE "/kytschi/imgs/portfolio/css.png", "CSS"
-    DIV CLOSE
+DIV "tech-used"
+    IMAGE "/kytschi/imgs/html_learn_it_today.gif", "HTML5"
+    IMAGE "/kytschi/imgs/vcss.gif", "CSS3"
+    IMAGE "/kytschi/imgs/javascript.gif", "Javascript"
+    IMAGE "/kytschi/imgs/mysql5.gif", "Mysql"
+    IMAGE "/kytschi/imgs/linux_now.gif", "linux"
+    IMAGE "/kytschi/imgs/nginx.gif", "Nginx"
+    IMAGE "/kytschi/imgs/php.gif", "PHP"
+    IMAGE "/kytschi/imgs/vuejs.gif", "Vue.js"
+    IMAGE "/kytschi/imgs/nodejs.gif", "Node.js"
+    IMAGE "/kytschi/imgs/bash.gif", "BASH Scripting"
 DIV CLOSE
 TABLE
     TROW

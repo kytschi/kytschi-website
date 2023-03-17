@@ -1,0 +1,109 @@
+TABLE
+    TROW
+        TCELL "50%"
+            DIV "card"
+                DIV "card-body"
+                    IMAGE "/kytschi/imgs/portfolio/qr-code-app-update-available.png", "QR code app"
+                DIV CLOSE
+                DIV "card-footer"
+                    SWRITE
+                        PRINT "Boutique Voucher"
+                        LINE BREAK
+                        PRINT "QR Code Scanner"
+                    SWRITE CLOSE
+                DIV CLOSE
+            DIV CLOSE
+        TCELL CLOSE
+        TCELL ,"table-text-right"
+            SWRITE
+                PRINT "Boutique Whitening offers vouchers to their dentist customer base that allows them to get whitening kits made up for their patients at specific laboratories. They'd mail out the vouchers and the dentists would fill them out, send them to the lab and the lab would make the kit up. They then would ship the kit back to the dentist."
+            SWRITE CLOSE
+            SWRITE
+                PRINT "Boutique Whitening faced a number of issues with this. Dentists would often move from practice to practice and they'd take the vouchers with them. Or practices would lose their vouchers and request more. There was no way of knowing if those missing vouchers turned up and were used. This caused a ton of headaches for the admin team."
+            SWRITE CLOSE
+            SWRITE
+                PRINT "So it was suggested that an application be build where it could validate the vouchers before the lab processed them."
+            SWRITE CLOSE
+        TCELL CLOSE
+    TROW CLOSE
+    TROW
+        TCELL
+            LINE BREAK
+            LINE BREAK
+        TCELL CLOSE
+        TCELL
+        TCELL CLOSE
+    TROW CLOSE
+    TROW
+        TCELL ,"table-text"
+            SWRITE
+                PRINT "They wanted the whole process to be as slick as possible and not impact on the lab's teams time. The idea floated was to have the Boutique Whitening E-Commerce system generate the vouchers with QR codes on them that are tied to the dentist or the practice. Boutique's team would print them on-site and ship them direct to the customer."
+            SWRITE CLOSE
+            SWRITE
+                PRINT "What we ended up building was an encrypted custom Linux operating system running on a touchscreen laptop with a USB multi-page scanner accessing the Internet via is own dedicated 4G router for security."
+            SWRITE CLOSE
+            SWRITE
+                PRINT "The team at the lab boots the laptop up which directly loads the app. They then load the vouchers into the scanner, 20 at a time, and click scan. One by one the scanner will feed the vouchers in, read the QR code and validate them with Boutique's home base. The lab team will then be informed of vouchers that are valid or not, and any problems with the scanning process. If vouchers have issues they can submit them back to the Boutique team so their customer support can look into the problem."
+            SWRITE CLOSE
+        TCELL CLOSE
+        TCELL
+            DIV "card"
+                DIV "card-body"
+                    IMAGE "/kytschi/imgs/girls-phone.jpg", "Even the blind are elite after reading this guide!"
+                DIV CLOSE
+                DIV "card-footer"
+                    SWRITE
+                        PRINT "Don't build for mobile"
+                        LINE BREAK
+                        PRINT "phones, they are just fads!"
+                    SWRITE CLOSE
+                DIV CLOSE
+            DIV CLOSE
+        TCELL CLOSE
+    TROW CLOSE
+TABLE CLOSE
+HEADING 3
+    PRINT "Looky what we have here"
+HEADING CLOSE
+DIV "image-wall"
+    DIV "image-wall-item"
+        LINK "/kytschi/imgs/portfolio/qr-code-app-batch-scanning.png", "Click to view me bigger",,"_blank"
+            IMAGE "/kytschi/imgs/portfolio/qr-code-app-batch-scanning.png", "Batch scanning"
+        LINK CLOSE
+    DIV CLOSE
+    DIV "image-wall-item"
+        LINK "/kytschi/imgs/portfolio/qr-code-app-full-batch-scan.png", "Click to view me bigger",,"_blank"
+            IMAGE "/kytschi/imgs/portfolio/qr-code-app-full-batch-scan.png", "Full batch scan"
+        LINK CLOSE
+    DIV CLOSE
+    DIV "image-wall-item"
+        LINK "/kytschi/imgs/portfolio/qr-code-app-manual-input.png", "Click to view me bigger",,"_blank"
+            IMAGE "/kytschi/imgs/portfolio/qr-code-app-manual-input.png", "Manual input"
+        LINK CLOSE
+    DIV CLOSE
+    DIV "image-wall-item"
+        LINK "/kytschi/imgs/portfolio/qr-code-app-update-available.png", "Click to view me bigger",,"_blank"
+            IMAGE "/kytschi/imgs/portfolio/qr-code-app-update-available.png", "Update available"
+        LINK CLOSE
+    DIV CLOSE
+    DIV "image-wall-item"
+        LINK "/kytschi/imgs/portfolio/qr-code-custom-linux-application.png", "Click to view me bigger",,"_blank"
+            IMAGE "/kytschi/imgs/portfolio/qr-code-custom-linux-application.png", "Linux application"
+        LINK CLOSE
+    DIV CLOSE
+DIV CLOSE
+HEADING 3
+    PRINT "The Tech Used"
+HEADING CLOSE
+DIV "tech-used"
+    IMAGE "/kytschi/imgs/html_learn_it_today.gif", "HTML5"
+    IMAGE "/kytschi/imgs/vcss.gif", "CSS3"
+    IMAGE "/kytschi/imgs/javascript.gif", "Javascript"
+    IMAGE "/kytschi/imgs/linux_now.gif", "linux"
+    IMAGE "/kytschi/imgs/bash.gif", "BASH Scripting"
+DIV CLOSE
+LINE BREAK
+LINE BREAK
+LINE BREAK
+LINE BREAK
+LINE BREAK

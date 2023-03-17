@@ -75,7 +75,7 @@ body {
 .card {
     float: left;
     width: 100%;
-    border: 1px solid #eee;
+    border: 1px solid #000;
 }
 
 .card-body {
@@ -151,6 +151,14 @@ header {
 
 .image-wall-item img {
     max-width: 100%;
+    border: 1px solid #000;
+}
+
+.tech-used img {
+    float: left;
+    width: 170px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 main {
@@ -200,7 +208,7 @@ table td img {
 .table-note p {
     font-weight: bolder;
     font-style: italic;
-    padding: 20px;
+    padding: 10px 20px 0 20px;
 }
 
 .table-text p {

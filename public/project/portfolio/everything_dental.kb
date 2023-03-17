@@ -85,3 +85,29 @@ DIV "image-wall"
         LINK CLOSE
     DIV CLOSE
 DIV CLOSE
+LINE BREAK
+LINE BREAK
+HEADING 3
+    PRINT "The Tech Used"
+HEADING CLOSE
+DIV "tech-used"
+    IMAGE "/kytschi/imgs/html_learn_it_today.gif", "HTML5"
+    IMAGE "/kytschi/imgs/vcss.gif", "CSS3"
+    IMAGE "/kytschi/imgs/javascript.gif", "Javascript"
+    IMAGE "/kytschi/imgs/mysql5.gif", "Mysql"
+    IMAGE "/kytschi/imgs/linux_now.gif", "linux"
+    IMAGE "/kytschi/imgs/nginx.gif", "Nginx"
+    IMAGE "/kytschi/imgs/php.gif", "PHP"
+    IMAGE "/kytschi/imgs/vuejs.gif", "Vue.js"
+    IMAGE "/kytschi/imgs/nodejs.gif", "Node.js"
+    IMAGE "/kytschi/imgs/bash.gif", "BASH Scripting"
+DIV CLOSE
+TABLE
+    TROW
+        TCELL "200px"
+            IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow", "arrow-small"
+        TCELL CLOSE
+    TROW CLOSE
+TABLE CLOSE
+LINE BREAK
+LINE BREAK
