@@ -69,7 +69,7 @@ LINE BREAK
 LINE BREAK
 TABLE "table-note"
     TROW
-        TCELL "250px","table-text"
+        TCELL "250px","table-note-img"
             IMAGE "/kytschi/imgs/nono.png", "A quick tip!"
         TCELL CLOSE
         TCELL
