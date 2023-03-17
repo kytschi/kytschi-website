@@ -81,6 +81,7 @@ body {
 .card-body {
     float: left;
     width: 100%;
+    font-size: 0;
 }
 
 .card-footer {
