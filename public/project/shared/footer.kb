@@ -1,3 +1,17 @@
+DATA visitors#
+	DOPEN "kytschi"
+	DREAD "visitors"
+	DSET "counter = counter + 1, updated_at=NOW()"
+	DWHERE "id=1"
+DATA CLOSE
+DATA visitors#
+	DOPEN "kytschi"
+	DREAD "visitors"
+	DSELECT "*"
+	DWHERE "id=1"
+	DLIMIT "1"
+DATA CLOSE
+
 FOOTER
 	TABLE
 		TROW
@@ -8,6 +22,14 @@ FOOTER
 				SWRITE "nav-link-img"
 					IMAGE "/kytschi/imgs/nocookie.gif", "I don't use cookies"
 				SWRITE CLOSE
+				DIV "visitors"
+					SWRITE
+						IMAGE "/kytschi/imgs/visitors.png", "Visitors"
+					SWRITE CLOSE
+					SWRITE
+						PRINT visitors#[0]["counter"], "visitors-count"
+					SWRITE CLOSE
+				DIV CLOSE
 			TCELL CLOSE
 			TCELL ,"footer-created"
 				SWRITE

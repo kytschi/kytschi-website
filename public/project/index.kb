@@ -164,6 +164,7 @@ BODY
 		LOAD "$ROOT_FOLDER/project/portfolio/activecell"
 		LOAD "$ROOT_FOLDER/project/portfolio/bw_finder"
 		LOAD "$ROOT_FOLDER/project/portfolio/qst"
+		LOAD "$ROOT_FOLDER/project/portfolio/kytscha"
 
 	MAIN CLOSE
 	LOAD "$ROOT_FOLDER/project/shared/footer"

@@ -238,6 +238,35 @@ th, td {
 	text-align: right;
 }
 
+.visitors {
+    float: left;
+    background-color: #D1CDCD;
+    border-top: 4px solid #F2F3EB;
+    border-left: 4px solid #F2F3EB;
+    border-bottom: 4px solid #000;
+    border-right: 4px solid #000;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.visitors p {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.visitors img {
+    max-height: 28px;
+}
+
+.visitors span {
+    width: 100%;
+    font-family: "Vintage", 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #E14ECA;
+}
+
 @media only screen and (max-width: 1024px) {
     body {
         overflow-x: scroll;
