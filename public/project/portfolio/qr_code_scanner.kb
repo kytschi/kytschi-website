@@ -63,7 +63,7 @@ TABLE
     TROW CLOSE
 TABLE CLOSE
 HEADING 3
-    PRINT "Looky what we have here"
+    PRINT "Peek-a-boo, I see you..."
 HEADING CLOSE
 DIV "image-wall"
     DIV "image-wall-item"
@@ -102,8 +102,12 @@ DIV "tech-used"
     IMAGE "/kytschi/imgs/linux_now.gif", "linux"
     IMAGE "/kytschi/imgs/bash.gif", "BASH Scripting"
 DIV CLOSE
-LINE BREAK
-LINE BREAK
-LINE BREAK
+TABLE
+    TROW
+        TCELL "200px"
+            IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow", "arrow-small"
+        TCELL CLOSE
+    TROW CLOSE
+TABLE CLOSE
 LINE BREAK
 LINE BREAK

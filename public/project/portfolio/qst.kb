@@ -1,0 +1,130 @@
+TABLE
+    TROW
+        TCELL "50%"
+            DIV "card"
+                DIV "card-body"
+                    IMAGE "/kytschi/imgs/portfolio/qst-finder-screen.png", "QST finder screen"
+                DIV CLOSE
+                DIV "card-footer"
+                    SWRITE
+                        PRINT "Quick Straight Teeth"
+                        LINE BREAK
+                        PRINT "Dental Finder App"
+                    SWRITE CLOSE
+                DIV CLOSE
+            DIV CLOSE
+        TCELL CLOSE
+        TCELL ,"table-text-right"
+            SWRITE
+                PRINT "Just like with Boutique Whitening, Quick Straight Teeth (QST) found that they were getting a lot of queries via their website for people looking for a dentist for general dental care."
+            SWRITE CLOSE
+            SWRITE
+                PRINT "They themselves are not dentists they just sell products to dentists."
+            SWRITE CLOSE
+            SWRITE
+                PRINT "Due to the volume of enquiries they figured 'why not rebrand the Boutique Whitening dentist finder app for QST?'"
+            SWRITE CLOSE
+        TCELL CLOSE
+    TROW CLOSE
+    TROW
+        TCELL
+            LINE BREAK
+            LINE BREAK
+        TCELL CLOSE
+        TCELL
+        TCELL CLOSE
+    TROW CLOSE
+    TROW
+        TCELL ,"table-text"
+            LINE BREAK
+            LINE BREAK
+            LINE BREAK
+            LINE BREAK
+            LINE BREAK
+            IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow"
+        TCELL CLOSE
+        TCELL
+            DIV "card"
+                DIV "card-body"
+                    IMAGE "/kytschi/imgs/1980s Offices (25).jpg", "Women can't build sites!"
+                DIV CLOSE
+                DIV "card-footer"
+                    SWRITE
+                        PRINT "I told you!"
+                        LINE BREAK
+                        PRINT "Women can't build sites!"
+                    SWRITE CLOSE
+                DIV CLOSE
+            DIV CLOSE
+        TCELL CLOSE
+    TROW CLOSE
+TABLE CLOSE
+HEADING 3
+    PRINT "The horror! The horror!"
+HEADING CLOSE
+DIV "image-wall"
+    DIV "image-wall-item"
+        LINK "/kytschi/imgs/portfolio/qst-finder-screen-2.png", "Click to view me bigger",,"_blank"
+            IMAGE "/kytschi/imgs/portfolio/qst-finder-screen-2.png", "Screenshot"
+        LINK CLOSE
+    DIV CLOSE
+    DIV "image-wall-item"
+        LINK "/kytschi/imgs/portfolio/qst-finder-screen-3.png", "Click to view me bigger",,"_blank"
+            IMAGE "/kytschi/imgs/portfolio/qst-finder-screen-3.png", "Screenshot"
+        LINK CLOSE
+    DIV CLOSE
+    DIV "image-wall-item"
+        LINK "/kytschi/imgs/portfolio/qst-finder-screen-4.png", "Click to view me bigger",,"_blank"
+            IMAGE "/kytschi/imgs/portfolio/qst-finder-screen-4.png", "Screenshot"
+        LINK CLOSE
+    DIV CLOSE
+    DIV "image-wall-item"
+        LINK "/kytschi/imgs/portfolio/qst-finder-screen-5.png", "Click to view me bigger",,"_blank"
+            IMAGE "/kytschi/imgs/portfolio/qst-finder-screen-5.png", "Screenshot"
+        LINK CLOSE
+    DIV CLOSE
+    DIV "image-wall-item"
+        LINK "/kytschi/imgs/portfolio/qst-finder-screen-6.png", "Click to view me bigger",,"_blank"
+            IMAGE "/kytschi/imgs/portfolio/qst-finder-screen-6.png", "Screenshot"
+        LINK CLOSE
+    DIV CLOSE
+    DIV "image-wall-item"
+        LINK "/kytschi/imgs/portfolio/qst-finder-screen-7.png", "Click to view me bigger",,"_blank"
+            IMAGE "/kytschi/imgs/portfolio/qst-finder-screen-7.png", "Screenshot"
+        LINK CLOSE
+    DIV CLOSE
+    DIV "image-wall-item"
+        LINK "/kytschi/imgs/portfolio/qst-finder-screen-8.png", "Click to view me bigger",,"_blank"
+            IMAGE "/kytschi/imgs/portfolio/qst-finder-screen-8.png", "Screenshot"
+        LINK CLOSE
+    DIV CLOSE
+    DIV "image-wall-item"
+        LINK "/kytschi/imgs/portfolio/qst-finder-screen-9.png", "Click to view me bigger",,"_blank"
+            IMAGE "/kytschi/imgs/portfolio/qst-finder-screen-9.png", "Screenshot"
+        LINK CLOSE
+    DIV CLOSE
+DIV CLOSE
+HEADING 3
+    PRINT "The Tech Used"
+HEADING CLOSE
+DIV "tech-used"
+    IMAGE "/kytschi/imgs/html_learn_it_today.gif", "HTML5"
+    IMAGE "/kytschi/imgs/vcss.gif", "CSS3"
+    IMAGE "/kytschi/imgs/javascript.gif", "Javascript"
+    IMAGE "/kytschi/imgs/mysql5.gif", "Mysql"
+    IMAGE "/kytschi/imgs/linux_now.gif", "linux"
+    IMAGE "/kytschi/imgs/nginx.gif", "Nginx"
+    IMAGE "/kytschi/imgs/php.gif", "PHP"
+    IMAGE "/kytschi/imgs/bash.gif", "BASH Scripting"
+    IMAGE "/kytschi/imgs/nodejs.gif", "Node.js"
+    IMAGE "/kytschi/imgs/vuejs.gif", "Vue.js"
+DIV CLOSE
+TABLE
+    TROW
+        TCELL "200px"
+            IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow", "arrow-small"
+        TCELL CLOSE
+    TROW CLOSE
+TABLE CLOSE
+LINE BREAK
+LINE BREAK

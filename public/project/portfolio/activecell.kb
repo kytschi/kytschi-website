@@ -1,0 +1,118 @@
+TABLE
+    TROW
+        TCELL "50%"
+            DIV "card"
+                DIV "card-body"
+                    IMAGE "/kytschi/imgs/portfolio/octoprint-dashboard.png", "Octoprint"
+                DIV CLOSE
+                DIV "card-footer"
+                    SWRITE
+                        PRINT "ActiveCell 3D Printing"
+                        LINE BREAK
+                        PRINT "API"
+                    SWRITE CLOSE
+                DIV CLOSE
+            DIV CLOSE
+        TCELL CLOSE
+        TCELL , "table-text-right"
+            SWRITE
+                PRINT "A 3D printing firm called ActiveCell was looking for a system to help manage their ever expanding printer farm."
+            SWRITE CLOSE
+            SWRITE
+                PRINT "Kytschi was contracted in to build an API that would allow their front end developer be able to build a centralised administration tool that would take in a job from a customer and kick it to a free printer."
+            SWRITE CLOSE
+            SWRITE
+                PRINT "They asked us to build the API in lumen as their front end developer had some experience with it and the idea was once we had knocked the project out they'd take over the maintenance."
+            SWRITE CLOSE
+            SWRITE
+                PRINT "The API would allow them to first query their printer farm for a free printer. They'd then look at that printer and see if it suitable for that job, does it have the right coloured spool of plastic, does it have enough material for the job and so on."
+            SWRITE CLOSE
+            SWRITE
+                PRINT "They could manage their printer materials via the API as a basic stock management system."
+            SWRITE CLOSE
+        TCELL CLOSE
+    TROW CLOSE
+    TROW
+        TCELL
+            LINE BREAK
+            LINE BREAK
+        TCELL CLOSE
+        TCELL
+        TCELL CLOSE
+    TROW CLOSE
+    TROW
+        TCELL ,"table-text"
+            SWRITE
+                PRINT "Next they could query the printers stats, things like its temperature, its nozzle status, etc."
+            SWRITE CLOSE
+            SWRITE
+                PRINT "Once they have found a suitable printer they could then fire over a 3D print design file to the printer. The API would then manage the printer's job keeping an eye on its process and reporting back to the front end app."
+            SWRITE CLOSE
+            LINE BREAK
+            LINE BREAK
+            LINE BREAK
+            LINE BREAK
+            LINE BREAK
+            IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow"
+        TCELL CLOSE
+        TCELL
+            DIV "card"
+                DIV "card-body"
+                    IMAGE "/kytschi/imgs/80s-geeks-2.jpg", "Even the blind are elite after reading this guide!"
+                DIV CLOSE
+                DIV "card-footer"
+                    SWRITE
+                        PRINT "Grow a mustache!"
+                        LINE BREAK
+                        PRINT "All elite devs have them!"
+                    SWRITE CLOSE
+                DIV CLOSE
+            DIV CLOSE
+        TCELL CLOSE
+    TROW CLOSE
+TABLE CLOSE
+HEADING 3
+    PRINT "The Tech Used"
+HEADING CLOSE
+DIV "tech-used"
+    IMAGE "/kytschi/imgs/linux_now.gif", "linux"
+    IMAGE "/kytschi/imgs/nginx.gif", "Nginx"
+    IMAGE "/kytschi/imgs/php.gif", "PHP"
+    IMAGE "/kytschi/imgs/raspberry_pi.gif", "Raspberry Pi"
+    IMAGE "/kytschi/imgs/bash.gif", "BASH Scripting"
+DIV CLOSE
+LINE BREAK
+LINE BREAK
+LINE BREAK
+LINE BREAK
+LINE BREAK
+TABLE "table-note"
+    TROW
+        TCELL "250px","table-text"
+            IMAGE "/kytschi/imgs/nono.png", "A quick tip!"
+        TCELL CLOSE
+        TCELL
+            SWRITE
+                PRINT "Don’t forget we offer the service for fake portfolios."
+            SWRITE CLOSE
+            SWRITE
+                PRINT "Impress that client with portfolios from all over the world features some of the top companies!"
+            SWRITE CLOSE
+            SWRITE
+                PRINT "Not Google though, they never called me back so they can go to hell!"
+            SWRITE CLOSE
+            SWRITE
+                PRINT "Simply fill in the card provided and send it to the address shown with an enclosed cheque for £2.99 for handling and shipping."
+            SWRITE CLOSE
+        TCELL CLOSE
+    TROW CLOSE
+TABLE CLOSE
+TABLE
+    TROW
+        TCELL "200px"
+            IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow", "arrow-small"
+        TCELL CLOSE
+    TROW CLOSE
+TABLE CLOSE
+LINE BREAK
+LINE BREAK
