@@ -26,7 +26,7 @@ TABLE
                 PRINT "The first build I did in c++ but I just wasn't happy with the library that I was using for serving the HTML. Don't get me wrong its a good library but it just didn't fit what I was after. I'd seen zephir-lang which lets you build PHP modules and it was something I was keen to play with so I began the port over to zephir."
             SWRITE CLOSE
             SWRITE
-                PRINT "So to sum up, kytschBASIC lets you write in a version of BASIC that is heavily inspired by AmigaBASIC and it'll render that code as HTML and CSS so it can be viewed via the web. It has support for jQuery also so you can do javascript integration."
+                PRINT "So to sum up...kytschBASIC lets you write in a version of BASIC that is heavily inspired by AmigaBASIC and it'll render that code as HTML and CSS so it can be viewed via the web. It has support for jQuery also so you can do javascript integration."
             SWRITE CLOSE
         TCELL CLOSE
     TROW CLOSE
