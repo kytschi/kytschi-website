@@ -13,7 +13,7 @@ BODY
 			TROW
 				TCELL ,"table-text"
 					SWRITE
-						PRINT "Today we are going to learn how to build a successful website from a computer and software engineer with over two decades of experience."
+						PRINT "Today we are going to learn how to build a successful website from a computer and software contract engineer with over two decades of experience."
 					SWRITE CLOSE
 					SWRITE
 						PRINT "There isn’t much in development and IT I have not tackled, so you can be reassured that after reading this you too can be as elite as I am."
@@ -49,8 +49,11 @@ BODY
 		TABLE CLOSE
 		TABLE
 			TROW
+				TCELL
+					LINE BREAK
+				TCELL CLOSE
 				TCELL "200px"
-					IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow", "arrow-small"
+					IMAGE "/kytschi/imgs/arrow.png", "arrow", "arrow-small"
 				TCELL CLOSE
 			TROW CLOSE
 		TABLE CLOSE
@@ -58,6 +61,19 @@ BODY
 		LINE BREAK
 		TABLE "table-margin"
 			TROW
+				TCELL "50%"
+					LINE BREAK
+					LINE BREAK
+					LINE BREAK
+					LINE BREAK
+					LINE BREAK
+					LINE BREAK
+					LINE BREAK
+					LINE BREAK
+					LINE BREAK
+					LINE BREAK
+					IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow"
+				TCELL CLOSE
 				TCELL ,"table-text"
 					DIV "card"
 						DIV "card-body"
@@ -70,7 +86,23 @@ BODY
 						DIV CLOSE
 					DIV CLOSE
 				TCELL CLOSE
+			TROW CLOSE
+		TABLE CLOSE
+		TABLE "table-margin"
+			TROW
 				TCELL "50%"
+					DIV "card"
+						DIV "card-body"
+							IMAGE "/kytschi/imgs/kirk-khan.jpg", "Contractor!!!"
+						DIV CLOSE
+						DIV "card-footer"
+							SWRITE
+								PRINT "Contractor!!!"
+							SWRITE CLOSE
+						DIV CLOSE
+					DIV CLOSE
+				TCELL CLOSE
+				TCELL ,"table-text-right"
 					LINE BREAK
 					LINE BREAK
 					LINE BREAK
