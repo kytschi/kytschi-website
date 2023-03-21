@@ -120,6 +120,15 @@ button {
     padding: 10px 40px;
     font-weight: bold;
     font-size: 24pt;
+    text-transform: uppercase;
+}
+
+.error .card {
+    border: none;
+}
+
+.error .card-footer {
+    background-color: #e01d00;
 }
 
 footer {
@@ -250,10 +259,12 @@ table td img {
 
 .table-text p, .table-text table {
     padding: 0 40px 0 0;
+    margin-top: 0;
 }
 
 .table-text-right p {
     padding: 0 0 0 40px;
+    margin-top: 0;
 }
 
 th, td {

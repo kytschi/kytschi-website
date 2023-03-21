@@ -24,12 +24,6 @@ TABLE
             SWRITE
                 PRINT "The plan was to knock out a quick 3 week build of a simple online stock management system that would allow both their sites to perform the stock takes but also request stock from each other and to order new stock via their suppliers."
             SWRITE CLOSE
-            SWRITE
-                PRINT "The suppliers themselves had their own access to the system where they could review the orders and fulfil them."
-            SWRITE CLOSE
-            SWRITE
-                PRINT "The system also sports email notifications when the stock is low or out of stock so the team can deal with them."
-            SWRITE CLOSE
         TCELL CLOSE
     TROW CLOSE
     TROW
@@ -42,10 +36,12 @@ TABLE
     TROW CLOSE
     TROW
         TCELL ,"table-text"
-            LINE BREAK
-            LINE BREAK
-            LINE BREAK
-            LINE BREAK
+            SWRITE
+                PRINT "The suppliers themselves had their own access to the system where they could review the orders and fulfil them."
+            SWRITE CLOSE
+            SWRITE
+                PRINT "The system also sports email notifications when the stock is low or out of stock so the team can deal with them."
+            SWRITE CLOSE
             LINE BREAK
             LINE BREAK
             LINE BREAK

@@ -32,7 +32,7 @@ BODY
 				TROW CLOSE
 			TABLE CLOSE
 		END IF
-		TABLE "table-margin"
+		TABLE
 			TROW
 				TCELL "50%"
 					DIV "card"
@@ -50,6 +50,8 @@ BODY
 					SWRITE
 						PRINT "Easiest way is just to email me at the address shown. But if your lazy and really like filling out forms..."
 					SWRITE CLOSE
+					LINE BREAK
+            		LINE BREAK
 					SWRITE
 						LINE BREAK
 						IMAGE "/kytschi/imgs/arrow.png", "arrow"
