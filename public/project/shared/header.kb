@@ -26,11 +26,3 @@ HEADER
 		LINK CLOSE
 	MENU CLOSE
 HEADER CLOSE
-
-DIV ,"mobile"
-	SWRITE
-		PRINT "Put down that phone!"
-		LINE BREAK
-		PRINT "Please view me on real computer."
-	SWRITE CLOSE
-DIV CLOSE

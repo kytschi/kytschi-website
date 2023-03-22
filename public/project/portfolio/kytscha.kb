@@ -1,29 +1,27 @@
-TABLE
-    TROW
-        TCELL "50%"
-            DIV "card"
-                DIV "card-body"
-                    IMAGE "/kytschi/imgs/portfolio/kytcha-3.png", "Kytscha"
-                DIV CLOSE
-                DIV "card-footer"
-                    SWRITE
-                        PRINT "Kytscha"
-                        LINE BREAK
-                        PRINT "ASCII based captcha"
-                    SWRITE CLOSE
-                DIV CLOSE
+DIV "table"
+    DIV "table-img mobile-margin"
+        DIV "card"
+            DIV "card-body"
+                IMAGE "/kytschi/imgs/portfolio/kytcha-3.png", "Kytscha"
             DIV CLOSE
-        TCELL CLOSE
-        TCELL ,"table-text-right"
-            SWRITE
-                PRINT "An open source ASCII captcha made because of our love of ASCII art at Kytschi and for some retro fun."
-            SWRITE CLOSE
-            SWRITE
-                PRINT "Use at your own risk ;-)"
-            SWRITE CLOSE
-        TCELL CLOSE
-    TROW CLOSE
-TABLE CLOSE
+            DIV "card-footer"
+                SWRITE
+                    PRINT "Kytscha"
+                    LINE BREAK
+                    PRINT "ASCII based captcha"
+                SWRITE CLOSE
+            DIV CLOSE
+        DIV CLOSE
+    DIV CLOSE
+    DIV "table-text"
+        SWRITE
+            PRINT "An open source ASCII captcha made because of our love of ASCII art at Kytschi and for some retro fun."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "Use at your own risk ;-)"
+        SWRITE CLOSE
+    DIV CLOSE
+DIV CLOSE
 HEADING 3
     PRINT "Terrible! Just terrible!"
 HEADING CLOSE
@@ -60,12 +58,8 @@ DIV "tech-used"
         IMAGE "/kytschi/imgs/clip2.gif", "Free"
     LINK CLOSE
 DIV CLOSE
-TABLE
-    TROW
-        TCELL "200px"
-            IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow", "arrow-small"
-        TCELL CLOSE
-    TROW CLOSE
-TABLE CLOSE
-LINE BREAK
-LINE BREAK
+DIV "table-blank-arrow-reversed"
+    DIV "table-blank-arrow-img"
+        IMAGE "/kytschi/imgs/arrow.png", "arrow", "arrow-small"
+    DIV CLOSE
+DIV CLOSE

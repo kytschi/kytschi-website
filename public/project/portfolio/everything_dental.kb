@@ -1,70 +1,50 @@
-TABLE "table-margin"
-    TROW
-        TCELL ,"table-text"
-            SWRITE
-                PRINT "A massive world wide dentist finder application to help people find their local dentist practice."
-            SWRITE CLOSE
-            SWRITE
-                PRINT "Built in parallel with the Boutique Whitening and Quick Straight Teeth dentist finders, Everything Dental dentist finder is massive world wide dentist practice finder with 1000s of practices available to search."
-            SWRITE CLOSE
-            SWRITE
-                PRINT "The finder is expanding into other countries to support a world wide customer base."
-            SWRITE CLOSE
-            SWRITE
-                PRINT "The project was built in Vue.js for the front-end app with the back-end API built in Laravel/Lumen running under PHP-FPM, nginx with MariaDB/MYSQL as the database engine."
-            SWRITE CLOSE
-        TCELL CLOSE
-        TCELL "50%"
-            DIV "card"
-                DIV "card-body"
-                    IMAGE "/kytschi/imgs/portfolio/ed-search-with-map.png", "ED search"
-                DIV CLOSE
-                DIV "card-footer"
-                    SWRITE
-                        PRINT "Everything Dental"
-                        LINE BREAK
-                        PRINT "Dentist Finder"
-                    SWRITE CLOSE
-                DIV CLOSE
+DIV "table"
+    DIV "table-text"
+        SWRITE
+            PRINT "A massive world wide dentist finder application to help people find their local dentist practice."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "Built in parallel with the Boutique Whitening and Quick Straight Teeth dentist finders, Everything Dental dentist finder is massive world wide dentist practice finder with 1000s of practices available to search."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "The finder is expanding into other countries to support a world wide customer base."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "The project was built in Vue.js for the front-end app with the back-end API built in Laravel/Lumen running under PHP-FPM, nginx with MariaDB/MYSQL as the database engine."
+        SWRITE CLOSE
+    DIV CLOSE
+    DIV "table-img"
+        DIV "card"
+            DIV "card-body"
+                IMAGE "/kytschi/imgs/portfolio/ed-search-with-map.png", "ED search"
             DIV CLOSE
-        TCELL CLOSE
-    TROW CLOSE
-    TROW
-        TCELL
-            LINE BREAK
-            LINE BREAK
-        TCELL CLOSE
-        TCELL
-        TCELL CLOSE
-    TROW CLOSE
-    TROW
-        TCELL
-            DIV "card"
-                DIV "card-body"
-                    IMAGE "/kytschi/imgs/1980s Offices (3).jpg", "Overcomplicate the design process as much as possible!"
-                DIV CLOSE
-                DIV "card-footer"
-                    SWRITE
-                        PRINT "Overcomplicate the design process as much as possible!"
-                    SWRITE CLOSE
-                DIV CLOSE
+            DIV "card-footer"
+                SWRITE
+                    PRINT "Everything Dental"
+                    LINE BREAK
+                    PRINT "Dentist Finder"
+                SWRITE CLOSE
             DIV CLOSE
-        TCELL CLOSE
-        TCELL ,"table-text-right"
-            LINE BREAK
-            LINE BREAK
-            LINE BREAK
-            LINE BREAK
-            LINE BREAK
-            LINE BREAK
-            LINE BREAK
-            LINE BREAK
-            LINE BREAK
-            LINE BREAK
-            IMAGE "/kytschi/imgs/arrow.png", "arrow"
-        TCELL CLOSE
-    TROW CLOSE
-TABLE CLOSE
+        DIV CLOSE
+    DIV CLOSE
+DIV CLOSE
+DIV "table"
+    DIV "table-img"
+        DIV "card"
+            DIV "card-body"
+                IMAGE "/kytschi/imgs/1980s Offices (3).jpg", "Overcomplicate the design process as much as possible!"
+            DIV CLOSE
+            DIV "card-footer"
+                SWRITE
+                    PRINT "Overcomplicate the design process as much as possible!"
+                SWRITE CLOSE
+            DIV CLOSE
+        DIV CLOSE
+    DIV CLOSE
+    DIV "table-text-right"
+        IMAGE "/kytschi/imgs/arrow.png", "arrow"
+    DIV CLOSE
+DIV CLOSE
 HEADING 3
     PRINT "I spy something with my little eye..."
 HEADING CLOSE
@@ -102,12 +82,8 @@ DIV "tech-used"
     IMAGE "/kytschi/imgs/nodejs.gif", "Node.js"
     IMAGE "/kytschi/imgs/bash.gif", "BASH Scripting"
 DIV CLOSE
-TABLE
-    TROW
-        TCELL "200px"
-            IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow", "arrow-small"
-        TCELL CLOSE
-    TROW CLOSE
-TABLE CLOSE
-LINE BREAK
-LINE BREAK
+DIV "table-blank-arrow"
+    DIV "table-blank-arrow-img"
+        IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow", "arrow-small"
+    DIV CLOSE
+DIV CLOSE

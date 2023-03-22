@@ -9,185 +9,140 @@ BODY
 		HEADING 3
 			PRINT "Introduction"
 		HEADING CLOSE
-		TABLE "table-margin"
-			TROW
-				TCELL ,"table-text"
-					SWRITE
-						PRINT "Today we are going to learn how to build a successful website from a computer and software contract engineer with over two decades of experience."
-					SWRITE CLOSE
-					SWRITE
-						PRINT "There isn’t much in development and IT I have not tackled, so you can be reassured that after reading this you too can be as elite as I am."
-					SWRITE CLOSE
-				TCELL CLOSE
-				TCELL "40%"
-					DIV "card"
-						DIV "card-body"
-							IMAGE "/kytschi/imgs/mike-welsh-check-out-that-hair.jpg", "Checkout that hair!"
-						DIV CLOSE
-						DIV "card-footer"
-							SWRITE
-								PRINT "I pity the fool that"
-								LINE BREAK
-								PRINT "doesn’t hire me"
-							SWRITE CLOSE
-						DIV CLOSE
+		DIV "table-margin"
+			DIV "table-text"
+				SWRITE
+					PRINT "Today we are going to learn how to build a successful website from a computer and software contract engineer with over two decades of experience."
+				SWRITE CLOSE
+				SWRITE
+					PRINT "There isn’t much in development and IT I have not tackled, so you can be reassured that after reading this you too can be as elite as I am."
+				SWRITE CLOSE
+			DIV CLOSE
+			DIV "table-img"
+				DIV "card"
+					DIV "card-body"
+						IMAGE "/kytschi/imgs/mike-welsh-check-out-that-hair.jpg", "Checkout that hair!"
 					DIV CLOSE
-				TCELL CLOSE
-			TROW CLOSE
-		TABLE CLOSE
-		TABLE "table-note"
-			TROW
-				TCELL "250px","table-note-img"
-					IMAGE "/kytschi/imgs/nono.png", "A quick tip!"
-				TCELL CLOSE
-				TCELL
-					SWRITE
-						PRINT "Remember that complementing yourself as much as possible with as many power words wins you that hire."
-					SWRITE CLOSE
-				TCELL CLOSE
-			TROW CLOSE
-		TABLE CLOSE
-		TABLE
-			TROW
-				TCELL
-					LINE BREAK
-				TCELL CLOSE
-				TCELL "200px"
-					IMAGE "/kytschi/imgs/arrow.png", "arrow", "arrow-small"
-				TCELL CLOSE
-			TROW CLOSE
-		TABLE CLOSE
-		LINE BREAK
-		LINE BREAK
-		TABLE "table-margin"
-			TROW
-				TCELL "50%"
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow"
-				TCELL CLOSE
-				TCELL ,"table-text"
-					DIV "card"
-						DIV "card-body"
-							IMAGE "/kytschi/imgs/hello@kytschi.com.jpg", "Email me"
-						DIV CLOSE
-						DIV "card-footer"
-							SWRITE
-								PRINT "hello@kytschi.com"
-							SWRITE CLOSE
-						DIV CLOSE
+					DIV "card-footer"
+						SWRITE
+							PRINT "I pity the fool that"
+							LINE BREAK
+							PRINT "doesn’t hire me"
+						SWRITE CLOSE
 					DIV CLOSE
-				TCELL CLOSE
-			TROW CLOSE
-		TABLE CLOSE
-		TABLE "table-margin"
-			TROW
-				TCELL "50%"
-					DIV "card"
-						DIV "card-body"
-							IMAGE "/kytschi/imgs/kirk-khan.jpg", "Contractor!!!"
-						DIV CLOSE
-						DIV "card-footer"
-							SWRITE
-								PRINT "Contractor!!!"
-							SWRITE CLOSE
-						DIV CLOSE
+				DIV CLOSE
+			DIV CLOSE
+		DIV CLOSE
+		DIV "table-note"
+			DIV "table-note-img"
+				IMAGE "/kytschi/imgs/nono.png", "A quick tip!"
+			DIV CLOSE
+			DIV
+				SWRITE
+					PRINT "Remember that complementing yourself as much as possible with as many power words wins you that hire."
+				SWRITE CLOSE
+			DIV CLOSE
+		DIV CLOSE
+		DIV "table-blank-arrow"
+			DIV "table-blank-arrow-img"
+				IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow", "arrow-small"
+			DIV CLOSE
+		DIV CLOSE
+		
+		DIV "table"
+			DIV "table-text-card"
+				DIV "card"
+					DIV "card-body"
+						IMAGE "/kytschi/imgs/hello@kytschi.com.jpg", "Email me"
 					DIV CLOSE
-				TCELL CLOSE
-				TCELL ,"table-text-right"
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					IMAGE "/kytschi/imgs/arrow.png", "arrow"
-				TCELL CLOSE
-			TROW CLOSE
-		TABLE CLOSE
-		TABLE "table-margin"
-			TROW
-				TCELL ,"table-text"
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					LINE BREAK
-					IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow"
-				TCELL CLOSE
-				TCELL "50%"
-					DIV "card"
-						DIV "card-body"
-							IMAGE "/kytschi/imgs/80s-geeks-3.jpg", "Portfolio"
-						DIV CLOSE
-						DIV "card-footer"
-							SWRITE
-								PRINT "Portfolio"
-							SWRITE CLOSE
-						DIV CLOSE
+					DIV "card-footer"
+						SWRITE
+							PRINT "hello@kytschi.com"
+						SWRITE CLOSE
 					DIV CLOSE
-				TCELL CLOSE
-			TROW CLOSE
-		TABLE CLOSE
+				DIV CLOSE
+			DIV CLOSE
+			DIV "table-img-arrow mobile-margin mobile-right no-mobile-margin"
+				IMAGE "/kytschi/imgs/arrow.png", "arrow"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "table"
+			DIV "table-img-arrow no-mobile"
+				IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow"
+			DIV CLOSE
+			DIV "table-text-card"
+				DIV "card"
+					DIV "card-body"
+						IMAGE "/kytschi/imgs/kirk-khan.jpg", "Contractor!!!"
+					DIV CLOSE
+					DIV "card-footer"
+						SWRITE
+							PRINT "Contractor!!!"
+						SWRITE CLOSE
+					DIV CLOSE
+				DIV CLOSE
+			DIV CLOSE
+			DIV "table-img-arrow mobile-show no-mobile-margin"
+				IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "table"
+			DIV "table-text-card"
+				DIV "card"
+					DIV "card-body"
+						IMAGE "/kytschi/imgs/80s-geeks-3.jpg", "Portfolio"
+					DIV CLOSE
+					DIV "card-footer"
+						SWRITE
+							PRINT "Portfolio"
+						SWRITE CLOSE
+					DIV CLOSE
+				DIV CLOSE
+			DIV CLOSE
+			DIV "table-img-arrow mobile-margin mobile-right no-mobile-margin"
+				IMAGE "/kytschi/imgs/arrow.png", "arrow"
+			DIV CLOSE
+		DIV CLOSE
 
 		LOAD "_ROOT/project/portfolio/kytschbasic"
 		LOAD "_ROOT/project/portfolio/boutique_e_commerce"
 		LOAD "_ROOT/project/portfolio/dental_finder_backend"
 				
-		TABLE "table-margin"
-			TROW
-				TCELL
-					DIV "card"
-						DIV "card-body"
-							IMAGE "/kytschi/imgs/hello@kytschi.com.jpg", "Email me"
-						DIV CLOSE
-						DIV "card-footer"
-							SWRITE
-								PRINT "hello@kytschi.com"
-							SWRITE CLOSE
-						DIV CLOSE
+		DIV "table-margin no-mobile-margin"
+			DIV "table-text-card mobile-margin"
+				DIV "card"
+					DIV "card-body"
+						IMAGE "/kytschi/imgs/hello@kytschi.com.jpg", "Email me"
 					DIV CLOSE
-				TCELL CLOSE
-				TCELL "50%", "table-text-right"
-					SWRITE
-						PRINT "Don't for check to get in touch so I can help your crappy website look as good as mine!"
-					SWRITE CLOSE
-					SWRITE
-						PRINT "I really am that good that I scare myself sometimes!!"
-					SWRITE CLOSE
-					SWRITE
-						PRINT "No seriously, just get in touch!!!"
-					SWRITE CLOSE
-					SWRITE
-						PRINT "I really am that elite that even Microsoft was too scared to hire me!!!!"
-					SWRITE CLOSE
-					SWRITE
-						PRINT "Apple just wet themselves at my skills!!!!!"
-					SWRITE CLOSE
-					SWRITE
-						PRINT "Google didn't call me back though!!!!!!"
-					SWRITE CLOSE
-					IMAGE "/kytschi/imgs/arrow.png", "arrow"
-				TCELL CLOSE
-			TROW CLOSE
-		TABLE CLOSE
+					DIV "card-footer"
+						SWRITE
+							PRINT "hello@kytschi.com"
+						SWRITE CLOSE
+					DIV CLOSE
+				DIV CLOSE
+			DIV CLOSE
+			DIV "table-text"
+				SWRITE
+					PRINT "Don't forget to get in touch so I can help your crappy website look as good as mine!"
+				SWRITE CLOSE
+				SWRITE
+					PRINT "I really am that good that I scare myself sometimes!!"
+				SWRITE CLOSE
+				SWRITE
+					PRINT "No seriously, just get in touch!!!"
+				SWRITE CLOSE
+				SWRITE
+					PRINT "I really am that elite that even Microsoft was too scared to hire me!!!!"
+				SWRITE CLOSE
+				SWRITE
+					PRINT "Apple just wet themselves at my skills!!!!!"
+				SWRITE CLOSE
+				SWRITE
+					PRINT "Google didn't call me back though!!!!!!"
+				SWRITE CLOSE
+				IMAGE "/kytschi/imgs/arrow.png", "arrow"
+			DIV CLOSE
+		DIV CLOSE
 
 		LOAD "_ROOT/project/portfolio/everything_dental"
 		LOAD "_ROOT/project/portfolio/stock_system"

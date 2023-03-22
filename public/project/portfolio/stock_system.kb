@@ -1,71 +1,55 @@
-TABLE
-    TROW
-        TCELL "50%"
-            DIV "card"
-                DIV "card-body"
-                    IMAGE "/kytschi/imgs/portfolio/stock-system-stock-overview-with-sidebar.png", "Stock system"
-                DIV CLOSE
-                DIV "card-footer"
-                    SWRITE
-                        PRINT "Stock Control"
-                        LINE BREAK
-                        PRINT "System"
-                    SWRITE CLOSE
-                DIV CLOSE
+DIV "table no-mobile-margin"
+    DIV "table-img mobile-margin"
+        DIV "card"
+            DIV "card-body"
+                IMAGE "/kytschi/imgs/portfolio/stock-system-stock-overview-with-sidebar.png", "Stock system"
             DIV CLOSE
-        TCELL CLOSE
-        TCELL , "table-text-right"
-            SWRITE
-                PRINT "Stock management system for managing stock across multiple sites and ordering of stock with suppliers. "
-            SWRITE CLOSE
-            SWRITE
-                PRINT "The company had an issue with their stock as it is across multiple sites. They'd often do a manual stock take each month but they found that it was always off resulting in stock shortages for some items or overstocking for others."
-            SWRITE CLOSE
-            SWRITE
-                PRINT "The plan was to knock out a quick 3 week build of a simple online stock management system that would allow both their sites to perform the stock takes but also request stock from each other and to order new stock via their suppliers."
-            SWRITE CLOSE
-        TCELL CLOSE
-    TROW CLOSE
-    TROW
-        TCELL
-            LINE BREAK
-            LINE BREAK
-        TCELL CLOSE
-        TCELL
-        TCELL CLOSE
-    TROW CLOSE
-    TROW
-        TCELL ,"table-text"
-            SWRITE
-                PRINT "The suppliers themselves had their own access to the system where they could review the orders and fulfil them."
-            SWRITE CLOSE
-            SWRITE
-                PRINT "The system also sports email notifications when the stock is low or out of stock so the team can deal with them."
-            SWRITE CLOSE
-            LINE BREAK
-            LINE BREAK
-            LINE BREAK
-            LINE BREAK
-            LINE BREAK
-            LINE BREAK
-            IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow"
-        TCELL CLOSE
-        TCELL
-            DIV "card"
-                DIV "card-body"
-                    IMAGE "/kytschi/imgs/1980s Offices (2).jpg", "Even the blind are elite after reading this guide!"
-                DIV CLOSE
-                DIV "card-footer"
-                    SWRITE
-                        PRINT "Even the blind are elite"
-                        LINE BREAK
-                        PRINT "after reading this guide!"
-                    SWRITE CLOSE
-                DIV CLOSE
+            DIV "card-footer"
+                SWRITE
+                    PRINT "Stock Control"
+                    LINE BREAK
+                    PRINT "System"
+                SWRITE CLOSE
             DIV CLOSE
-        TCELL CLOSE
-    TROW CLOSE
-TABLE CLOSE
+        DIV CLOSE
+    DIV CLOSE
+    DIV "table-text"
+        SWRITE
+            PRINT "Stock management system for managing stock across multiple sites and ordering of stock with suppliers. "
+        SWRITE CLOSE
+        SWRITE
+            PRINT "The company had an issue with their stock as it is across multiple sites. They'd often do a manual stock take each month but they found that it was always off resulting in stock shortages for some items or overstocking for others."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "The plan was to knock out a quick 3 week build of a simple online stock management system that would allow both their sites to perform the stock takes but also request stock from each other and to order new stock via their suppliers."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "The suppliers themselves had their own access to the system where they could review the orders and fulfil them."
+        SWRITE CLOSE
+    DIV CLOSE
+DIV CLOSE    
+DIV "table"
+    DIV "table-text"
+        SWRITE
+            PRINT "The system also sports email notifications when the stock is low or out of stock so the team can deal with them."
+        SWRITE CLOSE
+        IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow"
+    DIV CLOSE
+    DIV "table-img"
+        DIV "card"
+            DIV "card-body"
+                IMAGE "/kytschi/imgs/1980s Offices (2).jpg", "Even the blind are elite after reading this guide!"
+            DIV CLOSE
+            DIV "card-footer"
+                SWRITE
+                    PRINT "Even the blind are elite"
+                    LINE BREAK
+                    PRINT "after reading this guide!"
+                SWRITE CLOSE
+            DIV CLOSE
+        DIV CLOSE
+    DIV CLOSE
+DIV CLOSE
 HEADING 3
     PRINT "Looky what we have here"
 HEADING CLOSE
@@ -128,12 +112,8 @@ DIV "tech-used"
     IMAGE "/kytschi/imgs/nodejs.gif", "Node.js"
     IMAGE "/kytschi/imgs/bash.gif", "BASH Scripting"
 DIV CLOSE
-TABLE
-    TROW
-        TCELL "200px"
-            IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow", "arrow-small"
-        TCELL CLOSE
-    TROW CLOSE
-TABLE CLOSE
-LINE BREAK
-LINE BREAK
+DIV "table-blank-arrow"
+    DIV "table-blank-arrow-img"
+        IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow", "arrow-small"
+    DIV CLOSE
+DIV CLOSE

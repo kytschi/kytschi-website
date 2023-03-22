@@ -1,64 +1,49 @@
-TABLE
-    TROW
-        TCELL "50%"
-            DIV "card"
-                DIV "card-body"
-                    IMAGE "/kytschi/imgs/portfolio/qst-finder-screen.png", "QST finder screen"
-                DIV CLOSE
-                DIV "card-footer"
-                    SWRITE
-                        PRINT "Quick Straight Teeth"
-                        LINE BREAK
-                        PRINT "Dental Finder App"
-                    SWRITE CLOSE
-                DIV CLOSE
+DIV "table"
+    DIV "table-text"
+        SWRITE
+            PRINT "Just like with Boutique Whitening, Quick Straight Teeth (QST) found that they were getting a lot of queries via their website for people looking for a dentist for general dental care."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "They themselves are not dentists they just sell products to dentists."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "Due to the volume of enquiries they figured 'why not rebrand the Boutique Whitening dentist finder app for QST?'"
+        SWRITE CLOSE
+    DIV CLOSE
+    DIV "table-img"
+        DIV "card"
+            DIV "card-body"
+                IMAGE "/kytschi/imgs/portfolio/qst-finder-screen.png", "QST finder screen"
             DIV CLOSE
-        TCELL CLOSE
-        TCELL ,"table-text-right"
-            SWRITE
-                PRINT "Just like with Boutique Whitening, Quick Straight Teeth (QST) found that they were getting a lot of queries via their website for people looking for a dentist for general dental care."
-            SWRITE CLOSE
-            SWRITE
-                PRINT "They themselves are not dentists they just sell products to dentists."
-            SWRITE CLOSE
-            SWRITE
-                PRINT "Due to the volume of enquiries they figured 'why not rebrand the Boutique Whitening dentist finder app for QST?'"
-            SWRITE CLOSE
-        TCELL CLOSE
-    TROW CLOSE
-    TROW
-        TCELL
-            LINE BREAK
-            LINE BREAK
-        TCELL CLOSE
-        TCELL
-        TCELL CLOSE
-    TROW CLOSE
-    TROW
-        TCELL ,"table-text"
-            LINE BREAK
-            LINE BREAK
-            LINE BREAK
-            LINE BREAK
-            LINE BREAK
-            IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow"
-        TCELL CLOSE
-        TCELL
-            DIV "card"
-                DIV "card-body"
-                    IMAGE "/kytschi/imgs/1980s Offices (25).jpg", "Women can't build sites!"
-                DIV CLOSE
-                DIV "card-footer"
-                    SWRITE
-                        PRINT "I told you!"
-                        LINE BREAK
-                        PRINT "Women can't build sites!"
-                    SWRITE CLOSE
-                DIV CLOSE
+            DIV "card-footer"
+                SWRITE
+                    PRINT "Quick Straight Teeth"
+                    LINE BREAK
+                    PRINT "Dental Finder App"
+                SWRITE CLOSE
             DIV CLOSE
-        TCELL CLOSE
-    TROW CLOSE
-TABLE CLOSE
+        DIV CLOSE
+    DIV CLOSE
+DIV CLOSE
+DIV "table"
+    DIV "table-img"
+        DIV "card"
+            DIV "card-body"
+                IMAGE "/kytschi/imgs/1980s Offices (25).jpg", "Women can't build sites!"
+            DIV CLOSE
+            DIV "card-footer"
+                SWRITE
+                    PRINT "I told you!"
+                    LINE BREAK
+                    PRINT "Women can't build sites!"
+                SWRITE CLOSE
+            DIV CLOSE
+        DIV CLOSE
+    DIV CLOSE
+    DIV "table-img-arrow no-mobile-margin"
+        IMAGE "/kytschi/imgs/arrow.png", "arrow"
+    DIV CLOSE
+DIV CLOSE
 HEADING 3
     PRINT "The horror! The horror!"
 HEADING CLOSE

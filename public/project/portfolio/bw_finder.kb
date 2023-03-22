@@ -1,65 +1,54 @@
-TABLE
-    TROW
-        TCELL "50%"
-            DIV "card"
-                DIV "card-body"
-                    IMAGE "/kytschi/imgs/portfolio/boutique-finder-screen-1.png", "Boutique finder screen"
-                DIV CLOSE
-                DIV "card-footer"
-                    SWRITE
-                        PRINT "Boutique Whitening"
-                        LINE BREAK
-                        PRINT "Dental Finder App"
-                    SWRITE CLOSE
-                DIV CLOSE
+DIV "table"
+    DIV "table-text"
+        SWRITE
+            PRINT "The client (Boutique Whitening) found that they were getting a lot of queries via their website for people looking for a dentist for general dental care. Boutique Whitening themselves aren't dentists they just sell products to dentists but due to the volume of enquiries they figured "why not create an app where people can find one of our clients" and so the Dentist Finder app was born."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "The project was split into three phases. Phase one was to build an API to drive the front-end javascript app. The API was built in Lumen/Laravel and will supply the front-end app JSON based on the particular endpoint accessed."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "Phase two was to build the front-end app. Vue.js was chosen as the desired framework. The front-end app allows the user to talk to the API in a nice and easy way, while display the relevant information to the user. Users can search based on their city or by their postcode. They can filter the results based on a desired radius of how far they are willing to travel, and they can filter the results to show recommended dentists using the platinum partners filter which are dentists who have sponsored the app."
+        SWRITE CLOSE
+    DIV CLOSE
+    DIV "table-img"
+        DIV "card"
+            DIV "card-body"
+                IMAGE "/kytschi/imgs/portfolio/boutique-finder-screen-1.png", "Boutique finder screen"
             DIV CLOSE
-        TCELL CLOSE
-        TCELL ,"table-text-right"
-            SWRITE
-                PRINT "The client, Boutique Whitening, found that they were getting a lot of queries via their website for people looking for a dentist for general dental care. Boutique Whitening themselves aren't dentists they just sell products to dentists but due to the volume of enquiries they figured "why not create an app where people can find one of our clients" and so the Dentist Finder app was born."
-            SWRITE CLOSE
-            SWRITE
-                PRINT "The project was split into three phases. Phase one was to build an API to drive the front-end javascript app. The API was built in Lumen/Laravel and will supply the front-end app JSON based on the particular endpoint accessed."
-            SWRITE CLOSE
-            SWRITE
-                PRINT "Phase two was to build the front-end app. Vue.js was chosen as the desired framework. The front-end app allows the user to talk to the API in a nice and easy way, while display the relevant information to the user. Users can search based on their city or by their postcode. They can filter the results based on a desired radius of how far they are willing to travel, and they can filter the results to show recommended dentists using the platinum partners filter which are dentists who have sponsored the app."
-            SWRITE CLOSE
-        TCELL CLOSE
-    TROW CLOSE
-    TROW
-        TCELL
-            LINE BREAK
-            LINE BREAK
-        TCELL CLOSE
-        TCELL
-        TCELL CLOSE
-    TROW CLOSE
-    TROW
-        TCELL ,"table-text"
-            SWRITE
-                PRINT "Phase three was to build a back-end app to the API to allow the admin team to manage the data that is available to the front-end app. The back-end app was also built in Vue.js. The admin team can view the traffic stats, manage the dentist practice data and add new practices. They can manage the treatments available to the practice. Manage the practice media, review the contact messages to the practice via the contact form, and so."
-            SWRITE CLOSE
-            SWRITE
-                PRINT "The back-end app is also available to the practice themselves. They can login, edit their data and manage their treatments and media, and review their contact messages. Contact message are sent direct to the practice when a front-end user fills in the contact form. When a practice makes a change to their data it is held in a pending review state and the admin team is notified. Once they have review it and all is good, the admin team can okay the changes and they will be made live."
-            SWRITE CLOSE
-            IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow"
-        TCELL CLOSE
-        TCELL
-            DIV "card"
-                DIV "card-body"
-                    IMAGE "/kytschi/imgs/1980s Offices (6).jpg", "Women can't build sites!"
-                DIV CLOSE
-                DIV "card-footer"
-                    SWRITE
-                        PRINT "Steal others ideas!"
-                        LINE BREAK
-                        PRINT "Just don't get caught!"
-                    SWRITE CLOSE
-                DIV CLOSE
+            DIV "card-footer"
+                SWRITE
+                    PRINT "Boutique Whitening"
+                    LINE BREAK
+                    PRINT "Dental Finder App"
+                SWRITE CLOSE
             DIV CLOSE
-        TCELL CLOSE
-    TROW CLOSE
-TABLE CLOSE
+        DIV CLOSE
+    DIV CLOSE
+DIV CLOSE
+DIV "table"
+    DIV "table-img mobile-margin"
+        DIV "card"
+            DIV "card-body"
+                IMAGE "/kytschi/imgs/1980s Offices (6).jpg", "Women can't build sites!"
+            DIV CLOSE
+            DIV "card-footer"
+                SWRITE
+                    PRINT "Steal others ideas!"
+                    LINE BREAK
+                    PRINT "Just don't get caught!"
+                SWRITE CLOSE
+            DIV CLOSE
+        DIV CLOSE
+    DIV CLOSE
+    DIV "table-text"
+        SWRITE
+            PRINT "Phase three was to build a back-end app to the API to allow the admin team to manage the data that is available to the front-end app. The back-end app was also built in Vue.js. The admin team can view the traffic stats, manage the dentist practice data and add new practices. They can manage the treatments available to the practice. Manage the practice media, review the contact messages to the practice via the contact form, and so."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "The back-end app is also available to the practice themselves. They can login, edit their data and manage their treatments and media, and review their contact messages. Contact message are sent direct to the practice when a front-end user fills in the contact form. When a practice makes a change to their data it is held in a pending review state and the admin team is notified. Once they have review it and all is good, the admin team can okay the changes and they will be made live."
+        SWRITE CLOSE        
+    DIV CLOSE
+DIV CLOSE
 HEADING 3
     PRINT "Just look already!"
 HEADING CLOSE
@@ -120,12 +109,8 @@ DIV "tech-used"
     IMAGE "/kytschi/imgs/nodejs.gif", "Node.js"
     IMAGE "/kytschi/imgs/vuejs.gif", "Vue.js"
 DIV CLOSE
-TABLE
-    TROW
-        TCELL "200px"
-            IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow", "arrow-small"
-        TCELL CLOSE
-    TROW CLOSE
-TABLE CLOSE
-LINE BREAK
-LINE BREAK
+DIV "table-blank-arrow-reversed"
+    DIV "table-blank-arrow-img"
+        IMAGE "/kytschi/imgs/arrow.png", "arrow", "arrow-small"
+    DIV CLOSE
+DIV CLOSE

@@ -8,17 +8,19 @@
     src: url("../fonts/FreeMono.ttf") format("truetype");
 }
 
-html, body {
+html {
+    width: 100%;
+    padding: 0;
+    margin: 0;
     background-color: #eee;
+}
+
+html, body {
     color: #000;
     font-family: "FreeMono", 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-size: 14pt;
     height: 100vh;
-    width: 100%;
-    min-width: 1024px;
     overflow-x: hidden;
-    padding: 0;
-    margin: 0;
 }
 
 .arrow-small {
@@ -28,6 +30,7 @@ html, body {
 body {
     margin: 0 auto;
     padding: 0px 100px;
+    min-width: 1024px;
     width: 60%;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
@@ -86,6 +89,10 @@ button {
     float: left;
     width: 100%;
     font-size: 0;
+}
+
+.card-body img {
+    width: 100%;
 }
 
 .card-footer {
@@ -196,6 +203,13 @@ input, textarea {
     font-size: 16pt;
 }
 
+.tech-used {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
 .tech-used img {
     float: left;
     width: 170px;
@@ -230,20 +244,64 @@ table {
     font-size: 14pt;
 }
 
+table td, table th {
+    vertical-align: top;
+}
+
 table td img {
     max-width: 100%;
+}
+
+.table-margin, .table {
+    display: flex;
+    column-gap: 20px;
+}
+
+.table {
+    margin-bottom: 50px;
+}
+
+.table-img-arrow img {
+    margin-top: 25%;
+}
+
+.no-margin img {
+    margin: 0 !important;
 }
 
 .table-margin {
     margin-bottom: 100px;
 }
 
+.table-blank-arrow, .table-blank-arrow-reversed {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.table-blank-arrow-reversed {
+    flex-direction: row-reverse;
+}
+
+.table-blank-arrow-img {
+    width: 200px;
+}
+
+.table-text-right {
+    text-align: right;
+}
+
+.table-text, .table-text-right, .table-img, .table-img-arrow, .table-text-card {
+    width: 50%;
+}
+
 .table-note {
+    display: flex;
     background-color: #eee;
     border: 1px solid #ccc;
 }
 
-.table-note img {
+.table-note img, .table-img img {
     max-width: 100%;
 }
 
@@ -254,23 +312,14 @@ table td img {
 }
 
 .table-note-img {
+    width: 250px;
     font-size: 0;
+    background-color: #fff;
+    justify-content: center;
 }
 
-.table-text p, .table-text table {
-    padding: 0 40px 0 0;
+.table-text p, .table-text-right p {
     margin-top: 0;
-}
-
-.table-text-right p {
-    padding: 0 0 0 40px;
-    margin-top: 0;
-}
-
-th, td {
-    text-align: left;
-    vertical-align: top;
-	padding: 0px;
 }
 
 .text-bold {
@@ -315,6 +364,10 @@ th, td {
     color: #E14ECA;
 }
 
+.mobile-show {
+    display: none;
+}
+
 @media only screen and (max-width: 1024px) {
     body {
         overflow-x: scroll;
@@ -326,7 +379,83 @@ th, td {
     }
 }
 @media only screen and (max-width: 900px) {
-    #mobile {
+    .arrow-small, .table-img-arrow img, .table-text img, .table-text-right img {
+        width: 150px;
+    }
+
+    html {
+        min-width: 100% !important;
+    }
+
+    body {
+        padding: 0 !important;
+        min-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .image-wall {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+    
+    main, header, footer {
+        padding: 0 10px !important;
+        width: calc(100% - 20px) !important;
+    }
+
+    .card-footer {
+        font-size: 20pt !important;
+    }
+
+    .bullet-item {
+        padding-left: 25px !important;
+        background-position: 10px 6px !important;
+    }
+
+    .no-mobile {
+        display: none !important;
+    }
+
+    .no-mobile-margin {
+        margin-bottom: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .no-mobile-margin img {
+        margin-top: 0 !important;
+    }
+
+    .mobile-margin {
+        margin-bottom: 20px;
+    }
+
+    .mobile-right {
+        text-align: right;
+    }
+
+    .mobile-show {
         display: block;
+    }
+
+    .table, .table-margin, .table-note {
+        flex-direction: column;
+    }
+
+    .table-note-img {
+        background-color: #fff;
+        justify-content: center;
+    }
+
+    .table-blank-arrow-img {
+        margin-right: 40px;
+    }
+
+    .table-blank-arrow, .table-blank-arrow-reversed {
+        margin-bottom: 0 !important;
+    }
+
+    .table-text, .table-text-right, .table-img, .table-img-arrow, .table-text-card, .table-note-img {
+        width: 100% !important;
     }
 }

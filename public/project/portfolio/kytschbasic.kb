@@ -1,53 +1,49 @@
-TABLE
-    TROW
-        TCELL "50%"
-            DIV "card"
-                DIV "card-body"
-                    IMAGE "/kytschi/imgs/portfolio/kytschbasic.png", "kytschBASIC"
-                DIV CLOSE
-                DIV "card-footer"
-                    SWRITE
-                        PRINT "kytschBASIC"
-                    SWRITE CLOSE
-                DIV CLOSE
+DIV "table"
+    DIV "table-text"
+        SWRITE
+            PRINT "A web language that is better than anything that currently exists! I should know, I wrote it!"
+        SWRITE CLOSE
+        SWRITE
+            PRINT "What is kytschBASIC?", "text-heading"
+        SWRITE CLOSE
+        SWRITE
+            PRINT "kytschBASIC come from an idea I had when reading one of my AmigaBASIC books. I thought "wouldn't it be cool to have a version of BASIC that rendered modern day websites" and so I set out to make it possible."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "The first build I did in c++ but I just wasn't happy with the library that I was using for serving the HTML. Don't get me wrong its a good library but it just didn't fit what I was after. I'd seen zephir-lang which lets you build PHP modules and it was something I was keen to play with so I began the port over to zephir."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "So to sum up...kytschBASIC lets you write in a version of BASIC that is heavily inspired by AmigaBASIC and it'll render that code as HTML and CSS so it can be viewed via the web. It has support for jQuery also so you can do javascript integration."
+        SWRITE CLOSE
+    DIV CLOSE
+    DIV "table-img"
+        DIV "card"
+            DIV "card-body"
+                IMAGE "/kytschi/imgs/portfolio/kytschbasic.png", "kytschBASIC"
             DIV CLOSE
-        TCELL CLOSE
-        TCELL ,"table-text-right"
-            SWRITE
-                PRINT "A web language that is better than anything that currently exists! I should know, I wrote it!"
-            SWRITE CLOSE
-            SWRITE
-                PRINT "What is kytschBASIC?", "text-heading"
-            SWRITE CLOSE
-            SWRITE
-                PRINT "kytschBASIC come from an idea I had when reading one of my AmigaBASIC books. I thought "wouldn't it be cool to have a version of BASIC that rendered modern day websites" and so I set out to make it possible."
-            SWRITE CLOSE
-            SWRITE
-                PRINT "The first build I did in c++ but I just wasn't happy with the library that I was using for serving the HTML. Don't get me wrong its a good library but it just didn't fit what I was after. I'd seen zephir-lang which lets you build PHP modules and it was something I was keen to play with so I began the port over to zephir."
-            SWRITE CLOSE
-            SWRITE
-                PRINT "So to sum up...kytschBASIC lets you write in a version of BASIC that is heavily inspired by AmigaBASIC and it'll render that code as HTML and CSS so it can be viewed via the web. It has support for jQuery also so you can do javascript integration."
-            SWRITE CLOSE
-        TCELL CLOSE
-    TROW CLOSE
-    TROW
-        TCELL "50%","table-text"
-            SWRITE
-                PRINT "Want to check it out and get involved, click below..."
-                LINE BREAK
-                LINE BREAK
-                LINK "https://github.com/kytschi/kytschBASIC", "Check the repo out", "nav-link-img", "_blank"
-                    IMAGE "/kytschi/imgs/noclick.gif", "Take me to the repo"
-                LINK CLOSE
-            SWRITE CLOSE
-        TCELL CLOSE
-        TCELL
-            IMAGE "/kytschi/imgs/arrow.png", "arrow", "arrow-small"
-        TCELL CLOSE
-    TROW CLOSE
-TABLE CLOSE
-LINE BREAK
-LINE BREAK
+            DIV "card-footer"
+                SWRITE
+                    PRINT "kytschBASIC"
+                SWRITE CLOSE
+            DIV CLOSE
+        DIV CLOSE
+    DIV CLOSE
+DIV CLOSE
+DIV "table-margin"
+    DIV "table-img-arrow no-margin"
+        IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow", "arrow-small"
+    DIV CLOSE
+    DIV "table-text"
+        SWRITE
+            PRINT "Want to check it out and get involved, click below..."
+            LINE BREAK
+            LINE BREAK
+            LINK "https://github.com/kytschi/kytschBASIC", "Check the repo out", "nav-link-img", "_blank"
+                IMAGE "/kytschi/imgs/noclick.gif", "Take me to the repo"
+            LINK CLOSE
+        SWRITE CLOSE
+    DIV CLOSE
+DIV CLOSE
 HEADING 3
     PRINT "The Tech Used"
 HEADING CLOSE
@@ -58,36 +54,18 @@ DIV "tech-used"
     IMAGE "/kytschi/imgs/php.gif", "PHP"
     IMAGE "/kytschi/imgs/zephir.jpg", "Zephir"
 DIV CLOSE
-TABLE
-    TROW
-        TCELL "200px"
-            IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow", "arrow-small"
-        TCELL CLOSE
-    TROW CLOSE
-TABLE CLOSE
-LINE BREAK
-LINE BREAK
-TABLE "table-note"
-    TROW
-        TCELL "250px","table-note-img"
-            IMAGE "/kytschi/imgs/nono.png", "A quick tip!"
-        TCELL CLOSE
-        TCELL
-            SWRITE
-                PRINT "Be sure to use images instead of text as images are prettier and it’ll make you look cool."
-            SWRITE CLOSE
-        TCELL CLOSE
-    TROW CLOSE
-TABLE CLOSE
-TABLE
-    TROW
-        TCELL
-            LINE BREAK
-        TCELL CLOSE
-        TCELL "200px"
-            IMAGE "/kytschi/imgs/arrow.png", "arrow", "arrow-small"
-        TCELL CLOSE
-    TROW CLOSE
-TABLE CLOSE
-LINE BREAK
-LINE BREAK
+DIV "table-note"
+    DIV "table-note-img"
+        IMAGE "/kytschi/imgs/nono.png", "A quick tip!"
+    DIV CLOSE
+    DIV
+        SWRITE
+            PRINT "Be sure to use images instead of text as images are prettier and it’ll make you look cool."
+        SWRITE CLOSE
+    DIV CLOSE
+DIV CLOSE
+DIV "table-blank-arrow-reversed"
+    DIV "table-blank-arrow-img no-mobile-margin"
+        IMAGE "/kytschi/imgs/arrow.png", "arrow", "arrow-small"
+    DIV CLOSE
+DIV CLOSE
