@@ -33,11 +33,14 @@ FOOTER
 			TCELL CLOSE
 			TCELL ,"footer-created"
 				SWRITE
-					PRINT "Created by Mike Welsh"
+					PRINT "Created by a fool"
+				SWRITE CLOSE
+				SWRITE
+					PRINT "Made in Britain"
 				SWRITE CLOSE
 				SWRITE
 					LINK "https://kytschbasic.org","Checkout kytschBASIC",,"_blank"
-						PRINT "Checkout kytschBASIC"
+						PRINT "Built with kytschBASIC"
 					LINK CLOSE
 				SWRITE CLOSE
 			TCELL CLOSE
