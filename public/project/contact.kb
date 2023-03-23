@@ -56,38 +56,46 @@ BODY
 					TABLE "contact_input"
 						TROW
 							TCELL
-								SWRITE
-									PRINT "What do I call you?"
+								SWRITE "required-text"
+									PRINT "Where you see this icon ", "required"
+									PRINT "&nbsp;you must fill it in!"
 								SWRITE CLOSE
 							TCELL CLOSE
 						TROW CLOSE
 						TROW
 							TCELL
-								FORM INPUT "name"
-							TCELL CLOSE
-						TROW CLOSE
-						TROW
-							TCELL
 								SWRITE
-									PRINT "What's the best email?"
+									PRINT "What do I call you?", "required"
 								SWRITE CLOSE
 							TCELL CLOSE
 						TROW CLOSE
 						TROW
 							TCELL
-								FORM INPUT "email"
+								FORM INPUT "name",,,,true
 							TCELL CLOSE
 						TROW CLOSE
 						TROW
 							TCELL
 								SWRITE
-									PRINT "Wanna say something?"
+									PRINT "What's the best email?", "required"
 								SWRITE CLOSE
 							TCELL CLOSE
 						TROW CLOSE
 						TROW
 							TCELL
-								FORM TEXTAREA "message"
+								FORM INPUT "email",,,,true
+							TCELL CLOSE
+						TROW CLOSE
+						TROW
+							TCELL
+								SWRITE
+									PRINT "Wanna say something?", "required"
+								SWRITE CLOSE
+							TCELL CLOSE
+						TROW CLOSE
+						TROW
+							TCELL
+								FORM TEXTAREA "message",,,,true
 							TCELL CLOSE
 						TROW CLOSE
 						TROW
@@ -98,7 +106,7 @@ BODY
 						TROW
 							TCELL
 								SWRITE
-									PRINT "Just type what you see!"
+									PRINT "Just type what you see!", "required"
 								SWRITE CLOSE
 							TCELL CLOSE
 						TROW CLOSE
@@ -114,6 +122,9 @@ BODY
 						TROW CLOSE
 						TROW
 							TCELL
+								SWRITE
+									PRINT "Done? Click below..."
+								SWRITE CLOSE
 								FORM SUBMIT "send"
 									IMAGE "/kytschi/imgs/email-icon.gif"
 								FORM SUBMIT CLOSE

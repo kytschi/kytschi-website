@@ -62,8 +62,13 @@ body {
 }
 
 button {
+    min-width: 200px;
     background: none;
     border: none;
+}
+
+button img {
+    width: 100%;
 }
 
 .nav-link {
@@ -212,6 +217,20 @@ input, textarea {
     font-size: 16pt;
 }
 
+.required {
+    background-image: url("../imgs/required.png");
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 15px;
+}
+
+.required-text {
+    color: #ff3f00;
+    font-size: 12pt;
+    padding-bottom: 20px;
+}
+
 .tech-used {
     display: block;
     float: left;
@@ -346,13 +365,13 @@ table td img {
 
 .visitors {
     float: left;
-    background-color: #D1CDCD;
+    background-color: #ccc;
     border-top: 4px solid #F2F3EB;
     border-left: 4px solid #F2F3EB;
     border-bottom: 4px solid #000;
     border-right: 4px solid #000;
     width: 193px;
-    height: 60px;
+    height: 58px;
     text-align: center;
     padding-top: 4px;
 }

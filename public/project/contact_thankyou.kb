@@ -1,10 +1,13 @@
 IFNTE _POST["send"] THEN
 	IF _VALID["captcha"] THEN
-		MAIL "mike@kytschi.com", "Website contact", "_POST["email]"
-			PRINT "_POST["message"]"
-		MAIL CLOSE
+		DATA comms#
+			DOPEN "kytschi"
+			DREAD "communications"
+			DSET "id=UUID(), subject='ENCRYPT(Website contact)', to_name='Mike Welsh', to_email='hello@kytschi.com', status='sent', from_name='ENCRYPT(_POST["name"])', from_email='ENCRYPT(_POST["email"])', message='ENCRYPT(_POST["message"])', created_at=NOW(), updated_at=NOW()"
+		DATA CLOSE
+		GOTO "/contact-me/thank-you"
 	ELSE
-		PRINT "/contact-me?error=invalid capture&name=_POST["name"]"
+		GOTO "/contact-me?error=invalid capture&name=_POST["name"]&email=_POST["email"]&message=_POST["message"]"
 	END IF
 END IF
 
