@@ -1,18 +1,4 @@
 DIV "table"
-    DIV "table-text"
-        SWRITE
-            PRINT "A massive world wide dentist finder application to help people find their local dentist practice."
-        SWRITE CLOSE
-        SWRITE
-            PRINT "Built in parallel with the Boutique Whitening and Quick Straight Teeth dentist finders, Everything Dental dentist finder is massive world wide dentist practice finder with 1000s of practices available to search."
-        SWRITE CLOSE
-        SWRITE
-            PRINT "The finder is expanding into other countries to support a world wide customer base."
-        SWRITE CLOSE
-        SWRITE
-            PRINT "The project was built in Vue.js for the front-end app with the back-end API built in Laravel/Lumen running under PHP-FPM, nginx with MariaDB/MYSQL as the database engine."
-        SWRITE CLOSE
-    DIV CLOSE
     DIV "table-img"
         DIV "card"
             DIV "card-body"
@@ -27,8 +13,25 @@ DIV "table"
             DIV CLOSE
         DIV CLOSE
     DIV CLOSE
+    DIV "table-text"
+        SWRITE
+            PRINT "A massive world wide dentist finder application to help people find their local dentist practice."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "Built in parallel with the Boutique Whitening and Quick Straight Teeth dentist finders, Everything Dental dentist finder is massive world wide dentist practice finder with 1000s of practices available to search."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "The finder is expanding into other countries to support a world wide customer base."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "The project was built in Vue.js for the front-end app with the back-end API built in Laravel/Lumen running under PHP-FPM, nginx with MariaDB/MYSQL as the database engine."
+        SWRITE CLOSE
+    DIV CLOSE
 DIV CLOSE
 DIV "table"
+    DIV "table-text"
+        IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow"
+    DIV CLOSE
     DIV "table-img"
         DIV "card"
             DIV "card-body"
@@ -40,9 +43,6 @@ DIV "table"
                 SWRITE CLOSE
             DIV CLOSE
         DIV CLOSE
-    DIV CLOSE
-    DIV "table-text-right"
-        IMAGE "/kytschi/imgs/arrow.png", "arrow"
     DIV CLOSE
 DIV CLOSE
 HEADING 3
@@ -65,8 +65,18 @@ DIV "image-wall"
         LINK CLOSE
     DIV CLOSE
 DIV CLOSE
-LINE BREAK
-LINE BREAK
+DIV "table-margin"
+    DIV "table-text"
+        SWRITE
+            PRINT "Want to check it out?! Click below..."
+            LINE BREAK
+            LINE BREAK
+            LINK "https://everything.dental/dentist-finder/", "Check it out live", "nav-link-img", "_blank"
+                IMAGE "/kytschi/imgs/browser.gif", "Check it out live"
+            LINK CLOSE
+        SWRITE CLOSE
+    DIV CLOSE
+DIV CLOSE
 HEADING 3
     PRINT "The Tech Used"
 HEADING CLOSE
@@ -82,8 +92,8 @@ DIV "tech-used"
     IMAGE "/kytschi/imgs/nodejs.gif", "Node.js"
     IMAGE "/kytschi/imgs/bash.gif", "BASH Scripting"
 DIV CLOSE
-DIV "table-blank-arrow"
+DIV "table-blank-arrow-reversed"
     DIV "table-blank-arrow-img"
-        IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow", "arrow-small"
+        IMAGE "/kytschi/imgs/arrow.png", "arrow", "arrow-small"
     DIV CLOSE
 DIV CLOSE

@@ -44,6 +44,18 @@ DIV "table"
         IMAGE "/kytschi/imgs/arrow.png", "arrow"
     DIV CLOSE
 DIV CLOSE
+DIV "table-margin"
+    DIV "table-text"
+        SWRITE
+            PRINT "Want to check it out?! Click below..."
+            LINE BREAK
+            LINE BREAK
+            LINK "https://uk.quickstraightteeth.net/get-quick-straight-teeth/", "Check it out live", "nav-link-img", "_blank"
+                IMAGE "/kytschi/imgs/browser.gif", "Check it out live"
+            LINK CLOSE
+        SWRITE CLOSE
+    DIV CLOSE
+DIV CLOSE
 HEADING 3
     PRINT "The horror! The horror!"
 HEADING CLOSE

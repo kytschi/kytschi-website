@@ -49,6 +49,18 @@ DIV "table"
         SWRITE CLOSE        
     DIV CLOSE
 DIV CLOSE
+DIV "table-margin"
+    DIV "table-text"
+        SWRITE
+            PRINT "Want to check it out?! Click below..."
+            LINE BREAK
+            LINE BREAK
+            LINK "https://boutiquewhitening.com/whitening-dentist-finder/", "Check it out live", "nav-link-img", "_blank"
+                IMAGE "/kytschi/imgs/browser.gif", "Check it out live"
+            LINK CLOSE
+        SWRITE CLOSE
+    DIV CLOSE
+DIV CLOSE
 HEADING 3
     PRINT "Just look already!"
 HEADING CLOSE
@@ -109,8 +121,8 @@ DIV "tech-used"
     IMAGE "/kytschi/imgs/nodejs.gif", "Node.js"
     IMAGE "/kytschi/imgs/vuejs.gif", "Vue.js"
 DIV CLOSE
-DIV "table-blank-arrow-reversed"
+DIV "table-blank-arrow"
     DIV "table-blank-arrow-img"
-        IMAGE "/kytschi/imgs/arrow.png", "arrow", "arrow-small"
+        IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow", "arrow-small"
     DIV CLOSE
 DIV CLOSE

@@ -10,139 +10,130 @@ BODY
 			PRINT "Contact me"
 		HEADING CLOSE
 		IFNTE _GET["error"] THEN
-			TABLE "error"
-				TROW
-					TCELL , "error-text"
-						SWRITE 
-							PRINT _GET["error"]
-						SWRITE CLOSE
-					TCELL CLOSE
-					TCELL "40%"
-						DIV "card"
-							DIV "card-body"
-								IMAGE "/kytschi/imgs/people-are-so-stupid-smh.gif", "Why are people so stupid"
-							DIV CLOSE
-							DIV "card-footer"
-								SWRITE
-									PRINT "ERROR"
-								SWRITE CLOSE
-							DIV CLOSE
-						DIV CLOSE
-					TCELL CLOSE
-				TROW CLOSE
-			TABLE CLOSE
-		END IF
-		TABLE
-			TROW
-				TCELL "50%"
+			DIV "error"
+				DIV "error-text"
+					SWRITE 
+						PRINT _GET["error"]
+					SWRITE CLOSE
+				DIV CLOSE
+				DIV "table-img"
 					DIV "card"
 						DIV "card-body"
-							IMAGE "/kytschi/imgs/hello@kytschi.com.jpg", "Email me"
+							IMAGE "/kytschi/imgs/people-are-so-stupid-smh.gif", "Why are people so stupid"
 						DIV CLOSE
 						DIV "card-footer"
 							SWRITE
-								PRINT "hello@kytschi.com"
+								PRINT "ERROR"
 							SWRITE CLOSE
 						DIV CLOSE
 					DIV CLOSE
-				TCELL CLOSE
-				TCELL ,"table-text-right"
-					SWRITE
-						PRINT "Easiest way is just to email me at the address shown. But if your lazy and really like filling out forms..."
-					SWRITE CLOSE
-					LINE BREAK
-            		LINE BREAK
-					SWRITE
-						LINE BREAK
-						IMAGE "/kytschi/imgs/arrow.png", "arrow"
-					SWRITE CLOSE
-				TCELL CLOSE
-			TROW CLOSE
-		TABLE CLOSE
+				DIV CLOSE
+			DIV CLOSE
+		END IF
+		DIV "table"
+			DIV "table-img mobile-margin"
+				DIV "card"
+					DIV "card-body"
+						IMAGE "/kytschi/imgs/hello@kytschi.com.jpg", "Email me"
+					DIV CLOSE
+					DIV "card-footer"
+						SWRITE
+							PRINT "hello@kytschi.com"
+						SWRITE CLOSE
+					DIV CLOSE
+				DIV CLOSE
+			DIV CLOSE
+			DIV "table-text no-mobile-margin"
+				SWRITE
+					PRINT "Easiest way is just to email me at the address shown. But if your lazy and really like filling out forms..."
+				SWRITE CLOSE
+				IMAGE "/kytschi/imgs/arrow.png", "arrow"
+			DIV CLOSE
+		DIV CLOSE
 		FORM "contact", "post", "/contact-me/thank-you"
-			TABLE "table-margin"
-				TROW
-					TCELL ,"table-text"
-						TABLE "contact_input"
-							TROW
-								TCELL
-									SWRITE
-										PRINT "What do I call you?"
-									SWRITE CLOSE
-								TCELL CLOSE
-							TROW CLOSE
-							TROW
-								TCELL
-									FORM INPUT "name"
-								TCELL CLOSE
-							TROW CLOSE
-							TROW
-								TCELL
-									SWRITE
-										PRINT "What's the best email?"
-									SWRITE CLOSE
-								TCELL CLOSE
-							TROW CLOSE
-							TROW
-								TCELL
-									FORM INPUT "email"
-								TCELL CLOSE
-							TROW CLOSE
-							TROW
-								TCELL
-									SWRITE
-										PRINT "Wanna say something?"
-									SWRITE CLOSE
-								TCELL CLOSE
-							TROW CLOSE
-							TROW
-								TCELL
-									FORM TEXTAREA "message"
-								TCELL CLOSE
-							TROW CLOSE
-							TROW
-								TCELL
-									LINE BREAK
-								TCELL CLOSE
-							TROW CLOSE
-							TROW
-								TCELL
-									SWRITE
-										PRINT "Just type what you see!"
-									SWRITE CLOSE
-								TCELL CLOSE
-							TROW CLOSE
-							TROW
-								TCELL
-									FORM CAPTCHA "captcha"
-								TCELL CLOSE
-							TROW CLOSE
-							TROW
-								TCELL
-									LINE BREAK
-								TCELL CLOSE
-							TROW CLOSE
-							TROW
-								TCELL
-									FORM SUBMIT "send", "CLICK ME TO BLOW UP THE WORLD!"
-								TCELL CLOSE
-							TROW CLOSE
-						TABLE CLOSE
-					TCELL CLOSE
-					TCELL "40%"
-						DIV "card"
-							DIV "card-body"
-								IMAGE "/kytschi/imgs/mike-welsh-check-out-that-hair.jpg", "Checkout that hair!"
-							DIV CLOSE
-							DIV "card-footer"
+			DIV "table-margin no-mobile-margin"
+				DIV "table-text mobile-margin"
+					TABLE "contact_input"
+						TROW
+							TCELL
 								SWRITE
-									PRINT "Checkout that hair man!"
+									PRINT "What do I call you?"
 								SWRITE CLOSE
-							DIV CLOSE
+							TCELL CLOSE
+						TROW CLOSE
+						TROW
+							TCELL
+								FORM INPUT "name"
+							TCELL CLOSE
+						TROW CLOSE
+						TROW
+							TCELL
+								SWRITE
+									PRINT "What's the best email?"
+								SWRITE CLOSE
+							TCELL CLOSE
+						TROW CLOSE
+						TROW
+							TCELL
+								FORM INPUT "email"
+							TCELL CLOSE
+						TROW CLOSE
+						TROW
+							TCELL
+								SWRITE
+									PRINT "Wanna say something?"
+								SWRITE CLOSE
+							TCELL CLOSE
+						TROW CLOSE
+						TROW
+							TCELL
+								FORM TEXTAREA "message"
+							TCELL CLOSE
+						TROW CLOSE
+						TROW
+							TCELL
+								LINE BREAK
+							TCELL CLOSE
+						TROW CLOSE
+						TROW
+							TCELL
+								SWRITE
+									PRINT "Just type what you see!"
+								SWRITE CLOSE
+							TCELL CLOSE
+						TROW CLOSE
+						TROW
+							TCELL
+								FORM CAPTCHA
+							TCELL CLOSE
+						TROW CLOSE
+						TROW
+							TCELL
+								LINE BREAK
+							TCELL CLOSE
+						TROW CLOSE
+						TROW
+							TCELL
+								FORM SUBMIT "send"
+									IMAGE "/kytschi/imgs/email-icon.gif"
+								FORM SUBMIT CLOSE
+							TCELL CLOSE
+						TROW CLOSE
+					TABLE CLOSE
+				DIV CLOSE
+				DIV "table-img"
+					DIV "card"
+						DIV "card-body"
+							IMAGE "/kytschi/imgs/mike-welsh-check-out-that-hair.jpg", "Checkout that hair!"
 						DIV CLOSE
-					TCELL CLOSE
-				TROW CLOSE
-			TABLE CLOSE
+						DIV "card-footer"
+							SWRITE
+								PRINT "Check out that hair man!"
+							SWRITE CLOSE
+						DIV CLOSE
+					DIV CLOSE
+				DIV CLOSE
+			DIV CLOSE
 		FORM CLOSE
 	MAIN CLOSE
 	LOAD "_ROOT/project/shared/footer"

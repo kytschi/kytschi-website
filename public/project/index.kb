@@ -107,21 +107,10 @@ BODY
 		LOAD "_ROOT/project/portfolio/kytschbasic"
 		LOAD "_ROOT/project/portfolio/boutique_e_commerce"
 		LOAD "_ROOT/project/portfolio/dental_finder_backend"
+		LOAD "_ROOT/project/portfolio/talkopedia"
 				
 		DIV "table-margin no-mobile-margin"
-			DIV "table-text-card mobile-margin"
-				DIV "card"
-					DIV "card-body"
-						IMAGE "/kytschi/imgs/hello@kytschi.com.jpg", "Email me"
-					DIV CLOSE
-					DIV "card-footer"
-						SWRITE
-							PRINT "hello@kytschi.com"
-						SWRITE CLOSE
-					DIV CLOSE
-				DIV CLOSE
-			DIV CLOSE
-			DIV "table-text"
+			DIV "table-text mobile-margin"
 				SWRITE
 					PRINT "Don't forget to get in touch so I can help your crappy website look as good as mine!"
 				SWRITE CLOSE
@@ -140,16 +129,28 @@ BODY
 				SWRITE
 					PRINT "Google didn't call me back though!!!!!!"
 				SWRITE CLOSE
-				IMAGE "/kytschi/imgs/arrow.png", "arrow"
+				IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow"
+			DIV CLOSE
+			DIV "table-text-card"
+				DIV "card"
+					DIV "card-body"
+						IMAGE "/kytschi/imgs/hello@kytschi.com.jpg", "Email me"
+					DIV CLOSE
+					DIV "card-footer"
+						SWRITE
+							PRINT "hello@kytschi.com"
+						SWRITE CLOSE
+					DIV CLOSE
+				DIV CLOSE
 			DIV CLOSE
 		DIV CLOSE
 
-		LOAD "_ROOT/project/portfolio/everything_dental"
-		LOAD "_ROOT/project/portfolio/stock_system"
 		LOAD "_ROOT/project/portfolio/qr_code_scanner"
+		LOAD "_ROOT/project/portfolio/stock_system"
+		LOAD "_ROOT/project/portfolio/everything_dental"
 	
-		LOAD "_ROOT/project/portfolio/activecell"
 		LOAD "_ROOT/project/portfolio/bw_finder"
+		LOAD "_ROOT/project/portfolio/activecell"
 		LOAD "_ROOT/project/portfolio/qst"
 		LOAD "_ROOT/project/portfolio/kytscha"
 

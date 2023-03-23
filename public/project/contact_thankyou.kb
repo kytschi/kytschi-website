@@ -1,8 +1,10 @@
 IFNTE _POST["send"] THEN
 	IF _VALID["captcha"] THEN
-		PRINT "YAY!"
+		MAIL "mike@kytschi.com", "Website contact", "_POST["email]"
+			PRINT "_POST["message"]"
+		MAIL CLOSE
 	ELSE
-		GOTO "/contact-me?error=invalid capture"
+		PRINT "/contact-me?error=invalid capture&name=_POST["name"]"
 	END IF
 END IF
 
@@ -17,33 +19,31 @@ BODY
 		HEADING 3
 			PRINT "Cheers me dears"
 		HEADING CLOSE
-		TABLE "table-margin"
-			TROW
-				TCELL ,"table-text"
-					SWRITE
-						PRINT "One evening when you least expect it. You'll be looking out of your window and see a face."
-					SWRITE CLOSE
-					SWRITE
-						PRINT "That's me getting back in touch."
-					SWRITE CLOSE
-					SWRITE
-						PRINT "It'll not be long..."
-					SWRITE CLOSE
-				TCELL CLOSE
-				TCELL "40%"
-					DIV "card"
-						DIV "card-body"
-							IMAGE "/kytschi/imgs/cat_huh.gif", "Be seeing you soon!"
-						DIV CLOSE
-						DIV "card-footer"
-							SWRITE
-								PRINT "Be seeing you soon!"
-							SWRITE CLOSE
-						DIV CLOSE
+		DIV "table-margin"
+			DIV "table-text"
+				SWRITE
+					PRINT "One evening when you least expect it. You'll be looking out of your window and see a face."
+				SWRITE CLOSE
+				SWRITE
+					PRINT "That's me getting back in touch."
+				SWRITE CLOSE
+				SWRITE
+					PRINT "It'll not be long..."
+				SWRITE CLOSE
+			DIV CLOSE
+			DIV "table-img"
+				DIV "card"
+					DIV "card-body"
+						IMAGE "/kytschi/imgs/cat_huh.gif", "Be seeing you soon!"
 					DIV CLOSE
-				TCELL CLOSE
-			TROW CLOSE
-		TABLE CLOSE
+					DIV "card-footer"
+						SWRITE
+							PRINT "Be seeing you soon!"
+						SWRITE CLOSE
+					DIV CLOSE
+				DIV CLOSE
+			DIV CLOSE
+		DIV CLOSE
 	MAIN CLOSE
 	LOAD "_ROOT/project/shared/footer"
 BODY CLOSE
