@@ -91,6 +91,7 @@ DIV "tech-used"
     IMAGE "/kytschi/imgs/javascript.gif", "Javascript"
     IMAGE "/kytschi/imgs/linux_now.gif", "linux"
     IMAGE "/kytschi/imgs/bash.gif", "BASH Scripting"
+    IMAGE "/kytschi/imgs/phalcon.gif", "Phalcon"
 DIV CLOSE
 DIV "table-blank-arrow"
     DIV "table-blank-arrow-img"
