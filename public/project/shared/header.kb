@@ -16,7 +16,7 @@ HEADER
 			IMAGE "/kytschi/imgs/free-stuff.gif", "Free stuff"
 		LINK CLOSE
 		LINK "https://soundcloud.com/kytschi","Free music","nav-link-img", "_blank"
-			IMAGE "/kytschi/imgs/top50w.gif", "Free music"
+			IMAGE "/kytschi/imgs/musicbug.gif", "Free music"
 		LINK CLOSE
 		LINK "/kytschi/cv.pdf","Check out my CV","nav-link-img", "_blank"
 			IMAGE "/kytschi/imgs/cooltxt.gif", "View CV"
