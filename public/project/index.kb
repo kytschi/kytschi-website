@@ -17,6 +17,15 @@ BODY
 				SWRITE
 					PRINT "There isn’t much in development and IT I have not tackled, so you can be reassured that after reading this you too can be as elite as I am."
 				SWRITE CLOSE
+				SWRITE
+					PRINT "I mean just look at this website! Look how professional and modern it looks!"
+				SWRITE CLOSE
+				SWRITE
+					PRINT "Can you really say you've seen anything better than this? If you think you have, get in touch by clicking the link below..."
+				SWRITE CLOSE
+				LINK "/contact-me","Contact me","nav-link-img"
+					IMAGE "/kytschi/imgs/email.gif", "contact"
+				LINK CLOSE
 			DIV CLOSE
 			DIV "table-img"
 				DIV "card"

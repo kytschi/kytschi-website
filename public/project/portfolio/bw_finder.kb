@@ -56,7 +56,7 @@ DIV "table-margin"
             LINE BREAK
             LINE BREAK
             LINK "https://boutiquewhitening.com/whitening-dentist-finder/", "Check it out live", "nav-link-img", "_blank"
-                IMAGE "/kytschi/imgs/browser.gif", "Check it out live"
+                IMAGE "/kytschi/imgs/best_viewed_with_eyes.gif", "Check it out live"
             LINK CLOSE
         SWRITE CLOSE
     DIV CLOSE
