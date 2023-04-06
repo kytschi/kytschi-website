@@ -84,6 +84,14 @@ BODY
 				SWRITE
 					PRINT "The app is still very much in alpha but I'll open the repo up soon for people to mess with."
 				SWRITE CLOSE
+				SWRITE
+					PRINT "Click below to check out what I have so far..."
+					LINE BREAK
+					LINE BREAK
+					LINK "https://plonky.kytschi.com", "Check it out live", "nav-link-img", "_blank"
+						IMAGE "/kytschi/imgs/browser.gif", "Check it out live"
+					LINK CLOSE
+				SWRITE CLOSE
 				IMAGE "/kytschi/imgs/arrow.png", "arrow"
 			DIV CLOSE
 		DIV CLOSE
