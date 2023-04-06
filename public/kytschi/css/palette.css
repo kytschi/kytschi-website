@@ -71,6 +71,11 @@ button img {
     width: 100%;
 }
 
+.date {
+    font-family: "FreeMono", 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
 .nav-link {
     height: 40px;
 }
@@ -79,6 +84,7 @@ button img {
     float: left;
     min-width: 200px;
     margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 .nav-link-img img {
@@ -374,6 +380,7 @@ table td img {
     height: 58px;
     text-align: center;
     padding-top: 4px;
+    margin-right: 10px;
 }
 
 .visitors p {

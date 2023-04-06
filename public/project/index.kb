@@ -1,7 +1,7 @@
 LANG "en"
 HEAD
 	LOAD "_ROOT/project/shared/head"
-	NAME "how to build the best website and get jobs | kytschi"
+	NAME "how to build the best website | kytschi"
 HEAD CLOSE
 BODY
 	LOAD "_ROOT/project/shared/header"

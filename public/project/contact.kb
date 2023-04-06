@@ -34,7 +34,7 @@ BODY
 			DIV "table-img mobile-margin"
 				DIV "card"
 					DIV "card-body"
-						IMAGE "/kytschi/imgs/hello@kytschi.com.jpg", "Email me"
+						IMAGE "/kytschi/imgs/cat-contact.gif", "Email me"
 					DIV CLOSE
 					DIV "card-footer"
 						SWRITE

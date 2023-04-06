@@ -16,12 +16,6 @@ FOOTER
 	TABLE
 		TROW
 			TCELL
-				SWRITE "nav-link-img"
-					IMAGE "/kytschi/imgs/made_on_amiga01.gif", "Made on an Amiga"
-				SWRITE CLOSE
-				SWRITE "nav-link-img"
-					IMAGE "/kytschi/imgs/nocookie.gif", "I don't use cookies"
-				SWRITE CLOSE
 				DIV "visitors"
 					SWRITE
 						IMAGE "/kytschi/imgs/visitors.png", "Visitors"
@@ -30,6 +24,15 @@ FOOTER
 						PRINT visitors#[0]["counter"], "visitors-count"
 					SWRITE CLOSE
 				DIV CLOSE
+				LINK "/sitemap","Sitemap","nav-link-img"
+					IMAGE "/kytschi/imgs/no.gif", "Sitemap"
+				LINK CLOSE
+				SWRITE "nav-link-img"
+					IMAGE "/kytschi/imgs/made_on_amiga01.gif", "Made on an Amiga"
+				SWRITE CLOSE
+				SWRITE "nav-link-img"
+					IMAGE "/kytschi/imgs/nocookie.gif", "I don't use cookies"
+				SWRITE CLOSE
 			TCELL CLOSE
 			TCELL ,"footer-created"
 				SWRITE
