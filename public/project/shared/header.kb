@@ -6,7 +6,7 @@ HEADER
 		PRINT "by Mike Welsh"
 	HEADING CLOSE
 	SWRITE
-		PRINT "Menu", "h3"
+		PRINT "A Clickable Menu", "h3"
 	SWRITE CLOSE
 	MENU
 		LINK "/","Go to the homepage","nav-link-img"
@@ -18,7 +18,7 @@ HEADER
 		LINK "https://soundcloud.com/kytschi","Free music","nav-link-img", "_blank"
 			IMAGE "/kytschi/imgs/musicbug.gif", "Free music"
 		LINK CLOSE
-		LINK "/kytschi/cv.pdf","Check out my CV","nav-link-img", "_blank"
+		LINK "/kytschi/cv-mike-welsh.pdf","Check out my CV","nav-link-img", "_blank"
 			IMAGE "/kytschi/imgs/cooltxt.gif", "View CV"
 		LINK CLOSE
 		LINK "/blog-land","Blog","nav-link-img"
