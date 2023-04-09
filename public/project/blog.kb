@@ -28,7 +28,28 @@ BODY
 				IMAGE "/kytschi/imgs/arrow.png", "arrow"
 			DIV CLOSE
 		DIV CLOSE
-		HEADING 4
+		HEADING 4, "blog-post-title"
+			PRINT "Plonky...open to the world"
+			LINE BREAK
+			PRINT "09/04/2023", "date"
+		HEADING CLOSE
+		DIV "blog-post"
+			SWRITE
+				PRINT "Plonky is coming along nicely. It's been a fun little challenge trying to figure out how to run an app as a PHP module."
+			SWRITE CLOSE
+			SWRITE
+				PRINT "It's at the point now where I've opened the repo up for others. Though I doubt anyone will care lol but someone might find it of some use."
+			SWRITE CLOSE
+			SWRITE
+				PRINT "Click below to check out the repo..."
+				LINE BREAK
+				LINE BREAK
+				LINK "https://github.com/kytschi/plonky", "Check out the repo", "link-img", "_blank"
+					IMAGE "/kytschi/imgs/best_viewed_with_eyes.gif", "Check out the repo"
+				LINK CLOSE
+			SWRITE CLOSE
+		DIV CLOSE
+		HEADING 4, "blog-post-title"
 			PRINT "Plonky"
 			LINE BREAK
 			PRINT "06/04/2023", "date"
@@ -76,7 +97,15 @@ BODY
 					PRINT "Originally it was to be built in Python using kivy and kivyMD as I wanted to get to know kivy. Sorry kivy team and devs but the experience was a painful one! The amount of headaches I had just getting stuff to build, position correctly and stay stable was too much my hair-line could take. So after about 3 weeks or so of on and off dev I threw in the towel."
 				SWRITE CLOSE
 				SWRITE
-					PRINT "I'd been toying with the idea (after a dream I had) with making an app in Zephir-lang as I use it for my kytschBASIC language (https://kytschbasic.org) and I just love it! So I figured I'd see if you could make a pure HTML, CSS and JS app that'll run as a PHP module."
+					PRINT "I'd been toying with the idea (after a dream I had) with making an app in Zephir-lang as I use it for my kytschBASIC language and I just love it!"
+				SWRITE CLOSE
+				SWRITE
+					LINK "https://kytschbasic.org", "Check out the repo", "link-img", "_blank"
+						PRINT "Check it out here https://kytschbasic.org"
+					LINK CLOSE
+				SWRITE CLOSE	
+				SWRITE
+					PRINT "So I figured I'd see if you could make a pure HTML, CSS and JS app that'll run as a PHP module."
 				SWRITE CLOSE
 				SWRITE
 					PRINT "And Plonky is what come of it."
@@ -88,7 +117,7 @@ BODY
 					PRINT "Click below to check out what I have so far..."
 					LINE BREAK
 					LINE BREAK
-					LINK "https://plonky.kytschi.com", "Check it out live", "nav-link-img", "_blank"
+					LINK "https://plonky.kytschi.com", "Check it out live", "link-img", "_blank"
 						IMAGE "/kytschi/imgs/best_viewed_with_eyes.gif", "Check it out live"
 					LINK CLOSE
 				SWRITE CLOSE

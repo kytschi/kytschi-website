@@ -80,14 +80,18 @@ button img {
     height: 40px;
 }
 
-.nav-link-img {
-    float: left;
-    min-width: 200px;
+.nav-link-img, .link-img {
+    display: block;
+    width: 200px;
     margin-right: 10px;
     margin-bottom: 5px;
 }
 
-.nav-link-img img {
+.nav-link-img {
+    float: left;
+}
+
+.nav-link-img img, .link-img img {
     width: 100%;
 }
 
@@ -291,7 +295,14 @@ table td img {
     column-gap: 20px;
 }
 
-.table {
+.blog-post {
+    width: 100%;
+}
+
+.blog-post-title {
+    margin-bottom: 10px;
+}
+.table, .blog-post {
     margin-bottom: 50px;
 }
 
