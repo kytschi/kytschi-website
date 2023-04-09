@@ -41,11 +41,6 @@ DIV "table"
         DIV CLOSE
     DIV CLOSE
     DIV "table-img-arrow no-mobile-margin"
-        IMAGE "/kytschi/imgs/arrow.png", "arrow"
-    DIV CLOSE
-DIV CLOSE
-DIV "table-margin"
-    DIV "table-text"
         SWRITE
             PRINT "Want to check it out?! Click below..."
             LINE BREAK
@@ -54,6 +49,7 @@ DIV "table-margin"
                 IMAGE "/kytschi/imgs/best_viewed_with_eyes.gif", "Check it out live"
             LINK CLOSE
         SWRITE CLOSE
+        IMAGE "/kytschi/imgs/arrow.png", "arrow"
     DIV CLOSE
 DIV CLOSE
 HEADING 3
@@ -116,12 +112,5 @@ DIV "tech-used"
     IMAGE "/kytschi/imgs/nodejs.gif", "Node.js"
     IMAGE "/kytschi/imgs/vuejs.gif", "Vue.js"
 DIV CLOSE
-TABLE
-    TROW
-        TCELL "200px"
-            IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow", "arrow-small"
-        TCELL CLOSE
-    TROW CLOSE
-TABLE CLOSE
-LINE BREAK
-LINE BREAK
+DIV "table-blank-arrow"
+DIV CLOSE

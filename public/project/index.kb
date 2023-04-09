@@ -53,9 +53,7 @@ BODY
 			DIV CLOSE
 		DIV CLOSE
 		DIV "table-blank-arrow"
-			DIV "table-blank-arrow-img"
-				IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow", "arrow-small"
-			DIV CLOSE
+			
 		DIV CLOSE
 		
 		DIV "table"
@@ -82,11 +80,11 @@ BODY
 			DIV "table-text-card"
 				DIV "card"
 					DIV "card-body"
-						IMAGE "/kytschi/imgs/kirk-khan.jpg", "Contractor!!!"
+						IMAGE "/kytschi/imgs/kirk-khan.jpg", "Looking for work!!!"
 					DIV CLOSE
 					DIV "card-footer"
 						SWRITE
-							PRINT "Contractor!!!"
+							PRINT "Looking for work!!!"
 						SWRITE CLOSE
 					DIV CLOSE
 				DIV CLOSE

@@ -121,7 +121,6 @@ BODY
 						IMAGE "/kytschi/imgs/best_viewed_with_eyes.gif", "Check it out live"
 					LINK CLOSE
 				SWRITE CLOSE
-				IMAGE "/kytschi/imgs/arrow.png", "arrow"
 			DIV CLOSE
 		DIV CLOSE
 	MAIN CLOSE

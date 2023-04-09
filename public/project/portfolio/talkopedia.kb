@@ -65,7 +65,4 @@ DIV "tech-used no-mobile-margin"
     IMAGE "/kytschi/imgs/phalcon.gif", "Phalcon"
 DIV CLOSE
 DIV "table-blank-arrow-reversed"
-    DIV "table-blank-arrow-img no-mobile-margin"
-        IMAGE "/kytschi/imgs/arrow.png", "arrow", "arrow-small"
-    DIV CLOSE
 DIV CLOSE

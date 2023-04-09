@@ -113,7 +113,4 @@ DIV "tech-used"
     IMAGE "/kytschi/imgs/bash.gif", "BASH Scripting"
 DIV CLOSE
 DIV "table-blank-arrow"
-    DIV "table-blank-arrow-img"
-        IMAGE "/kytschi/imgs/arrow-reversed.png", "arrow", "arrow-small"
-    DIV CLOSE
 DIV CLOSE

@@ -91,7 +91,4 @@ DIV "table-note"
     DIV CLOSE    
 DIV CLOSE
 DIV "table-blank-arrow-reversed"
-    DIV "table-blank-arrow-img"
-        IMAGE "/kytschi/imgs/arrow.png", "arrow", "arrow-small"
-    DIV CLOSE
 DIV CLOSE
