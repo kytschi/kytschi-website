@@ -29,6 +29,39 @@ BODY
 			DIV CLOSE
 		DIV CLOSE
 		HEADING 4, "blog-post-title"
+			PRINT "You dumb dog!"
+			LINE BREAK
+			PRINT "16/04/2023", "date"
+		HEADING CLOSE
+		DIV "blog-post"
+			SWRITE
+				PRINT "So I wrote a CMS a few years back and I was going to opensource it. I still might but for now ITS ALL MINE!"
+			SWRITE CLOSE
+			SWRITE
+				PRINT "That got me thinking I'll release a light weight version but since I'm in love with Zephir I figured I'd just quickly knock up a CMS that is a PHP module."
+			SWRITE CLOSE
+			SWRITE
+				PRINT "And Dumb Dog was born...coming soon!"
+			SWRITE CLOSE
+			DIV "image-wall"
+				DIV "image-wall-item"
+					LINK "/kytschi/imgs/portfolio/dumb-dog-screen-1.jpg", "Click to view me bigger",,"_blank"
+						IMAGE "/kytschi/imgs/portfolio/dumb-dog-screen-1.jpg", "Dumb Dog Screen 1"
+					LINK CLOSE
+				DIV CLOSE
+				DIV "image-wall-item"
+					LINK "/kytschi/imgs/portfolio/dumb-dog-screen-2.jpg", "Click to view me bigger",,"_blank"
+						IMAGE "/kytschi/imgs/portfolio/dumb-dog-screen-2.jpg", "Dumb Dog Screen 2"
+					LINK CLOSE
+				DIV CLOSE
+				DIV "image-wall-item"
+					LINK "/kytschi/imgs/portfolio/dumb-dog-screen-3.jpg", "Click to view me bigger",,"_blank"
+						IMAGE "/kytschi/imgs/portfolio/dumb-dog-screen-3.jpg", "Dumb Dog Screen 3"
+					LINK CLOSE
+				DIV CLOSE
+			DIV CLOSE
+		DIV CLOSE
+		HEADING 4, "blog-post-title"
 			PRINT "Plonky...open to the world"
 			LINE BREAK
 			PRINT "09/04/2023", "date"
