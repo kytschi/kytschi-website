@@ -29,6 +29,35 @@ BODY
 			DIV CLOSE
 		DIV CLOSE
 		HEADING 4, "blog-post-title"
+			PRINT "Dumb Dog goes out for a public walk..."
+			LINE BREAK
+			PRINT "17/04/2023", "date"
+		HEADING CLOSE
+		DIV "blog-post"
+			SWRITE
+				PRINT "Dumb dog repo is opened up to the public. It's still certainly an alpha build but it's getting there."
+			SWRITE CLOSE
+			SWRITE
+				PRINT "I've created a sample site using it and plan on making a few more to help flesh the CMS out."
+			SWRITE CLOSE
+			SWRITE
+				PRINT "Click below to check out the repo..."
+				LINE BREAK
+				LINE BREAK
+				LINK "https://github.com/kytschi/dumb-dog", "Check out the repo", "link-img", "_blank"
+					IMAGE "/kytschi/imgs/best_viewed_with_eyes.gif", "Check out the repo"
+				LINK CLOSE
+			SWRITE CLOSE
+			SWRITE
+				PRINT "See it in action, click below..."
+				LINE BREAK
+				LINE BREAK
+				LINK "https://dumb-dog.kytschi.com", "The sample site running it", "link-img", "_blank"
+					IMAGE "/kytschi/imgs/best_viewed_with_eyes.gif", "The sample site running it"
+				LINK CLOSE
+			SWRITE CLOSE
+		DIV CLOSE
+		HEADING 4, "blog-post-title"
 			PRINT "You dumb dog!"
 			LINE BREAK
 			PRINT "16/04/2023", "date"
