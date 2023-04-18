@@ -74,18 +74,48 @@ BODY
 			SWRITE CLOSE
 			DIV "image-wall"
 				DIV "image-wall-item"
-					LINK "/kytschi/imgs/portfolio/dumb-dog-screen-1.jpg", "Click to view me bigger",,"_blank"
-						IMAGE "/kytschi/imgs/portfolio/dumb-dog-screen-1.jpg", "Dumb Dog Screen 1"
+					LINK "/kytschi/imgs/portfolio/dumbdog-login.jpg", "Click to view me bigger",,"_blank"
+						IMAGE "/kytschi/imgs/portfolio/dumbdog-login.jpg", "Login"
 					LINK CLOSE
 				DIV CLOSE
 				DIV "image-wall-item"
-					LINK "/kytschi/imgs/portfolio/dumb-dog-screen-2.jpg", "Click to view me bigger",,"_blank"
-						IMAGE "/kytschi/imgs/portfolio/dumb-dog-screen-2.jpg", "Dumb Dog Screen 2"
+					LINK "/kytschi/imgs/portfolio/dumbdog-pages.jpg", "Click to view me bigger",,"_blank"
+						IMAGE "/kytschi/imgs/portfolio/dumbdog-pages.jpg", "Pages"
 					LINK CLOSE
 				DIV CLOSE
 				DIV "image-wall-item"
-					LINK "/kytschi/imgs/portfolio/dumb-dog-screen-3.jpg", "Click to view me bigger",,"_blank"
-						IMAGE "/kytschi/imgs/portfolio/dumb-dog-screen-3.jpg", "Dumb Dog Screen 3"
+					LINK "/kytschi/imgs/portfolio/dumbdog-edit-page.jpg", "Click to view me bigger",,"_blank"
+						IMAGE "/kytschi/imgs/portfolio/dumbdog-edit-page.jpg", "Edit Page"
+					LINK CLOSE
+				DIV CLOSE
+				DIV "image-wall-item"
+					LINK "/kytschi/imgs/portfolio/dumbdog-files.jpg", "Click to view me bigger",,"_blank"
+						IMAGE "/kytschi/imgs/portfolio/dumbdog-files.jpg", "Files"
+					LINK CLOSE
+				DIV CLOSE
+				DIV "image-wall-item"
+					LINK "/kytschi/imgs/portfolio/dumbdog-quick-menu.jpg", "Click to view me bigger",,"_blank"
+						IMAGE "/kytschi/imgs/portfolio/dumbdog-quick-menu.jpg", "Quick menu"
+					LINK CLOSE
+				DIV CLOSE
+				DIV "image-wall-item"
+					LINK "/kytschi/imgs/portfolio/dumbdog-settings.jpg", "Click to view me bigger",,"_blank"
+						IMAGE "/kytschi/imgs/portfolio/dumbdog-settings.jpg", "Settings"
+					LINK CLOSE
+				DIV CLOSE
+				DIV "image-wall-item"
+					LINK "/kytschi/imgs/portfolio/dumbdog-templates.jpg", "Click to view me bigger",,"_blank"
+						IMAGE "/kytschi/imgs/portfolio/dumbdog-templates.jpg", "Templates"
+					LINK CLOSE
+				DIV CLOSE
+				DIV "image-wall-item"
+					LINK "/kytschi/imgs/portfolio/dumbdog-themes.jpg", "Click to view me bigger",,"_blank"
+						IMAGE "/kytschi/imgs/portfolio/dumbdog-themes.jpg", "Themes"
+					LINK CLOSE
+				DIV CLOSE
+				DIV "image-wall-item"
+					LINK "/kytschi/imgs/portfolio/dumbdog-users.jpg", "Click to view me bigger",,"_blank"
+						IMAGE "/kytschi/imgs/portfolio/dumbdog-users.jpg", "Users"
 					LINK CLOSE
 				DIV CLOSE
 			DIV CLOSE
