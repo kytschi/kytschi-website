@@ -112,6 +112,7 @@ BODY
 		DIV CLOSE
 
 		LOAD "_ROOT/project/portfolio/kytschbasic"
+		LOAD "_ROOT/project/portfolio/dumbdog"
 		LOAD "_ROOT/project/portfolio/boutique_e_commerce"
 		LOAD "_ROOT/project/portfolio/dental_finder_backend"
 		LOAD "_ROOT/project/portfolio/talkopedia"

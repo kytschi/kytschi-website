@@ -67,7 +67,7 @@ BODY
 				PRINT "So I wrote a CMS a few years back and I was going to opensource it. I still might but for now ITS ALL MINE!"
 			SWRITE CLOSE
 			SWRITE
-				PRINT "That got me thinking I'll release a light weight version but since I'm in love with Zephir I figured I'd just quickly knock up a CMS that is a PHP module."
+				PRINT "That got me thinking I'll release a lightweight version but since I'm in love with Zephir I figured I'd just quickly knock up a CMS that is a PHP module."
 			SWRITE CLOSE
 			SWRITE
 				PRINT "And Dumb Dog was born...coming soon!"
