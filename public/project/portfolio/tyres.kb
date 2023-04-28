@@ -1,0 +1,50 @@
+HEADING 3
+    PRINT "Oi Oi! You lucky people!"
+HEADING CLOSE
+DIV "table"
+    DIV "table-text"
+        SWRITE
+            PRINT "Mate of mine was after a better way of managing his workloads with his team. They use Discord for most of their team chat and task management but he uses Jira."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "He got sick of having to cut and paste from Jira into Discord for the team to then carry out the task. It was really slowing down the productivity and taking too much of his time away from important work."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "So he asked me if I could come up with a solution to speed things up. Tyres the Jira to Discord BOT was born."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "Tyres will create channels when new projects are created in Jira. He'll message the correct project's channel with the tasks to the correct team members. He also will bug you with reminders when you fall behind ;-)"
+        SWRITE CLOSE
+        LINE BREAK
+        LINE BREAK
+        SWRITE
+            PRINT "Checkout Prosper Labs if your after a company who will really help you with your SEO needs, click below..."
+            LINE BREAK
+            LINE BREAK
+            LINK "https://prosper-labs.co.uk/", "Prosper labs", "link-img", "_blank"
+                IMAGE "/kytschi/imgs/best_viewed_with_eyes.gif", "Prosper labs"
+            LINK CLOSE
+        SWRITE CLOSE
+    DIV CLOSE
+    DIV "table-img"
+        DIV "card"
+            DIV "card-body"
+                IMAGE "/kytschi/imgs/portfolio/tyres.jpg", "Tyres"
+            DIV CLOSE
+            DIV "card-footer"
+                SWRITE
+                    PRINT "Tyres Jira to Discord BOT"
+                SWRITE CLOSE
+            DIV CLOSE
+        DIV CLOSE
+    DIV CLOSE
+DIV CLOSE
+HEADING 3
+    PRINT "The Tech Used"
+HEADING CLOSE
+DIV "tech-used"
+    IMAGE "/kytschi/imgs/zephir.jpg", "Zephir"
+    IMAGE "/kytschi/imgs/bash.gif", "BASH Scripting"
+DIV CLOSE
+DIV "table-blank-arrow-reversed"
+DIV CLOSE

@@ -1,3 +1,6 @@
+HEADING 3
+    PRINT "Didn't you already show this?"
+HEADING CLOSE
 DIV "table"
     DIV "table-text"
         SWRITE

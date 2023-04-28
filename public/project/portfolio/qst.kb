@@ -1,3 +1,6 @@
+HEADING 3
+    PRINT "Wait a min...again?!"
+HEADING CLOSE
 DIV "table"
     DIV "table-text"
         SWRITE

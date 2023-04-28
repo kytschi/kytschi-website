@@ -1,3 +1,6 @@
+HEADING 3
+    PRINT "My tooth hurts! Who can I call?!"
+HEADING CLOSE
 DIV "table"
     DIV "table-img"
         DIV "card"

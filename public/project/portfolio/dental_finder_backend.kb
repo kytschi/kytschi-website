@@ -1,3 +1,6 @@
+HEADING 3
+    PRINT "Managing teeth knockers..."
+HEADING CLOSE
 DIV "table"
     DIV "table-text"
         SWRITE

@@ -1,3 +1,6 @@
+HEADING 3
+    PRINT "ASCII is pretty!"
+HEADING CLOSE
 DIV "table"
     DIV "table-img mobile-margin"
         DIV "card"

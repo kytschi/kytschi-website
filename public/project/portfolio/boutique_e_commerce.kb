@@ -1,3 +1,6 @@
+HEADING 3
+    PRINT "The whitest teeth on the block!"
+HEADING CLOSE
 DIV "table"
     DIV "table-text"
         SWRITE

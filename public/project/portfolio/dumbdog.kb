@@ -1,3 +1,6 @@
+HEADING 3
+    PRINT "Dumb Dog CMS"
+HEADING CLOSE
 DIV "table"
     DIV "table-text"
         SWRITE
@@ -36,7 +39,7 @@ DIV "table"
             DIV CLOSE
             DIV "card-footer"
                 SWRITE
-                    PRINT "Dumb Dog"
+                    PRINT "Dumb Doggie"
                 SWRITE CLOSE
             DIV CLOSE
         DIV CLOSE
@@ -103,4 +106,7 @@ DIV "tech-used"
     IMAGE "/kytschi/imgs/zephir.jpg", "Zephir"
 DIV CLOSE
 DIV "table-blank-arrow-reversed"
+    DIV "table-blank-arrow-img"
+        IMAGE "/kytschi/imgs/arrow.png", "arrow", "arrow-small"
+    DIV CLOSE
 DIV CLOSE
