@@ -44,14 +44,6 @@ DIV "table"
         DIV CLOSE
     DIV CLOSE
     DIV "table-img-arrow no-mobile-margin"
-        SWRITE
-            PRINT "Want to check it out?! Click below..."
-            LINE BREAK
-            LINE BREAK
-            LINK "https://uk.quickstraightteeth.net/get-quick-straight-teeth/", "Check it out live", "nav-link-img", "_blank"
-                IMAGE "/kytschi/imgs/best_viewed_with_eyes.gif", "Check it out live"
-            LINK CLOSE
-        SWRITE CLOSE
         IMAGE "/kytschi/imgs/arrow.png", "arrow"
     DIV CLOSE
 DIV CLOSE

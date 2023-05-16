@@ -52,18 +52,6 @@ DIV "table"
         SWRITE CLOSE        
     DIV CLOSE
 DIV CLOSE
-DIV "table-margin"
-    DIV "table-text"
-        SWRITE
-            PRINT "Want to check it out?! Click below..."
-            LINE BREAK
-            LINE BREAK
-            LINK "https://boutiquewhitening.com/whitening-dentist-finder/", "Check it out live", "nav-link-img", "_blank"
-                IMAGE "/kytschi/imgs/best_viewed_with_eyes.gif", "Check it out live"
-            LINK CLOSE
-        SWRITE CLOSE
-    DIV CLOSE
-DIV CLOSE
 HEADING 3
     PRINT "Just look already!"
 HEADING CLOSE

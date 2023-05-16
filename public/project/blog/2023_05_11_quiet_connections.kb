@@ -1,0 +1,37 @@
+HEADING 4, "blog-post-title"
+    PRINT "Help those in need..."
+    LINE BREAK
+    PRINT "11/05/2023", "date"
+HEADING CLOSE
+DIV "blog-post"
+    SWRITE
+        PRINT "For the last month or so now I've been helping at with a community interest company (CIC) called Quiet Connections. "
+        PRINT "I've always been a strong believer in if you can offer your time and skills to those that need them do so. It's extermely rewarding and is a great way to transfer some of that knowledge you've gained over the years. "
+        PRINT "Plus you often get to mess around and figure something new out while saying them a ton of cash."
+    SWRITE CLOSE
+    SWRITE
+        PRINT "They are a lovely bunch of people who got burnt by a previous developer that took their money and delivered nothing that was promised. "
+        PRINT "It's so common these days in dev that it makes me sick to the bone."
+    SWRITE CLOSE
+    SWRITE
+        PRINT "Their plan is to revamp their website a bit so I've been working on a new version for them behind the scenes. Still trying to convince them to dump WordPress and go with Dumb Dog lol, well I can dream anyways ;-)"
+    SWRITE CLOSE
+    SWRITE
+        PRINT "But their biggest plan is to have their own e-learning platform as they offer courses on various aspects of helping to deal with mental health issues. "
+        PRINT "We are currently expirementing with Moodle to see if it'll fit all their needs so I'm working in the background getting that built up for them."
+    SWRITE CLOSE
+    SWRITE
+        PRINT "I've used Moodle before and its a pretty nice LMS, not that hard to use (though it was a pain to get setup and the theme built) and its full of features."
+    SWRITE CLOSE
+        SWRITE
+        PRINT "Watch this space for more updates and releases of their new website plus LMS."
+    SWRITE CLOSE
+    SWRITE
+        PRINT "Click below to check out the repo..."
+        LINE BREAK
+        LINE BREAK
+        LINK "https://quietconnections.co.uk", "Check them out", "link-img", "_blank"
+            IMAGE "/kytschi/imgs/best_viewed_with_eyes.gif", "Check them out"
+        LINK CLOSE
+    SWRITE CLOSE
+DIV CLOSE
