@@ -1,0 +1,83 @@
+HEADING 3
+    PRINT "The spirit of the doorways..."
+HEADING CLOSE
+DIV "table"
+    DIV "table-text"
+        SWRITE
+            PRINT "A while back I wrote a security tool that basically scanned my webserver logs for specific patterns. These patterns were known attack ones and I'd just block the IP of those running them."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "Since that project is all but dead and with a recent server getting blasted by bots I figured I'd port it to it's own little project. With my love of Zephir it was the perfect choice."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "Janus is a standalone PHP module that allows you to scan webserver logs and from that build up patterns of dodgy going ons so you can keep scanning for people running those attacks and blacklist them from ever coming back."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "Once you've defined the patterns, Janus will automatically keep running looking for new attempts of people trying to be clever dicks and block them."
+        SWRITE CLOSE
+        SWRITE
+            PRINT "Janus has defined patterns already, stuff I've been collecting from my own logs and I'll keep growing it to share the data with the project."
+        SWRITE CLOSE
+        LINE BREAK
+        LINE BREAK
+        SWRITE
+            PRINT "Checkout the repo on GitHub if you fancy using it or becoming part of the project."
+            LINE BREAK
+            LINE BREAK
+            LINK "https://github.com/kytschi/janus", "The repo", "link-img", "_blank"
+                IMAGE "/kytschi/imgs/best_viewed_with_eyes.gif", "The repo"
+            LINK CLOSE
+        SWRITE CLOSE
+    DIV CLOSE
+    DIV "table-img"
+        DIV "card"
+            DIV "card-body"
+                IMAGE "/kytschi/imgs/portfolio/janus-1.jpg", "Janus"
+            DIV CLOSE
+            DIV "card-footer"
+                SWRITE
+                    PRINT "Janus IP Blocker"
+                SWRITE CLOSE
+            DIV CLOSE
+        DIV CLOSE
+    DIV CLOSE
+DIV CLOSE
+HEADING 3
+    PRINT "SNEAK A PEEK!"
+HEADING CLOSE
+DIV "image-wall"
+    DIV "image-wall-item"
+        LINK "/kytschi/imgs/portfolio/janus-2.jpg", "Click to view me bigger",,"_blank"
+            IMAGE "/kytschi/imgs/portfolio/janus-2.jpg", "Screenshot 2"
+        LINK CLOSE
+    DIV CLOSE
+    DIV "image-wall-item"
+        LINK "/kytschi/imgs/portfolio/janus-4.jpg", "Click to view me bigger",,"_blank"
+            IMAGE "/kytschi/imgs/portfolio/janus-4.jpg", "Screenshot 4"
+        LINK CLOSE
+    DIV CLOSE
+    DIV "image-wall-item"
+        LINK "/kytschi/imgs/portfolio/janus-5.jpg", "Click to view me bigger",,"_blank"
+            IMAGE "/kytschi/imgs/portfolio/janus-5.jpg", "Screenshot 5"
+        LINK CLOSE
+    DIV CLOSE
+    DIV "image-wall-item"
+        LINK "/kytschi/imgs/portfolio/janus-6.jpg", "Click to view me bigger",,"_blank"
+            IMAGE "/kytschi/imgs/portfolio/janus-6.jpg", "Screenshot 6"
+        LINK CLOSE
+    DIV CLOSE
+    DIV "image-wall-item"
+        LINK "/kytschi/imgs/portfolio/janus-7.jpg", "Click to view me bigger",,"_blank"
+            IMAGE "/kytschi/imgs/portfolio/janus-7.jpg", "Screenshot 7"
+        LINK CLOSE
+    DIV CLOSE
+DIV CLOSE
+HEADING 3
+    PRINT "The Tech Used"
+HEADING CLOSE
+DIV "tech-used"
+    IMAGE "/kytschi/imgs/zephir.jpg", "Zephir"
+    IMAGE "/kytschi/imgs/bash.gif", "BASH Scripting"
+DIV CLOSE
+DIV "table-blank-arrow-reversed"
+DIV CLOSE
