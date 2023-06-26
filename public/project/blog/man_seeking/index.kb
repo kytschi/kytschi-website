@@ -7,19 +7,17 @@ BODY
 	LOAD "_ROOT/project/shared/header"
 	MAIN
 		HEADING 3
-			PRINT "Blog-land"
+			PRINT "Man writing compiler seeks Woman"
 		HEADING CLOSE
 		DIV "table"
 			DIV "table-img mobile-margin"
 				DIV "card"
 					DIV "card-body"
-						IMAGE "/kytschi/imgs/cat-blog.gif", "Meeeeoooow!"
+						IMAGE "/kytschi/imgs/blog/man-writing-compiler-seeks-woman.jpg", "Man writing compiler seeks Woman"
 					DIV CLOSE
 					DIV "card-footer"
 						SWRITE
-							PRINT "Check out what I"
-							LINE BREAK
-							PRINT "am up to!"
+							PRINT "Write to me ladies!"
 						SWRITE CLOSE
 					DIV CLOSE
 				DIV CLOSE
@@ -29,13 +27,7 @@ BODY
 			DIV CLOSE
 		DIV CLOSE
 		
-		LOAD "_ROOT/project/blog/2023_06_23_man_seeking"
-		LOAD "_ROOT/project/blog/2023_05_11_quiet_connections"
-		LOAD "_ROOT/project/blog/2023_04_17_dumbdog_public"
-		LOAD "_ROOT/project/blog/2023_04_16_dumbdob_announced"
-		LOAD "_ROOT/project/blog/2023_04_09_plonky_public"
-		LOAD "_ROOT/project/blog/2023_04_06_plonky_announced"
-		
+		LOAD "_ROOT/project/blog/man_seeking/2023_06_23_how_it_started"	
 		
 	MAIN CLOSE
 	LOAD "_ROOT/project/shared/footer"

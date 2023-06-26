@@ -1,0 +1,29 @@
+HEADING 4, "blog-post-title"
+    PRINT "Man writing own compiler seeks Woman"
+    LINE BREAK
+    PRINT "26/06/2023", "date"
+HEADING CLOSE
+DIV "blog-post"
+    DIV "table"
+        DIV "table-img mobile-margin"
+            DIV "card"
+                DIV "card-body"
+                    IMAGE "/kytschi/imgs/blog/man-writing-compiler-seeks-woman.jpg", "Man writing compiler seeks Woman"
+                DIV CLOSE
+            DIV CLOSE
+        DIV CLOSE
+        DIV "table-text no-mobile-margin"
+            SWRITE
+                PRINT "For a long time I've been wanting to write my own programming language, sure I have kytschBASIC and I love it! But I wanted a lang that I could compile and create full blown desktop apps."
+            SWRITE CLOSE
+            SWRITE
+                PRINT "Follow the journey here..."
+                LINE BREAK
+                LINE BREAK
+                LINK "/blog-land/man-writing-compiler-seeks-woman", "Follow me", "link-img"
+                    IMAGE "/kytschi/imgs/best_viewed_with_eyes.gif", "Follow me"
+                LINK CLOSE
+            SWRITE CLOSE
+        DIV CLOSE
+    DIV CLOSE
+DIV CLOSE
