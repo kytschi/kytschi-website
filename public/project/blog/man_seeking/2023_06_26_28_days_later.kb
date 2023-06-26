@@ -13,7 +13,7 @@ DIV "blog-post"
         PRINT "I tab the hell out of my code when writing but that catches me out with Python."
     SWRITE CLOSE
     SWRITE
-        PRINT "I'm also a big OOP fan, and I do love type casting when working in big teams to help keep track of "
+        PRINT "I'm also a big OOP fan, and I do love typecasting when working in big teams to help keep track of "
         PRINT "what's what. So this got me thinking about redesigning the syntax."
     SWRITE CLOSE
     SWRITE
@@ -51,14 +51,14 @@ DIV "blog-post"
             SWRITE CLOSE
             SWRITE
                 PRINT "The concept is to not have a traditional OOP lang but more a functional one that emulates, "
-                PRINT "for want of a better word, OOP design methods. So do build a 'class' you just create "
-                PRINT "a function with function in it. Ain't that was classes are? Pissy dev guy, "
-                PRINT "mail me your response to mike-is-right@kytschi.com and that's that!"
+                PRINT "for want of a better word, OOP design methods. So to build a 'class' you just create "
+                PRINT "a function with functions in it. Ain't that what classes are? Pissy dev guy, "
+                PRINT "mail me your response to mike-is-right@kytschi.com and THAT'S THAT!"
             SWRITE CLOSE
         DIV CLOSE
     DIV CLOSE
     HEADING 4, "blog-post-title"
-        PRINT "It's just words mwan!"
+        PRINT "It's just words Mwan!"
     HEADING CLOSE
     SWRITE
         PRINT "So this is now what I'm thinking the syntax is going to be:-"
@@ -122,7 +122,7 @@ HelloWorld {
         PRINT " account?"
     SWRITE CLOSE
     SWRITE
-        PRINT "When I was writing the typecasting source it really flowed nice and quickly. "
+        PRINT "When I was writing the typecasting source it really flowed nice and quick. "
     SWRITE CLOSE
     SWRITE
         PRINT "Am I ripping another lang off? "
@@ -132,7 +132,7 @@ HelloWorld {
     SWRITE CLOSE
     SWRITE
         PRINT "I've seen that many over my time there'll be bleeding of all kinds in that. "
-        PRINT "But for now I liked it!"
+        PRINT "But for now I like it!"
     SWRITE CLOSE
     HEADING 4, "blog-post-title"
         PRINT "The parser rebuild"
@@ -153,8 +153,8 @@ HelloWorld {
     SWRITE CLOSE
     SWRITE
         PRINT "I love this guy called Terry Davis (R.I.P. bud your missed!), creator of TempleOS and HolyC. "
-        PRINT "Checkout TempleOS and HolyC if you haven't already. Sure the guy had issues but you can't "
-        PRINT "deny that he was a true coding genius!"
+        PRINT "Checkout TempleOS and HolyC if you haven't already. Sure the guy had issues (don't we all?) "
+        PRINT "but you can't deny that he was a true coding genius!"
     SWRITE CLOSE
     SWRITE
         PRINT "Anyways I really liked his approach to printing. His print command basically would print to any kind of "
