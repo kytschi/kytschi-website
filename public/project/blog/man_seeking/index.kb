@@ -1,7 +1,13 @@
 LANG "en"
 HEAD
-	LOAD "_ROOT/project/shared/head"
-	NAME "blog | kytschi"
+	CHARSET "UTF-8"
+	DESCRIPTION "My exploits into writing my own programming language and compiler"
+	KEYWORDS "webite building, jobs, web developer, contractor, software engineer, devops, funny website, satire"
+	AUTHOR "Mike Welsh"
+	VIEWPORT "width=device-width, initial-scale=1.0"
+	FAVICON "/kytschi/imgs/favicon.ico","64x64"
+	PALETTE "kytschi"
+	NAME "man writing compiler seeking woman | kytschi"
 HEAD CLOSE
 BODY
 	LOAD "_ROOT/project/shared/header"
