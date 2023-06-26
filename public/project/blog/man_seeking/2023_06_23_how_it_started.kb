@@ -6,7 +6,7 @@ HEADING CLOSE
 DIV "blog-post"
     SWRITE
         PRINT "On a Sunday I go for a walk with an old dev buddy of mine. "
-        PRINT "Maths super genuis, and we always chat about how we are bored in life when it comes to what we do. "       
+        PRINT "Maths super genius, and we always chat about how we are bored in life when it comes to what we do. "       
     SWRITE CLOSE
     SWRITE
         PRINT "We were just shooting the sh*t and I got on about how I'd "
@@ -192,7 +192,7 @@ echo mike.name;"
     HEADING 4, "blog-post-title"
         PRINT "And the refactoring begins..."
     HEADING CLOSE
-    SWRITE CLOSE        
+    SWRITE        
         PRINT "Now I was again getting to know the C lang and how to build up things I started to refactor the code. "
         PRINT "Splitting bits up, making (or should I say trying to make) reusable pieces of code and just get the "
         PRINT "parser to build the Abstract Syntax Tree better known as the AST."

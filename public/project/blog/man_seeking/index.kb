@@ -27,7 +27,8 @@ BODY
 			DIV CLOSE
 		DIV CLOSE
 		
-		LOAD "_ROOT/project/blog/man_seeking/2023_06_23_how_it_started"	
+		LOAD "_ROOT/project/blog/man_seeking/2023_06_23_how_it_started"
+		LOAD "_ROOT/project/blog/man_seeking/2023_06_26_28_days_later"
 		
 	MAIN CLOSE
 	LOAD "_ROOT/project/shared/footer"
