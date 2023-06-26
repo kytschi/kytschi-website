@@ -5,27 +5,24 @@ HEADER
 	HEADING 2
 		PRINT "by Mike Welsh"
 	HEADING CLOSE
-	SWRITE
-		PRINT "A Clickable Menu", "h3"
-	SWRITE CLOSE
 	MENU
-		LINK "/","Go to the homepage","nav-link-img"
-			IMAGE "/kytschi/imgs/internet-roadkill.gif", "Free stuff"
+		LINK "/","Go to the homepage","button-link"
+			PRINT "HOME"			
 		LINK CLOSE
-		LINK "https://github.com/kytschi","Free stuff","nav-link-img", "_blank"
-			IMAGE "/kytschi/imgs/free-stuff.gif", "Free stuff"
+		LINK "https://github.com/kytschi","Free stuff","button-link", "_blank"
+			PRINT "Free stuff"
 		LINK CLOSE
-		LINK "https://soundcloud.com/kytschi","Free music","nav-link-img", "_blank"
-			IMAGE "/kytschi/imgs/musicbug.gif", "Free music"
+		LINK "https://soundcloud.com/kytschi","Free music","button-link", "_blank"
+			PRINT "Free music"
 		LINK CLOSE
-		LINK "/kytschi/cv-mike-welsh.pdf","Check out my CV","nav-link-img", "_blank"
-			IMAGE "/kytschi/imgs/cooltxt.gif", "View CV"
+		LINK "/kytschi/cv-mike-welsh.pdf","Check out my CV","button-link", "_blank"
+			PRINT "View CV"
 		LINK CLOSE
-		LINK "/blog-land","Blog","nav-link-img"
-			IMAGE "/kytschi/imgs/ip64now.gif", "blog"
+		LINK "/blog-land","Blog","button-link"
+			PRINT "Blog"
 		LINK CLOSE
-		LINK "/contact-me","Contact me","nav-link-img"
-			IMAGE "/kytschi/imgs/email.gif", "contact"
+		LINK "/contact-me","Contact me","button-link"
+			PRINT "Contact"
 		LINK CLOSE
 	MENU CLOSE
 HEADER CLOSE
