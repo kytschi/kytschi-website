@@ -175,7 +175,7 @@ echo mike.name;"
             SWRITE
                 PRINT "kytschBASIC was a breeze to write cause first off it's not a compiler just an interpreter "
                 PRINT "and the re-write I did was in Zephir-lang which is just soooo gorgeous of lang it's "
-                PRINT "not even funny. Coupled with it being a high level lang it hold your hand like that sweaty man "
+                PRINT "not even funny. Coupled with it being a high level lang it holds your hand like that sweaty man "
                 PRINT "in the park that one day back in '88, but I digress..."
             SWRITE CLOSE
             SWRITE CLOSE
