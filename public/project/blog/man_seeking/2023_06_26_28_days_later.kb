@@ -18,7 +18,7 @@ DIV "blog-post"
     SWRITE CLOSE
     SWRITE
         PRINT "My mate also made a comment on how he likes to parse, he just looks for characters rather than parsing "
-        PRINT "a full line for example. That really peaked my interest! So I thought I'd redesign the parser as well."
+        PRINT "a full line for example. That really piqued my interest! So I thought I'd redesign the parser as well."
     SWRITE CLOSE
     LINE BREAK
     DIV "table"

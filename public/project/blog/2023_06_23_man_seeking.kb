@@ -1,7 +1,7 @@
 HEADING 4, "blog-post-title"
     PRINT "Man writing own compiler seeks Woman"
     LINE BREAK
-    PRINT "26/06/2023", "date"
+    PRINT "23/06/2023", "date"
 HEADING CLOSE
 DIV "blog-post"
     DIV "table"

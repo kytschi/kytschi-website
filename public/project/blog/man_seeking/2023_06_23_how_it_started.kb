@@ -17,7 +17,7 @@ DIV "blog-post"
         PRINT "and he goes why don't we write our own language!"
     SWRITE CLOSE
     SWRITE
-        PRINT "I've been inching to write something stupidly hard and get back into another lang for ages, "
+        PRINT "I've been itching to write something stupidly hard and get back into another lang for ages, "
         PRINT "this fit the bill perfectly."
     SWRITE CLOSE
     SWRITE
