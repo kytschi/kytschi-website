@@ -16,7 +16,7 @@ DIV "blog-post"
         PRINT "I'm what like a week into this (not been working every day on it) but yesterday burnt me out."
     SWRITE CLOSE
     SWRITE
-        PRINT "My advice to those looking to do this, start super simple, nice easy procedural language and built up "
+        PRINT "My advice to those looking to do this, start super simple, nice easy procedural language and build up "
         PRINT "from there. Don't do what I've done and start off with this "super" complex OOP style lang unless "
         PRINT "you have two brains and plenty of caffeine or something stronger ;-)"
     SWRITE CLOSE
@@ -39,7 +39,7 @@ DIV "blog-post"
                 PRINT "When you hit this point, walk away for a bit or you'll just fall deeper in."
             SWRITE CLOSE
             SWRITE
-                PRINT "I find on most projects I'm a 3 month sprint guy when it comes to burn out. "
+                PRINT "I find on most projects I'm a 3 month sprint guy when it comes to burnout. "
                 PRINT "You get 1000% out of me for 3 months then I enter "
                 PRINT "The Burnout Zone ", "speech"
                 PRINT " and I become a grumpy snail dev unless I can jump onto something else. "
@@ -58,7 +58,7 @@ DIV "blog-post"
             SWRITE
                 PRINT "Anyways, C is fun and I love the old school stuff. Like I've stressed before, doing this in "
                 PRINT "higher level lang would be far far less time consuming but the challenge was set to be C "
-                PRINT "and I'm sticking with it for now, and THAT's THAT!"
+                PRINT "and I'm sticking with it, for now, and THAT's THAT!"
             SWRITE CLOSE
         DIV CLOSE
     DIV CLOSE
@@ -144,6 +144,8 @@ _start:
     CPRINT CLOSE
     IMAGE "/kytschi/imgs/blog/hello-world-running.jpg", "Hello World Running"
     SWRITE
-        PRINT "For now I know I can compile something and get it running so I'm happy... burnout... but happy :-D"
+        PRINT "For now I know I can compile something and get it running so I'm happy... in "
+        PRINT "The Burnout Zone", "speech"
+        PRINT "... but happy :-D"
     SWRITE CLOSE
 DIV CLOSE
