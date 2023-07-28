@@ -1,0 +1,36 @@
+LANG "en"
+HEAD
+	CHARSET "UTF-8"
+	DESCRIPTION "If job hunting was a meme it would be this..."
+	KEYWORDS "webite building, jobs, web developer, contractor, software engineer, devops, funny website, satire"
+	AUTHOR "Mike Welsh"
+	VIEWPORT "width=device-width, initial-scale=1.0"
+	FAVICON "/kytschi/imgs/favicon.ico","64x64"
+	PALETTE "kytschi"
+	NAME "if job hunting was a meme it would be this... | kytschi"
+HEAD CLOSE
+BODY
+	LOAD "_ROOT/project/shared/header"
+	MAIN
+		HEADING 3
+			PRINT "If job hunting was a meme it would be this..."
+		HEADING CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/girlfriend-blockers.jpeg", "me, the company and the recruiter"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/obiwan-arentthedroids.jpg", "Not the dev your looking for"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/not-the-qualifications-need.jpg", "Not the qualifactions I need"
+			DIV CLOSE
+		DIV CLOSE
+	MAIN CLOSE
+	LOAD "_ROOT/project/shared/footer"
+BODY CLOSE
+END

@@ -1,7 +1,7 @@
 LANG "en"
 HEAD
 	CHARSET "UTF-8"
-	DESCRIPTION "My exploits into writing my own programming language and compiler"
+	DESCRIPTION "How to handle job seeking rejection hell!"
 	KEYWORDS "webite building, jobs, web developer, contractor, software engineer, devops, funny website, satire"
 	AUTHOR "Mike Welsh"
 	VIEWPORT "width=device-width, initial-scale=1.0"

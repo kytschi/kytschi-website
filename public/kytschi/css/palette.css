@@ -126,6 +126,10 @@ a.nav-link-img {
     text-align: center;
 }
 
+.card-mb {
+    margin-bottom: 50px;
+}
+
 #contact input {
     margin-bottom: 20px;
 }
