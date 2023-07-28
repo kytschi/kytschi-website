@@ -13,7 +13,7 @@ BODY
 	LOAD "_ROOT/project/shared/header"
 	MAIN
 		HEADING 3
-			PRINT "How to handle job application rejection hell!"
+			PRINT "How to handle job seeking rejection hell!"
 		HEADING CLOSE
 		            	CPRINT
 If you can't tell this is pure fiction and done for some fun :-)
@@ -35,7 +35,8 @@ With that out of the way, enjoy!
 			DIV CLOSE
 			DIV "table-text no-mobile-margin"
 				SWRITE
-					PRINT "Over the last 9 months I've been search for a new role and around 90% of the time I just get this type of automated response back."
+					PRINT "Over the last 9 months I've been search for a new role and around 90% of the time I "
+					PRINT "just get this type of automated response back."
 				SWRITE CLOSE
 				LINE BREAK
             	CPRINT
