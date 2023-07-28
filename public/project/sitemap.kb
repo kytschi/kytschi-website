@@ -63,6 +63,13 @@ BODY
 				HEADING CLOSE
 			LINK CLOSE
 		SWRITE CLOSE
+		SWRITE
+			LINK "/blog-land/if-job-hunting-was-a-meme-it-would-be-this","If job hunting was a meme it would be this"
+				HEADING 4
+					PRINT "If job hunting was a meme it would be this"
+				HEADING CLOSE
+			LINK CLOSE
+		SWRITE CLOSE
 	MAIN CLOSE
 	LOAD "_ROOT/project/shared/footer"
 BODY CLOSE
