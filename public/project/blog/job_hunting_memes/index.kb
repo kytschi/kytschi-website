@@ -30,6 +30,11 @@ BODY
 				IMAGE "/kytschi/imgs/blog/memes/not-the-qualifications-need.jpg", "Not the qualifactions I need"
 			DIV CLOSE
 		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/not-starving.jpg", "Not starving"
+			DIV CLOSE
+		DIV CLOSE
 	MAIN CLOSE
 	LOAD "_ROOT/project/shared/footer"
 BODY CLOSE
