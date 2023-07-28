@@ -48,5 +48,18 @@ FOOTER
 				SWRITE CLOSE
 			TCELL CLOSE
 		TROW CLOSE
+		TROW
+			TCELL
+				SWRITE
+					PRINT "Disclaimer!"
+				SWRITE CLOSE
+				SWRITE
+					PRINT "This site contains satire and humorous content if you can't tell... "
+				SWRITE CLOSE
+			TCELL CLOSE
+			TCELL
+				LINE BREAK
+			TCELL CLOSE
+		TROW CLOSE
 	TABLE CLOSE
 FOOTER CLOSE

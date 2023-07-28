@@ -296,6 +296,10 @@ table td, table th {
     vertical-align: top;
 }
 
+.no-top-margin {
+    margin-top: 0;
+}
+
 table td img {
     max-width: 100%;
 }
@@ -364,6 +368,11 @@ table td img {
     font-weight: bolder;
     font-style: italic;
     padding: 0px 20px 0 20px;
+}
+
+.qoute {
+    font-weight: bolder;
+    font-style: italic;
 }
 
 .table-note-img {

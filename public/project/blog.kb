@@ -29,6 +29,7 @@ BODY
 			DIV CLOSE
 		DIV CLOSE
 		
+		LOAD "_ROOT/project/blog/2023_07_21_job_rejection"
 		LOAD "_ROOT/project/blog/2023_06_23_man_seeking"
 		LOAD "_ROOT/project/blog/2023_05_11_quiet_connections"
 		LOAD "_ROOT/project/blog/2023_04_17_dumbdog_public"

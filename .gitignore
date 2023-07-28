@@ -2,3 +2,7 @@ config
 compiled.php
 *.pub
 test.kb
+composer*
+vendor*
+comms.json
+comms.php

@@ -49,6 +49,20 @@ BODY
 				HEADING CLOSE
 			LINK CLOSE
 		SWRITE CLOSE
+		SWRITE
+			LINK "/blog-land/man-writing-compiler-seeks-woman","Man writing own compiler seeks Woman"
+				HEADING 4
+					PRINT "Man writing own compiler seeks Woman"
+				HEADING CLOSE
+			LINK CLOSE
+		SWRITE CLOSE
+		SWRITE
+			LINK "/blog-land/how-to-deal-with-job-rejection","How to handle job application rejection hell!"
+				HEADING 4
+					PRINT "How to handle job application rejection hell!"
+				HEADING CLOSE
+			LINK CLOSE
+		SWRITE CLOSE
 	MAIN CLOSE
 	LOAD "_ROOT/project/shared/footer"
 BODY CLOSE
