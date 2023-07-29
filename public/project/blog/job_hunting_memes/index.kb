@@ -118,6 +118,31 @@ BODY
 				IMAGE "/kytschi/imgs/blog/memes/php-fixer.jpeg", "PHP fixer"
 			DIV CLOSE
 		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/use-git.jpg", "Use git"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/recruiter-headache.jpg", "Recruiter headache"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/no-wordpress.jpeg", "No wordpress"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/sorry-no-match.jpeg", "Sorry no match"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/mates-off-to-work.jpg", "Mates off to work"
+			DIV CLOSE
+		DIV CLOSE
 	MAIN CLOSE
 	LOAD "_ROOT/project/shared/footer"
 BODY CLOSE
