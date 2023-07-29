@@ -73,6 +73,51 @@ BODY
 				IMAGE "/kytschi/imgs/blog/memes/laravel-more-choices.jpg", "Laravel more choices"
 			DIV CLOSE
 		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/docker-vm.jpeg", "Docker VM"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/bash-ci.jpg", "Bash CI/CD"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/node-right.jpeg", "Node right"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/stay-here-5yrs.jpeg", "Stay here 5yrs"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/code-base-amazing.jpeg", "Code base is amazing"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/porting-to-laravel.jpg", "Porting to laravel"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/clown-rejected.jpeg", "Clown rejected"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/mcds-hiring.jpg", "McDs hiring"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/php-fixer.jpeg", "PHP fixer"
+			DIV CLOSE
+		DIV CLOSE
 	MAIN CLOSE
 	LOAD "_ROOT/project/shared/footer"
 BODY CLOSE
