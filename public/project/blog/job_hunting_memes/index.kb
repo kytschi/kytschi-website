@@ -35,6 +35,44 @@ BODY
 				IMAGE "/kytschi/imgs/blog/memes/not-starving.jpg", "Not starving"
 			DIV CLOSE
 		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/picard-perfect-job-1.jpg", "Picard perfect job"
+				IMAGE "/kytschi/imgs/blog/memes/picard-perfect-job-2.jpg", "Picard perfect job"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/picard-riker-web-dev.jpeg", "Picard Riker web dev"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/picard-laravel-dev.jpg", "Picard laravel dev"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/picard-fully-remote-1.jpeg", "Picard fully remote"
+				IMAGE "/kytschi/imgs/blog/memes/picard-fully-remote-2.jpeg", "Picard fully remote"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/picard-perfect-fit-1.jpeg", "Picard perfect fit"
+				IMAGE "/kytschi/imgs/blog/memes/picard-perfect-fit-2.jpeg", "Picard perfect fit"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/drake-only-laravel.jpg", "Drake only laravel"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/laravel-more-choices.jpg", "Laravel more choices"
+			DIV CLOSE
+		DIV CLOSE
 	MAIN CLOSE
 	LOAD "_ROOT/project/shared/footer"
 BODY CLOSE
