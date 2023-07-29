@@ -143,6 +143,26 @@ BODY
 				IMAGE "/kytschi/imgs/blog/memes/mates-off-to-work.jpg", "Mates off to work"
 			DIV CLOSE
 		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/sorry-uses-lang.jpg", "Sorry uses lang"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/but-can-write-laravel.jpg", "But can write laravel"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/we-need-net.jpeg", "We need .net"
+			DIV CLOSE
+		DIV CLOSE
+		DIV "card card-mb"
+			DIV "card-body"
+				IMAGE "/kytschi/imgs/blog/memes/volunteer-dev.jpeg", "Volunteer dev"
+			DIV CLOSE
+		DIV CLOSE
 	MAIN CLOSE
 	LOAD "_ROOT/project/shared/footer"
 BODY CLOSE
