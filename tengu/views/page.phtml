@@ -1,0 +1,30 @@
+<div id="page">
+    <h2><?= $page->name; ?></h2>
+    <?php
+    if ($page->content) {
+        ?>
+        <section>
+            <?= $page->content; ?>
+        </section>
+        <?php
+    }
+    if (count($page->tags)) {
+        ?>
+        <h3>
+            <span>Tags</span>
+        </h3>
+        <div id="tags">
+            <?php
+            foreach ($page->tags as $tag) {
+                ?>
+                <a
+                    href="/search?search=<?=$tag->tag;?>"
+                    title="Click to search based on this tag">&#35;<?= $tag->tag; ?></a>
+                <?php
+            }
+            ?>
+        </div>
+        <?php
+    }
+    ?>
+</div>

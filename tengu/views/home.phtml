@@ -1,0 +1,57 @@
+<div id="home">
+    <h2>
+        <span><?= $page->slogan; ?></span>
+    </h2>
+    <?php
+    if ($page->content) {
+        ?>
+        <section>
+            <?= $page->content; ?>
+        </section>
+        <?php
+    }
+    if ($page->category_items) {
+        foreach ($page->category_items as $item) {
+            ?>
+            <h3>
+                <span><?= $item->name; ?></span>
+            </h3>
+            <div class="tiles">
+                <?php
+                foreach ($item->category_items as $sub_item) {
+                    ?>
+                    <div class="tile">
+                        <h4><?= $sub_item->name; ?></h4>
+                        <?php
+                        if ($sub_item->cover_image) {
+                            ?>
+                            <p class="tile-img">
+                                <img 
+                                    src="<?=$sub_item->cover_image->url;?>"
+                                    title="<?= $sub_item->name; ?>"
+                                    alt="<?= $sub_item->cover_image->label; ?>">
+                            </p>
+                            <?php
+                        }
+                        ?>
+                        <p>
+                            <?= $sub_item->summary; ?>
+                        </p>
+                        <p>
+                            <a 
+                                href="<?= !empty($sub_item->canonical_url) ? $sub_item->canonical_url : $sub_item->url; ?>"
+                                class="button" 
+                                title="Show me about the <?= $sub_item->name; ?> project">
+                                show me more
+                            </a>
+                        </p>
+                    </div>
+                    <?php
+                }
+                ?>
+            </div>
+            <?php
+        }
+    }
+    ?>
+</div>

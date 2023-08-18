@@ -1,0 +1,69 @@
+<div id="page">
+    <h2><?= !empty($page->slogan) ? $page->slogan : $page->name; ?></h2>
+    <?php
+    if ($page->content) {
+        ?>
+        <section>
+            <?= $page->content; ?>
+        </section>
+        <?php
+    }
+    if ($page->category_items) {
+        ?>
+        <div class="tiles">
+            <?php
+            foreach ($page->category_items as $item) {
+                ?>
+                <div class="tile">
+                    <h4><?= $item->name; ?></h4>
+                    <?php
+                    if ($item->cover_image) {
+                        ?>
+                        <p class="tile-img">
+                            <img 
+                                src="<?=$item->cover_image->url;?>"
+                                title="<?= $item->name; ?>"
+                                alt="<?= $item->cover_image->label; ?>">
+                        </p>
+                        <?php
+                    }
+                    ?>
+                    <p>
+                        <?= $item->summary; ?>
+                    </p>
+                    <p>
+                        <a 
+                            href="<?= !empty($item->canonical_url) ? $item->canonical_url : $item->url; ?>"
+                            class="button" 
+                            <?= strpos($item->url, 'http') ? ' target="_blank"' : ''; ?>
+                            title="I want to check out <?= $item->name; ?>">
+                            Take me to it
+                        </a>
+                    </p>
+                </div>
+                <?php
+            }
+            ?>
+        </div>
+        <?php
+    }
+    if (count($page->tags)) {
+        ?>
+        <h3>
+            <span>Tags</span>
+        </h3>
+        <div id="tags">
+            <?php
+            foreach ($page->tags as $tag) {
+                ?>
+                <a
+                    href="/search?search=<?=$tag->tag;?>"
+                    title="Click to search based on this tag">&#35;<?= $tag->tag; ?></a>
+                <?php
+            }
+            ?>
+        </div>
+        <?php
+    }
+    ?>
+</div>
