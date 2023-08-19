@@ -38,7 +38,7 @@
                 padding-left: 15px;
                 margin-right: auto;
                 margin-left: auto;
-                margin-top: 60px;
+                margin-top: 20px;
             }
             h1, h2 {
                 font-family: 'body', sans-serif;           
@@ -46,10 +46,12 @@
             h1 {
                 color: #93EEFF;
                 font-size: 48pt;
+                margin: 0;
             }
             h2 {
                 color: #fff;
                 font-size: 36pt;
+                margin: 0;
             }
             p {
                 text-align: center;
@@ -69,8 +71,8 @@
             <h2>Where do you want to go?</h2>
             <img src="/assets/illustration-gustavo-viselner-03.jpg">
             <p>
-                <a href="https://past.kytschi.com">Past</a>
-                <a href="https://future.kytschi.com">Future</a>
+                <a href="https://past.kytschi.com">The Past</a>
+                <a href="https://future.kytschi.com">The Future</a>
             </p>
             <small>art by Gustavo Viselner</small>
         </div>
