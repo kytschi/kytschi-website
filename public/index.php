@@ -3,6 +3,7 @@
 <html>
     <head>
         <title>Mike Welsh - Kytschi</title>
+        <link rel="icon" href="/assets/favicon.ico" sizes="64x64">
         <style>
             @font-face {
                 font-family: 'body';
@@ -76,5 +77,9 @@
             </p>
             <small>art by Gustavo Viselner</small>
         </div>
+        <audio controls autoplay>
+            <source src="/assets/gigawatts.mp3" type="audio/mpeg">
+            Your browser can't play the background tune :-(
+        </audio> 
     </body>
 </html>
