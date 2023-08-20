@@ -15,7 +15,7 @@ HEADER
 		LINK "https://soundcloud.com/kytschi","Free music","button-link", "_blank"
 			PRINT "Free music"
 		LINK CLOSE
-		LINK "https://kytschi.com/assets/cv-mike-welsh.pdf","Check out my CV","button-link", "_blank"
+		LINK "https://kytschi.com/website/themes/kytschi/assets/cv-mike-welsh.pdf","Check out my CV","button-link", "_blank"
 			PRINT "View CV"
 		LINK CLOSE
 		LINK "/blog-land","Blog","button-link"
