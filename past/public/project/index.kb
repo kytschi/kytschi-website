@@ -1,3 +1,12 @@
+DATA pages&
+	DOPEN "kytschi"
+	DREAD "pages"
+	DSELECT "pages.*, CONCAT('https://future.kytschi.ninja/dump/', files.filename) AS img"
+	DJOIN "files ON files.id=pages.cover_image_id AND files.deleted_at IS NULL"
+	DWHERE "pages.type='portfolio'"
+	DSORT "pages.created_at DESC"
+DATA CLOSE
+
 LANG "en"
 HEAD
 	LOAD "_ROOT/project/shared/head"
@@ -111,14 +120,33 @@ BODY
 			DIV CLOSE
 		DIV CLOSE
 
-		LOAD "_ROOT/project/portfolio/kytschbasic"
-		LOAD "_ROOT/project/portfolio/dumbdog"
-		LOAD "_ROOT/project/portfolio/janus"
-		LOAD "_ROOT/project/portfolio/tyres"
-		LOAD "_ROOT/project/portfolio/boutique_e_commerce"
-		LOAD "_ROOT/project/portfolio/dental_finder_backend"
-		LOAD "_ROOT/project/portfolio/talkopedia"
-				
+		FOR page& IN pages&
+			HEADING 3
+				PRINT page&["name"]
+			HEADING CLOSE
+			DIV "table no-mobile-margin"
+				DIV "table-img mobile-margin"
+					DIV "card"
+						DIV "card-body"
+							IMAGE page&["img"]
+						DIV CLOSE
+						DIV "card-footer"
+							SWRITE
+								PRINT page&["slogan"]
+							SWRITE CLOSE
+						DIV CLOSE
+					DIV CLOSE
+				DIV CLOSE
+			DIV CLOSE
+			PRINT page&["content"]
+			SWRITE
+				PRINT "&nbsp;"
+			SWRITE CLOSE
+		END FOR
+
+		SWRITE
+			PRINT "&nbsp;"
+		SWRITE CLOSE
 		DIV "table-margin no-mobile-margin"
 			DIV "table-text mobile-margin"
 				SWRITE
@@ -154,16 +182,6 @@ BODY
 				DIV CLOSE
 			DIV CLOSE
 		DIV CLOSE
-
-		LOAD "_ROOT/project/portfolio/qr_code_scanner"
-		LOAD "_ROOT/project/portfolio/stock_system"
-		LOAD "_ROOT/project/portfolio/everything_dental"
-	
-		LOAD "_ROOT/project/portfolio/bw_finder"
-		LOAD "_ROOT/project/portfolio/activecell"
-		LOAD "_ROOT/project/portfolio/qst"
-		LOAD "_ROOT/project/portfolio/kytscha"
-
 	MAIN CLOSE
 	LOAD "_ROOT/project/shared/footer"
 BODY CLOSE
