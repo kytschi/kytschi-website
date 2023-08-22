@@ -9,14 +9,14 @@ HEADER
 		LINK "/","Go to the homepage","button-link"
 			PRINT "HOME"			
 		LINK CLOSE
-		LINK "https://github.com/kytschi","Free stuff","button-link", "_blank"
-			PRINT "Free stuff"
+		LINK "https://github.com/kytschi","GitHub","button-link", "_blank"
+			PRINT "GitHub"
 		LINK CLOSE
-		LINK "https://soundcloud.com/kytschi","Free music","button-link", "_blank"
-			PRINT "Free music"
+		LINK "https://soundcloud.com/kytschi","Tunes","button-link", "_blank"
+			PRINT "Tunes"
 		LINK CLOSE
 		LINK "https://kytschi.com/website/themes/kytschi/assets/cv-mike-welsh.pdf","Check out my CV","button-link", "_blank"
-			PRINT "View CV"
+			PRINT "CV"
 		LINK CLOSE
 		LINK "/blog-land","Blog","button-link"
 			PRINT "Blog"

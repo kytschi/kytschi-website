@@ -125,14 +125,14 @@ BODY
 				PRINT page&["name"]
 			HEADING CLOSE
 			DIV "table no-mobile-margin"
-				DIV "table-img mobile-margin"
+				DIV "table-img-full mobile-margin"
 					DIV "card"
 						DIV "card-body"
 							IMAGE page&["img"]
 						DIV CLOSE
 						DIV "card-footer"
-							SWRITE
-								PRINT page&["slogan"]
+							SWRITE "card-footer-summary"
+								PRINT page&["summary"]
 							SWRITE CLOSE
 						DIV CLOSE
 					DIV CLOSE

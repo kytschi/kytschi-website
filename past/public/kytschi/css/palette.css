@@ -30,8 +30,8 @@ html, body {
 body {
     margin: 0 auto;
     padding: 0px 40px;
-    min-width: 1024px;
-    width: 60%;
+    min-width: 900px;
+    width: 1000px;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
     background-color: #fff;
@@ -131,6 +131,11 @@ a.nav-link-img {
     font-family: "Vintage", 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-weight: normal;
     text-align: center;
+}
+
+.card-footer-summary {
+    padding: 0 20px;
+    text-align: left;
 }
 
 .card-mb {

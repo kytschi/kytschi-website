@@ -6,9 +6,11 @@
         <a href="https://past.kytschi.com">The Past</a>
         <a href="https://future.kytschi.com">The Future</a>
     </p>
-    <small>art by Gustavo Viselner</small>
+    
+    <small>art by Gustavo Viselner</small><br/>
+    <small>music by Trekster</small><br/>
+    <audio controls autoplay>
+        <source src="<?= $this->tengu->theme->getAsset('trekster-gigawatts.mp3'); ?>" type="audio/mpeg">
+        Your browser can't play the background tune :-(
+    </audio> 
 </div>
-<audio controls autoplay>
-    <source src="<?= $this->tengu->theme->getAsset('gigawatts.mp3'); ?>" type="audio/mpeg">
-    Your browser can't play the background tune :-(
-</audio> 
