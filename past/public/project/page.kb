@@ -1,7 +1,7 @@
 DATA page&
 	DOPEN "kytschi"
 	DREAD "pages"
-	DSELECT "*, CONCAT(name,' | kytschi') AS title, IF(STRCMP(type, 'category'), 1, 0) as category"
+	DSELECT "*, CONCAT(name,' | kytschi') AS title, IF(INSTR(type, 'category') > 0, 1, 0) as category"
 	DWHERE "url='_PATH'"
 DATA CLOSE
 
@@ -53,8 +53,8 @@ BODY
                             SWRITE
                                 PRINT item&["summary"]
                             SWRITE CLOSE
-                            LINK item&["url"],"Take me to the tunes","button-link"
-                                PRINT "Take me to the tunes"
+                            LINK item&["url"],"Follow me","button-link"
+                                PRINT "Follow me"
                             LINK CLOSE
                         DIV CLOSE
                     DIV CLOSE
