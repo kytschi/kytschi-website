@@ -1,0 +1,69 @@
+DATA page&
+	DOPEN "kytschi"
+	DREAD "pages"
+	DSELECT "*, CONCAT(name,' | kytschi') AS title"
+	DWHERE "url='_PATH'"
+DATA CLOSE
+
+LANG "en"
+HEAD
+	LOAD "_ROOT/project/shared/head"
+    IFNTE page&[0]
+	    NAME page&[0]["title"]
+    ELSE
+        NAME "page not found | kytschi"
+    END IF
+HEAD CLOSE
+BODY
+	LOAD "_ROOT/project/shared/header"
+	MAIN
+		HEADING 4
+            IFNTE page&[0]
+			    PRINT page&[0]["name"]
+            ELSE
+                PRINT "Page not found"
+            END IF
+		HEADING CLOSE
+        IFNTE page&[0]
+            IF page&[0]["type"]=="page-category"
+                DATA items&
+                    DOPEN "kytschi"
+                    DREAD "page_categories"
+                    DSELECT "pages.*, CONCAT('https://future.kytschi.com/dump/', files.filename) AS cover_img"
+                    DJOIN "pages ON pages.id=page_categories.page_id AND page_categories.deleted_at IS NULL"
+                    DLJOIN "files ON files.id=pages.cover_image_id AND files.deleted_at IS NULL"
+                    DWHERE "category_id=:id"
+                    DBIND id=page&[0]["id"]
+                DATA CLOSE
+                FOR item& IN items&
+                    DIV "table"
+                        DIV "table-img mobile-margin"
+                            DIV "card"
+                                DIV "card-body"
+                                    IMAGE item&["cover_img"],item&["name"]
+                                DIV CLOSE
+                                DIV "card-footer"
+                                    SWRITE
+                                        PRINT item&["name"]
+                                    SWRITE CLOSE
+                                DIV CLOSE
+                            DIV CLOSE
+                        DIV CLOSE
+                        DIV "table-text no-mobile-margin"
+                            SWRITE
+                                PRINT item&["summary"]
+                            SWRITE CLOSE
+                            LINK item&["url"],"Take me to the tunes","button-link"
+                                PRINT "Take me to the tunes"
+                            LINK CLOSE
+                        DIV CLOSE
+                    DIV CLOSE
+                END FOR
+            END IF
+        ELSE
+            PRINT "Page not found"
+        END IF
+	MAIN CLOSE
+	LOAD "_ROOT/project/shared/footer"
+BODY CLOSE
+END

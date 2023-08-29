@@ -1,3 +1,14 @@
+DATA menu&
+	DOPEN "kytschi"
+	DREAD "menu"
+	DSELECT "menu_items.name, menu_items.tooltip, IF(pages.url != '', pages.url, menu_items.external_link) AS url"
+	DLJOIN "menu_categories AS cats ON cats.category_id=menu.id AND cats.deleted_at IS NULL"
+	DLJOIN "menu AS menu_items ON menu_items.id=cats.menu_id AND menu_items.deleted_at IS NULL"
+	DLJOIN "pages ON pages.id=menu_items.page_id AND pages.deleted_at IS NULL"
+	DWHERE "menu.slug='header'"
+	DSORT "cats.sort"
+DATA CLOSE
+
 HEADER
 	HEADING 1
 		PRINT "How to build a successful website"
@@ -5,24 +16,17 @@ HEADER
 	HEADING 2
 		PRINT "by Mike Welsh"
 	HEADING CLOSE
+	HEADING 3
+		PRINT "A Menu"
+	HEADING CLOSE
 	MENU
-		LINK "/","Go to the homepage","button-link"
-			PRINT "HOME"			
+		LINK "/","Go to home","nav-link"
+			PRINT "Home"		
 		LINK CLOSE
-		LINK "https://github.com/kytschi","GitHub","button-link", "_blank"
-			PRINT "GitHub"
-		LINK CLOSE
-		LINK "https://soundcloud.com/kytschi","Tunes","button-link", "_blank"
-			PRINT "Tunes"
-		LINK CLOSE
-		LINK "https://kytschi.com/website/themes/kytschi/assets/cv-mike-welsh.pdf","Check out my CV","button-link", "_blank"
-			PRINT "CV"
-		LINK CLOSE
-		LINK "/blog-land","Blog","button-link"
-			PRINT "Blog"
-		LINK CLOSE
-		LINK "/contact-me","Contact me","button-link"
-			PRINT "Contact"
-		LINK CLOSE
+		FOR item& IN menu&
+			LINK item&["url"],item&["tooltip"],"nav-link"
+				PRINT item&["name"]			
+			LINK CLOSE
+		END FOR
 	MENU CLOSE
 HEADER CLOSE

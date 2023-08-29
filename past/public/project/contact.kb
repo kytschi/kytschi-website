@@ -6,7 +6,7 @@ HEAD CLOSE
 BODY
 	LOAD "_ROOT/project/shared/header"
 	MAIN
-		HEADING 3
+		HEADING 4
 			PRINT "Contact me"
 		HEADING CLOSE
 		IFNTE _GET["error"] THEN
@@ -38,7 +38,9 @@ BODY
 					DIV CLOSE
 					DIV "card-footer"
 						SWRITE
-							PRINT "hello@kytschi.com"
+							LINK "mailto:hello@kytschi.com?subject=You rock!"
+								PRINT "hello@kytschi.com"
+							LINK CLOSE
 						SWRITE CLOSE
 					DIV CLOSE
 				DIV CLOSE
@@ -139,7 +141,7 @@ BODY
 						DIV CLOSE
 						DIV "card-footer"
 							SWRITE
-								PRINT "Check out that hair man!"
+								PRINT "Check out that hair!"
 							SWRITE CLOSE
 						DIV CLOSE
 					DIV CLOSE

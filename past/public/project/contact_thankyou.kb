@@ -19,7 +19,7 @@ HEAD CLOSE
 BODY
 	LOAD "_ROOT/project/shared/header"
 	MAIN
-		HEADING 3
+		HEADING 4
 			PRINT "Cheers me dears"
 		HEADING CLOSE
 		DIV "table-margin"

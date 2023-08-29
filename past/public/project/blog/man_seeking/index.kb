@@ -12,7 +12,7 @@ HEAD CLOSE
 BODY
 	LOAD "_ROOT/project/shared/header"
 	MAIN
-		HEADING 3
+		HEADING 4
 			PRINT "Man writing compiler seeks Woman"
 		HEADING CLOSE
 		DIV "table"

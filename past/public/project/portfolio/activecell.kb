@@ -1,4 +1,4 @@
-HEADING 3
+HEADING 4
     PRINT "ActiveCell, 3D printing pi's!"
 HEADING CLOSE
 DIV "table no-mobile-margin"
@@ -59,7 +59,7 @@ DIV "table"
         DIV CLOSE
     DIV CLOSE
 DIV CLOSE
-HEADING 3
+HEADING 4
     PRINT "The Tech Used"
 HEADING CLOSE
 DIV "tech-used"

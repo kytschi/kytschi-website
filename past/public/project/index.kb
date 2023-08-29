@@ -1,12 +1,3 @@
-DATA pages&
-	DOPEN "kytschi"
-	DREAD "pages"
-	DSELECT "pages.*, CONCAT('https://future.kytschi.ninja/dump/', files.filename) AS img"
-	DJOIN "files ON files.id=pages.cover_image_id AND files.deleted_at IS NULL"
-	DWHERE "pages.type='portfolio'"
-	DSORT "pages.created_at DESC"
-DATA CLOSE
-
 LANG "en"
 HEAD
 	LOAD "_ROOT/project/shared/head"
@@ -15,7 +6,7 @@ HEAD CLOSE
 BODY
 	LOAD "_ROOT/project/shared/header"
 	MAIN
-		HEADING 3
+		HEADING 4
 			PRINT "Introduction"
 		HEADING CLOSE
 		DIV "table-margin"
@@ -120,8 +111,16 @@ BODY
 			DIV CLOSE
 		DIV CLOSE
 
+		DATA pages&
+			DOPEN "kytschi"
+			DREAD "pages"
+			DSELECT "pages.*, CONCAT('https://future.kytschi.com/dump/', files.filename) AS img"
+			DJOIN "files ON files.id=pages.cover_image_id AND files.deleted_at IS NULL"
+			DWHERE "pages.type='portfolio'"
+			DSORT "pages.created_at DESC"
+		DATA CLOSE
 		FOR page& IN pages&
-			HEADING 3
+			HEADING 4
 				PRINT page&["name"]
 			HEADING CLOSE
 			DIV "table no-mobile-margin"

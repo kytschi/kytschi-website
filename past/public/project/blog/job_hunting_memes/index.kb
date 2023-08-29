@@ -12,7 +12,7 @@ HEAD CLOSE
 BODY
 	LOAD "_ROOT/project/shared/header"
 	MAIN
-		HEADING 3
+		HEADING 4
 			PRINT "If job hunting was a meme it would be this..."
 		HEADING CLOSE
 		DIV "card card-mb"

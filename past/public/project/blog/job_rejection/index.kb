@@ -19,7 +19,7 @@ HEAD CLOSE
 BODY
 	LOAD "_ROOT/project/shared/header"
 	MAIN
-		HEADING 3
+		HEADING 4
 			PRINT page#[0]["name"]
 		HEADING CLOSE
 		PRINT page#[0]["content"]            	

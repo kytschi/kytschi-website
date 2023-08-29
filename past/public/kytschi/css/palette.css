@@ -52,7 +52,7 @@ body {
     padding-left: 60px !important;
 }
 
-.button-link, .nav-link {
+.button-link {
     background-color: #000;
     padding: 20px 40px;
     float: left;
@@ -66,6 +66,21 @@ body {
     text-transform: uppercase;
     overflow: hidden;
     margin-right: 10px;
+}
+
+.nav-link {
+    float: left;
+    color: #000;
+    text-decoration: underline;
+    font-weight: bolder;
+    text-transform: uppercase;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.button-link:hover, .nav-link:hover {
+    font-family: 'Vintage';
+    text-decoration: none;
 }
 
 button {
@@ -131,6 +146,10 @@ a.nav-link-img {
     font-family: "Vintage", 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-weight: normal;
     text-align: center;
+}
+
+.card-footer a, .card-footer a:hover, .card-footer a:visited {
+    color: #fff;
 }
 
 .card-footer-summary {

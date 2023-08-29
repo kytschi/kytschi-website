@@ -1,3 +1,10 @@
+DATA page&
+	DOPEN "kytschi"
+	DREAD "pages"
+	DSELECT "*, CONCAT(name,' | kytschi') AS title"
+	DWHERE "url='/blog-land'"
+DATA CLOSE
+
 LANG "en"
 HEAD
 	LOAD "_ROOT/project/shared/head"
@@ -6,7 +13,7 @@ HEAD CLOSE
 BODY
 	LOAD "_ROOT/project/shared/header"
 	MAIN
-		HEADING 3
+		HEADING 4
 			PRINT "Blog-land"
 		HEADING CLOSE
 		DIV "table"
@@ -28,15 +35,53 @@ BODY
 				IMAGE "/kytschi/imgs/arrow.png", "arrow"
 			DIV CLOSE
 		DIV CLOSE
+
+		DATA items&
+			DOPEN "kytschi"
+			DREAD "pages"
+			DSELECT "posts.*, CONCAT('https://future.kytschi.com/dump/', files.filename) AS cover_img, TO_CHAR(posts.created_at, 'DD/MM/YYYY') AS created_at"
+			DJOIN "page_categories ON page_categories.category_id=pages.id AND page_categories.deleted_at IS NULL"
+			DJOIN "pages AS posts ON posts.id=page_categories.page_id AND posts.deleted_at IS NULL"
+			DLJOIN "files ON files.id=posts.cover_image_id AND files.deleted_at IS NULL"
+			DWHERE "pages.url='/blog-land'"
+		DATA CLOSE
+		FOR item& IN items&
+			HEADING 4, "blog-post-title"
+				PRINT item&["name"]
+				LINE BREAK
+				PRINT item&["created_at"], "date"
+			HEADING CLOSE
+			DIV "blog-post"
+				DIV "table"
+					DIV "table-img mobile-margin"
+						DIV "card"
+							DIV "card-body"
+								IMAGE item&["cover_img"],item&["name"]
+							DIV CLOSE
+						DIV CLOSE
+					DIV CLOSE
+					DIV "table-text no-mobile-margin"
+						SWRITE
+							PRINT item&["summary"]
+						SWRITE CLOSE
+						SWRITE
+							LINK item&["url"], "Follow me", "button-link"
+								PRINT "Click here to find out more"
+							LINK CLOSE
+						SWRITE CLOSE
+					DIV CLOSE
+				DIV CLOSE
+			DIV CLOSE
+		END FOR
 		
-		LOAD "_ROOT/project/blog/2023_07_28_job_searching_in_meme_form"
-		LOAD "_ROOT/project/blog/2023_07_21_job_rejection"
-		LOAD "_ROOT/project/blog/2023_06_23_man_seeking"
-		LOAD "_ROOT/project/blog/2023_05_11_quiet_connections"
-		LOAD "_ROOT/project/blog/2023_04_17_dumbdog_public"
-		LOAD "_ROOT/project/blog/2023_04_16_dumbdob_announced"
-		LOAD "_ROOT/project/blog/2023_04_09_plonky_public"
-		LOAD "_ROOT/project/blog/2023_04_06_plonky_announced"
+		REM LOAD "_ROOT/project/blog/2023_07_28_job_searching_in_meme_form"
+		REM LOAD "_ROOT/project/blog/2023_07_21_job_rejection"
+		REM LOAD "_ROOT/project/blog/2023_06_23_man_seeking"
+		REM LOAD "_ROOT/project/blog/2023_05_11_quiet_connections"
+		REM LOAD "_ROOT/project/blog/2023_04_17_dumbdog_public"
+		REM LOAD "_ROOT/project/blog/2023_04_16_dumbdob_announced"
+		REM LOAD "_ROOT/project/blog/2023_04_09_plonky_public"
+		REM LOAD "_ROOT/project/blog/2023_04_06_plonky_announced"
 		
 		
 	MAIN CLOSE
