@@ -16,7 +16,7 @@ use Kytschi\Tengu\Helpers\DateHelper;
         $page_num = intval($_GET['page']);
     }
     $category_items = $this->tengu->findCategoryItems([
-        'where' => '(pages.type="blog-post" OR pages.type="blog-post-category") AND pages.status="active"',
+        'where' => 'pages.status="active"',
         'category_id' => $page->id,
         'pagination' => [
             'page' => $page_num,
