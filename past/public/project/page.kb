@@ -1,7 +1,7 @@
 DATA page&
 	DOPEN "kytschi"
 	DREAD "pages"
-	DSELECT "*, CONCAT(name,' | kytschi') AS title"
+	DSELECT "*, CONCAT(name,' | kytschi') AS title, IF(STRCMP(type, 'category'), 1, 0) as category"
 	DWHERE "url='_PATH'"
 DATA CLOSE
 
@@ -25,7 +25,7 @@ BODY
             END IF
 		HEADING CLOSE
         IFNTE page&[0]
-            IF page&[0]["type"]=="page-category"
+            IF page&[0]["category"]
                 DATA items&
                     DOPEN "kytschi"
                     DREAD "page_categories"
