@@ -39,7 +39,7 @@ BODY
 		DATA items&
 			DOPEN "kytschi"
 			DREAD "pages"
-			DSELECT "posts.*, CONCAT('/dump/', files.filename) AS cover_img, TO_CHAR(posts.created_at, 'DD/MM/YYYY') AS created_at"
+			DSELECT "posts.*, CONCAT('/dump/', files.filename) AS cover_img, DATE_FORMAT(posts.created_at, '%d/%m/%Y') AS created_at"
 			DJOIN "page_categories ON page_categories.category_id=pages.id AND page_categories.deleted_at IS NULL"
 			DJOIN "pages AS posts ON posts.id=page_categories.page_id AND posts.deleted_at IS NULL"
 			DLJOIN "files ON files.id=posts.cover_image_id AND files.deleted_at IS NULL"
