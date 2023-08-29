@@ -44,6 +44,7 @@ BODY
 			DJOIN "pages AS posts ON posts.id=page_categories.page_id AND posts.deleted_at IS NULL"
 			DLJOIN "files ON files.id=posts.cover_image_id AND files.deleted_at IS NULL"
 			DWHERE "pages.url='/blog-land'"
+			DSORT "posts.created_at DESC"
 		DATA CLOSE
 		IFNTE items&
 			FOR item& IN items&
@@ -75,17 +76,6 @@ BODY
 				DIV CLOSE
 			END FOR
 		END IF
-		
-		REM LOAD "_ROOT/project/blog/2023_07_28_job_searching_in_meme_form"
-		REM LOAD "_ROOT/project/blog/2023_07_21_job_rejection"
-		REM LOAD "_ROOT/project/blog/2023_06_23_man_seeking"
-		REM LOAD "_ROOT/project/blog/2023_05_11_quiet_connections"
-		REM LOAD "_ROOT/project/blog/2023_04_17_dumbdog_public"
-		REM LOAD "_ROOT/project/blog/2023_04_16_dumbdob_announced"
-		REM LOAD "_ROOT/project/blog/2023_04_09_plonky_public"
-		REM LOAD "_ROOT/project/blog/2023_04_06_plonky_announced"
-		
-		
 	MAIN CLOSE
 	LOAD "_ROOT/project/shared/footer"
 BODY CLOSE
