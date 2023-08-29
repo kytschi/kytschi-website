@@ -11,61 +11,94 @@ use Kytschi\Tengu\Helpers\DateHelper;
         </section>
         <?php
     }
-    if ($page->category_items) {
-        ?>
+    $page_num = 1;
+    if (!empty($_GET['page'])) {
+        $page_num = intval($_GET['page']);
+    }
+    $category_items = $this->tengu->findCategoryItems([
+        'where' => 'pages.type="blog-post" AND pages.status="active"',
+        'category_id' => $page->id,
+        'pagination' => [
+            'page' => $page_num,
+            'limit' => 30
+        ],
+        'order' => 'pages.created_at DESC'
+    ]);
+    if ($category_items->total_items) {
+    ?>
         <div class="tiles">
-            <?php
-            foreach ($page->category_items as $item) {
-                ?>
-                <div class="tile">
-                    <h4><?= $item->name; ?></h4>
-                    <?php
-                    if ($item->type == 'blog-post' || $item->type == 'blog-post-category') {
-                        ?>
-                        <p class="post-date">
-                            <?= DateHelper::prettyFull($item->created_at, false); ?>
-                        </p>
-                        <?php
-                    }
-                    if ($item->cover_image) {
-                        ?>
-                        <p class="tile-img">
-                            <img 
-                                src="<?=$item->cover_image->url;?>"
-                                title="<?= $item->name; ?>"
-                                alt="<?= $item->cover_image->label; ?>">
-                        </p>
-                        <?php
-                    }
-                    ?>
-                    <p>
-                        <?= $item->summary; ?>
-                    </p>
-                    <p>
-                        <a 
-                            href="<?= !empty($item->canonical_url) ? $item->canonical_url : $item->url; ?>"
-                            class="button" 
-                            <?= strpos($item->url, 'http') ? ' target="_blank"' : ''; ?>
-                            title="I want to check out <?= $item->name; ?>">
-                            <?php
-                            switch ($item->type) {
-                                case 'blog-post':
-                                    echo 'Show me more';
-                                    break;
-                                case 'blog-post-category':
-                                    echo 'Show me more';
-                                    break;
-                                default:
-                                    echo 'Take me to it';
-                                    break;
-                            }
-                            ?>
-                        </a>
-                    </p>
-                </div>
-                <?php
-            }
+        <?php
+        foreach ($category_items->getItems() as $item) {
             ?>
+            <div class="tile">
+                <h4><?= $item->name; ?></h4>
+                <?php
+                if ($item->type == 'blog-post' || $item->type == 'blog-post-category') {
+                    ?>
+                    <p class="post-date">
+                        <?= DateHelper::prettyFull($item->created_at, false); ?>
+                    </p>
+                    <?php
+                }
+                if ($item->cover_image) {
+                    ?>
+                    <p class="tile-img">
+                        <img 
+                            src="<?=$item->cover_image->url;?>"
+                            title="<?= $item->name; ?>"
+                            alt="<?= $item->cover_image->label; ?>">
+                    </p>
+                    <?php
+                }
+                ?>
+                <p>
+                    <?= $item->summary; ?>
+                </p>
+                <p>
+                    <a 
+                        href="<?= !empty($item->canonical_url) ? $item->canonical_url : $item->url; ?>"
+                        class="button" 
+                        <?= strpos($item->url, 'http') ? ' target="_blank"' : ''; ?>
+                        title="I want to check out <?= $item->name; ?>">
+                        <?php
+                        switch ($item->type) {
+                            case 'blog-post':
+                                echo 'Show me more';
+                                break;
+                            case 'blog-post-category':
+                                echo 'Show me more';
+                                break;
+                            default:
+                                echo 'Take me to it';
+                                break;
+                        }
+                        ?>
+                    </a>
+                </p>
+                </div>
+            <?php
+        }
+        ?>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <?php
+                    echo $this->partial(
+                        'common/pagination',
+                        [
+                            'data' => $category_items,
+                            'url' => $page->url
+                        ]
+                    );
+                ?>
+                </div>
+        </div>
+    <?php
+    }
+    else {
+        ?>
+        <div class="row">
+            <p class="h4">No posts yet.</p>
         </div>
         <?php
     }
