@@ -139,12 +139,12 @@ BODY
 			DIV CLOSE
 			PRINT page&["content"]
 			SWRITE
-				PRINT "&nbsp;"
+				PRINT " "
 			SWRITE CLOSE
 		END FOR
 
 		SWRITE
-			PRINT "&nbsp;"
+			PRINT " "
 		SWRITE CLOSE
 		DIV "table-margin no-mobile-margin"
 			DIV "table-text mobile-margin"
