@@ -114,7 +114,7 @@ BODY
 		DATA pages&
 			DOPEN "kytschi"
 			DREAD "pages"
-			DSELECT "pages.*, CONCAT('https://future.kytschi.com/dump/', files.filename) AS img"
+			DSELECT "pages.*, CONCAT('/dump/', files.filename) AS img"
 			DJOIN "files ON files.id=pages.cover_image_id AND files.deleted_at IS NULL"
 			DWHERE "pages.type='portfolio'"
 			DSORT "pages.created_at DESC"
