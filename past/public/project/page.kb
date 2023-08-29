@@ -29,7 +29,7 @@ BODY
                 DATA items&
                     DOPEN "kytschi"
                     DREAD "page_categories"
-                    DSELECT "pages.*, CONCAT('https://future.kytschi.com/dump/', files.filename) AS cover_img"
+                    DSELECT "pages.*, CONCAT('/dump/', files.filename) AS cover_img"
                     DJOIN "pages ON pages.id=page_categories.page_id AND page_categories.deleted_at IS NULL"
                     DLJOIN "files ON files.id=pages.cover_image_id AND files.deleted_at IS NULL"
                     DWHERE "category_id=:id"
@@ -59,6 +59,8 @@ BODY
                         DIV CLOSE
                     DIV CLOSE
                 END FOR
+            ELSE
+                PRINT page&[0]["content"]
             END IF
         ELSE
             PRINT "Page not found"
