@@ -13,8 +13,6 @@ DATA visitors#
 DATA CLOSE
 
 FOOTER
-	DIV, "bug"
-	DIV CLOSE
 	TABLE
 		TROW
 			TCELL
@@ -62,4 +60,3 @@ FOOTER
 		TROW CLOSE
 	TABLE CLOSE
 FOOTER CLOSE
-LOAD "/kytschi/js/bug-min.js"

@@ -1,12 +1,12 @@
 DATA menu&
 	DOPEN "kytschi"
-	DREAD "menu"
-	DSELECT "menu_items.name, menu_items.tooltip, IF(pages.url != '', pages.url, menu_items.external_link) AS url"
-	DLJOIN "menu_categories AS cats ON cats.category_id=menu.id AND cats.deleted_at IS NULL"
-	DLJOIN "menu AS menu_items ON menu_items.id=cats.menu_id AND menu_items.deleted_at IS NULL"
-	DLJOIN "pages ON pages.id=menu_items.page_id AND pages.deleted_at IS NULL"
-	DWHERE "menu.slug='header'"
-	DSORT "cats.sort"
+	DREAD "content AS parent"
+	DSELECT "menus.*, content.*, content.sub_title AS alt, IFNULL(link.url, content.url) AS url"
+	DJOIN "content ON content.parent_id = parent.id AND content.type='menu-item'"
+	DJOIN "menus ON menus.content_id = content.id"
+	DLJOIN "content AS link ON link.id = menus.link_to AND link.deleted_at IS NULL"
+	DWHERE "parent.tags LIKE '%header%' AND parent.deleted_at IS NULL"
+	DSORT "content.sort ASC"
 DATA CLOSE
 
 HEADER
@@ -24,8 +24,8 @@ HEADER
 			PRINT "Home"		
 		LINK CLOSE
 		FOR item& IN menu&
-			LINK item&["url"],item&["tooltip"],"nav-link"
-				PRINT item&["name"]			
+			LINK item&["url"],item&["title"],"nav-link"
+				PRINT item&["title"]			
 			LINK CLOSE
 		END FOR
 	MENU CLOSE

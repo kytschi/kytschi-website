@@ -1,0 +1,19 @@
+{
+    "database":
+    {
+        "type": "mysql",
+        "host": "localhost",
+        "port": "3306",
+        "db": "gestalt",
+        "username": "gestalt",
+        "password": "gestalt"
+    },
+    "apps": {
+        "cms": true,
+        "commerce": false,
+        "crm": true
+    },
+    "dumb_dog_url": "/dumb-dog",
+    "save_mode": true,
+    "encryption": "GENERATE A RANDOM KEY WITH openssl rand -base64 32"
+}

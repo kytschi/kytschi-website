@@ -1,21 +1,23 @@
+@import url("./css/bootstrap.min.css");
+
 @font-face {
     font-family: 'header-title';
-    src: url("../fonts/NEONLEDLight.otf") format("opentype");
+    src: url("./fonts/NEONLEDLight.otf") format("opentype");
 }
 
 @font-face {
     font-family: 'summary';
-    src: url("../fonts/Neon\ Light.otf") format("opentype");
+    src: url("./fonts/Neon\ Light.otf") format("opentype");
 }
 
 @font-face {
     font-family: 'header';
-    src: url("../fonts/Louis\ George\ Cafe.ttf") format("truetype");
+    src: url("./fonts/Louis\ George\ Cafe.ttf") format("truetype");
 }
 
 @font-face {
     font-family: 'content';
-    src: url("../fonts/Adam-Bold.ttf") format("truetype");
+    src: url("./fonts/Adam-Bold.ttf") format("truetype");
 }
 
 html, body {
@@ -143,6 +145,32 @@ header {
     font-size: 16pt;
     position: relative;
     z-index: 102;
+}
+
+#images {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#images .image {
+    flex: 0 0 auto;
+    background-color: #00010A;
+    padding: 10px 20px;
+    box-shadow: 0 0px 10px 5px rgb(248, 3, 62, 0.1);
+    width: 50%;
+}
+
+#images .image img {
+    width: 100%;
 }
 
 .logo img {
@@ -282,19 +310,30 @@ section img {
     margin-bottom: 20px;
 }
 
+@media only screen and (min-width: 480px) {
+    .tiles {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
 .tiles {
-    display: grid;
-    direction: ltr;
-    grid-gap: 1em;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-template-rows: masonry;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    column-gap: 2.5em;
 }
 
 .tile {
     width: 100%;
     background-color: #00010A;
     padding: 20px 40px;
+    margin-bottom: 40px;
+    border: 1px solid #330146;
     box-shadow: 0 0px 10px 5px rgb(248, 3, 62, 0.1);
+    display: inline-block;  
+    break-inside: avoid-column;
 }
 
 .tile .button {

@@ -1,3 +1,11 @@
+DATA pages&
+	DOPEN "kytschi"
+	DREAD "content"
+	DSELECT "*"
+	DWHERE type='page' AND sitemap_include=1 AND deleted_at IS NULL"
+	DSORT "url ASC"
+DATA CLOSE
+
 LANG "en"
 HEAD
 	LOAD "_ROOT/project/shared/head"
@@ -28,48 +36,15 @@ BODY
 				IMAGE "/kytschi/imgs/arrow.png", "arrow"
 			DIV CLOSE
 		DIV CLOSE
-		SWRITE
-			LINK "/","Go to the homepage"
-				HEADING 4
-					PRINT "Home"
-				HEADING CLOSE
-			LINK CLOSE
-		SWRITE CLOSE
-		SWRITE
-			LINK "/contact-me","Go to the contact page"
-				HEADING 4
-					PRINT "Contact me"
-				HEADING CLOSE
-			LINK CLOSE
-		SWRITE CLOSE
-		SWRITE
-			LINK "/blog-land","Go to the blog page"
-				HEADING 4
-					PRINT "Blog"
-				HEADING CLOSE
-			LINK CLOSE
-		SWRITE CLOSE
-		SWRITE
-			LINK "/blog-land/man-writing-compiler-seeks-woman","Man writing own compiler seeks Woman"
-				HEADING 4
-					PRINT "Man writing own compiler seeks Woman"
-				HEADING CLOSE
-			LINK CLOSE
-		SWRITE CLOSE
-		SWRITE
-			LINK "/blog-land/how-to-deal-with-job-rejection","How to handle job application rejection hell!"
-				HEADING 4
-					PRINT "How to handle job seeking rejection hell!"
-				HEADING CLOSE
-			LINK CLOSE
-		SWRITE CLOSE
-		SWRITE
-			LINK "/blog-land/if-job-hunting-was-a-meme-it-would-be-this","If job hunting was a meme it would be this"
-				HEADING 4
-					PRINT "If job hunting was a meme it would be this"
-				HEADING CLOSE
-			LINK CLOSE
-		SWRITE CLOSE
+		FOR page& IN pages&
+			SWRITE
+				LINK page&["url"],page&["title"]
+					HEADING 4
+						PRINT page&["title"]
+					HEADING CLOSE
+				LINK CLOSE
+			SWRITE CLOSE
+		END FOR
 	MAIN CLOSE
 	LOAD "_ROOT/project/shared/footer"
 BODY CLOSE

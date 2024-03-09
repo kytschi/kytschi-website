@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'body';
-    src: url("../assets/Minecraft.ttf") format("truetype");
+    src: url("./Minecraft.ttf") format("truetype");
 }
 
 html, body {
@@ -22,7 +22,7 @@ a {
     height: 104px;
     text-decoration: none;
     margin-right: 60px;
-    background-image: url("../assets/button.png");
+    background-image: url("./button.png");
     background-repeat: no-repeat;
 }
 .container {

@@ -1,7 +1,8 @@
 DATA page&
 	DOPEN "kytschi"
-	DREAD "pages"
-	DSELECT "*, CONCAT(name,' | kytschi') AS title, IF(INSTR(type, 'category') > 0, 1, 0) as category"
+	DREAD "content"
+	DSELECT "content.*, CONCAT(title,' | kytschi') AS page_title, CONCAT('/files/', files.filename) AS img"
+    DLJOIN "files ON files.id=(SELECT id FROM files WHERE resource_id=content.id AND deleted_at IS NULL ORDER BY sort DESC LIMIT 1)"
 	DWHERE "url='_PATH'"
 DATA CLOSE
 
@@ -9,7 +10,7 @@ LANG "en"
 HEAD
 	LOAD "_ROOT/project/shared/head"
     IFNTE page&[0]
-	    NAME page&[0]["title"]
+	    NAME page&[0]["page_title"]
     ELSE
         NAME "page not found | kytschi"
     END IF
@@ -19,49 +20,31 @@ BODY
 	MAIN
 		HEADING 4
             IFNTE page&[0]
-			    PRINT page&[0]["name"]
+			    PRINT page&[0]["title"]
             ELSE
                 PRINT "Page not found"
             END IF
 		HEADING CLOSE
         IFNTE page&[0]
-            IF page&[0]["category"]
-                DATA items&
-                    DOPEN "kytschi"
-                    DREAD "page_categories"
-                    DSELECT "pages.*, CONCAT('/dump/', files.filename) AS cover_img"
-                    DJOIN "pages ON pages.id=page_categories.page_id AND page_categories.deleted_at IS NULL"
-                    DLJOIN "files ON files.id=pages.cover_image_id AND files.deleted_at IS NULL"
-                    DWHERE "category_id=:id"
-                    DBIND id=page&[0]["id"]
-                DATA CLOSE
-                FOR item& IN items&
-                    DIV "table"
-                        DIV "table-img mobile-margin"
-                            DIV "card"
-                                DIV "card-body"
-                                    IMAGE item&["cover_img"],item&["name"]
-                                DIV CLOSE
-                                DIV "card-footer"
-                                    SWRITE
-                                        PRINT item&["name"]
-                                    SWRITE CLOSE
-                                DIV CLOSE
-                            DIV CLOSE
+            DIV "table"
+                DIV "table-img mobile-margin"
+                    DIV "card"
+                        DIV "card-body"
+                            IMAGE page&[0]["img"],page&[0]["title"]
                         DIV CLOSE
-                        DIV "table-text no-mobile-margin"
+                        DIV "card-footer"
                             SWRITE
-                                PRINT item&["summary"]
+                                PRINT page&[0]["slogan"]
                             SWRITE CLOSE
-                            LINK item&["url"],"Follow me","button-link"
-                                PRINT "Follow me"
-                            LINK CLOSE
                         DIV CLOSE
                     DIV CLOSE
-                END FOR
-            ELSE
-                PRINT page&[0]["content"]
-            END IF
+                DIV CLOSE
+                DIV "table-text no-mobile-margin"
+                    SWRITE
+                        PRINT page&[0]["content"]
+                    SWRITE CLOSE
+                DIV CLOSE
+            DIV CLOSE
         ELSE
             PRINT "Page not found"
         END IF
