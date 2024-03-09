@@ -21,30 +21,32 @@
             foreach ($DUMBDOG->page->children as $page) {
                 ?>
                 <div class="tile">
-                    <h4><?= $page->title; ?></h4>
-                    <?php
-                    if (count($page->images) > 1) {
-                        ?>
-                        <p class="tile-img">
-                            <img 
-                                src="<?=$page->images[1]->image;?>"
-                                title="Click to view the page labelled <?= $page->title; ?>"
-                                alt="<?= $page->title; ?>">
-                        </p>
+                    <div>
+                        <h4><?= $page->title; ?></h4>
                         <?php
-                    }
-                    ?>
-                    <p>
-                        <?= $page->slogan; ?>
-                    </p>
-                    <p>
-                        <a 
-                            href="<?= $DUMBDOG->canonical($page->url); ?>"
-                            class="button" 
-                            title="Show me about the <?= $page->title; ?> project">
-                            show me more
-                        </a>
-                    </p>
+                        if (count($page->images) > 1) {
+                            ?>
+                            <p class="tile-img">
+                                <img 
+                                    src="<?=$page->images[1]->image;?>"
+                                    title="Click to view the page labelled <?= $page->title; ?>"
+                                    alt="<?= $page->title; ?>">
+                            </p>
+                            <?php
+                        }
+                        ?>
+                        <p>
+                            <?= $page->slogan; ?>
+                        </p>
+                        <p>
+                            <a 
+                                href="<?= $DUMBDOG->canonical($page->url); ?>"
+                                class="button" 
+                                title="Show me about the <?= $page->title; ?> project">
+                                show me more
+                            </a>
+                        </p>
+                    </div>
                 </div>
                 <?php
             }

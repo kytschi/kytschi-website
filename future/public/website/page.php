@@ -7,6 +7,9 @@
         <h3><?= $DUMBDOG->page->sub_title; ?></h3>
         <?php
     }
+    if ($DUMBDOG->page->type == 'blog') {
+        echo '<p class="post-date">' . $DUMBDOG->prettyDateFull($DUMBDOG->page->created_at, false) . '</p>';
+    }
     if ($DUMBDOG->page->content) {
         ?>
         <section>
@@ -34,7 +37,7 @@
         <?php
     }
 
-    if (count($DUMBDOG->page->images) > 1) {
+    if (count($DUMBDOG->page->images) > 2) {
         ?>
         <h3>
             <span>Images</span>
@@ -61,37 +64,46 @@
     if (count($DUMBDOG->page->children)) {
         ?>
         <h3>
-            <span>Projects</span>
+            <span>
+                <?= $DUMBDOG->page->type == 'blog-category' ? 'Posts' : 'Projects'; ?>
+            </span>
         </h3>
         <div class="tiles">
             <?php
-            foreach ($DUMBDOG->page->children as $page) {
+            foreach ($DUMBDOG->page->children as $key => $page) {
                 ?>
-                <div class="tile">
-                    <h4><?= $page->title; ?></h4>
-                    <?php
-                    if (count($page->images) > 1) {
-                        ?>
-                        <p class="tile-img">
-                            <img 
-                                src="<?=$page->images[1]->image;?>"
-                                title="Click to view the page labelled <?= $page->title; ?>"
-                                alt="<?= $page->title; ?>">
-                        </p>
+                <div id="tile-<?= $key; ?>" class="tile">
+                    <div>
+                        <h4><?= $page->title; ?></h4>
                         <?php
-                    }
-                    ?>
-                    <p>
-                        <?= $page->slogan; ?>
-                    </p>
-                    <p>
-                        <a 
-                            href="<?= $DUMBDOG->canonical($page->url); ?>"
-                            class="button" 
-                            title="Show me about the <?= $page->title; ?> project">
-                            show me more
-                        </a>
-                    </p>
+                        if (in_array($page->type, ['blog', 'blog-category'])) {
+                            echo '<p class="post-date">' . $DUMBDOG->prettyDateFull($page->created_at, false) . '</p>';
+                        }
+                        ?>
+                        <?php
+                        if (count($page->images) > 1) {
+                            ?>
+                            <p class="tile-img">
+                                <img 
+                                    src="<?=$page->images[1]->image;?>"
+                                    title="Click to view the page labelled <?= $page->title; ?>"
+                                    alt="<?= $page->title; ?>">
+                            </p>
+                            <?php
+                        }
+                        ?>
+                        <p>
+                            <?= $page->slogan; ?>
+                        </p>
+                        <p>
+                            <a 
+                                href="<?= $DUMBDOG->canonical($page->url); ?>"
+                                class="button" 
+                                title="Show me about the <?= $page->title; ?> project">
+                                show me more
+                            </a>
+                        </p>
+                    </div>
                 </div>
                 <?php
             }

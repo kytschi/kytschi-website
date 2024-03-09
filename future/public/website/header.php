@@ -27,10 +27,6 @@
         <link rel="icon" href="/website/assets/img/favicon.ico" sizes="64x64">
 
         <link rel="canonical" href="<?= $DUMBDOG->canonical($DUMBDOG->page->url); ?>">
-
-        <script src="/website/assets/js/jquery.min.js"></script>
-        <script src="/website/assets/js/popper.min.js"></script>
-        <script src="/website/assets/js/bootstrap.min.js"></script>
     </head>
     <body <?= count($DUMBDOG->page->images) ? ' style="background-image: url(' . $DUMBDOG->page->images[0]->image . ');"' : '' ?>>
         <div class="container-fluid">

@@ -9,7 +9,7 @@ DATA CLOSE
 LANG "en"
 HEAD
 	LOAD "_ROOT/project/shared/head"
-	NAME "how to build the best website | kytschi"
+	NAME page&[0]["page_title"]
 HEAD CLOSE
 BODY
 	LOAD "_ROOT/project/shared/header"
@@ -123,13 +123,13 @@ BODY
 			DOPEN "kytschi"
 			DREAD "content"
 			DSELECT "content.*, CONCAT('/files/', files.filename) AS img"
-			DLJOIN "files ON files.id=(SELECT id FROM files WHERE resource_id=content.id AND deleted_at IS NULL ORDER BY sort DESC LIMIT 1)"
+			DLJOIN "files ON files.id=(SELECT id FROM files WHERE resource_id=content.id AND deleted_at IS NULL AND sort=1)"
 			DWHERE "content.parent_id=:id AND content.type='page' AND content.deleted_at IS NULL"
 			DBIND id=page&[0]["id"]
 			DSORT "content.created_at DESC"
 		DATA CLOSE
 
-		IF projects&
+		IFNTE projects&
 			FOR project& IN projects&
 				HEADING 4
 					PRINT project&["title"]
