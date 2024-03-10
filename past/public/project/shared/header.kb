@@ -24,9 +24,15 @@ HEADER
 			PRINT "Home"		
 		LINK CLOSE
 		FOR item& IN menu&
-			LINK item&["url"],item&["title"],"nav-link"
-				PRINT item&["title"]			
-			LINK CLOSE
+			IF item&["new_window"]=1
+				LINK item&["url"],item&["title"],"nav-link","_blank"
+					PRINT item&["title"]
+				LINK CLOSE
+			ELSE
+				LINK item&["url"],item&["title"],"nav-link"
+					PRINT item&["title"]
+				LINK CLOSE
+			END IF
 		END FOR
 	MENU CLOSE
 HEADER CLOSE
