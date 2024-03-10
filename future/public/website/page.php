@@ -65,7 +65,9 @@
         ?>
         <h3>
             <span>
-                <?= $DUMBDOG->page->type == 'blog-category' ? 'Posts' : 'Projects'; ?>
+                <?= $DUMBDOG->page->type == 'blog-category' ?
+                    'Posts' :
+                    ($DUMBDOG->page->type == 'page-category' ? 'Pages' : 'Projects'); ?>
             </span>
         </h3>
         <div class="tiles">
@@ -97,7 +99,8 @@
                         </p>
                         <p>
                             <a 
-                                href="<?= $DUMBDOG->canonical($page->url); ?>"
+                                href="<?= substr($page->url, 0, 4) == 'http' ? $page->url : $DUMBDOG->canonical($page->url); ?>"
+                                <?= substr($page->url, 0, 4) == 'http' ? 'target="_blank"' : ''; ?>
                                 class="button" 
                                 title="Show me about the <?= $page->title; ?> project">
                                 show me more
