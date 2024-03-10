@@ -16,7 +16,7 @@ use DumbDog\Exceptions\Exception;
 try {
     $engine = null;
     $libs = [];
-    new DumbDog("../dumbdog.json", $engine, $libs);
+    new DumbDog("../.dumbdog.json", $engine, $libs);
 } catch (\Exception $err) {
     (new Exception($err->getMessage()))->fatal();
 }
