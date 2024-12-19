@@ -57,20 +57,27 @@
                         ?>
                         <div class="col">
                             <div class="text">
-                                <?= $item->slogan; ?>
+                                <p class="mb-5"><?= $item->slogan; ?></p>
+                                <a href="<?= $item->url; ?>" class="button">See more</a>
                             </div>
-                            <div class="row tags">
-                                <?php
-                                foreach ($item->tags as $tag) {
-                                    ?>
-                                    <a
-                                        class="tag col-auto"
-                                        href="/search?search=<?=$tag;?>"
-                                        title="Click to search based on this tag">&#35;<?= $tag; ?></a>
-                                    <?php
-                                }
+                            <?php
+                            if ($item->tags) {
                                 ?>
-                            </div>
+                                <div class="row tags">
+                                    <?php
+                                    foreach ($item->tags as $tag) {
+                                        ?>
+                                        <a
+                                            class="tag col-auto"
+                                            href="/search?search=<?=$tag;?>"
+                                            title="Click to search based on this tag">&#35;<?= $tag; ?></a>
+                                        <?php
+                                    }
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                            ?>
                         </div>
                         <div class="col-auto">
                             <img src="/website/assets/boxes/<?= $key + 3; ?>.png"/>
@@ -83,20 +90,27 @@
                         </div>
                         <div class="col">
                             <div class="text">
-                                <?= $item->slogan; ?>
+                                <p class="mb-5"><?= $item->slogan; ?></p>
+                                <a href="<?= $item->url; ?>" class="button">See more</a>
                             </div>
-                            <div class="row tags">
-                                <?php
-                                foreach ($item->tags as $tag) {
-                                    ?>
-                                    <a
-                                        class="tag col-auto"
-                                        href="/search?search=<?=$tag;?>"
-                                        title="Click to search based on this tag">&#35;<?= $tag; ?></a>
-                                    <?php
-                                }
+                            <?php
+                            if ($item->tags) {
                                 ?>
-                            </div>
+                                <div class="row tags">
+                                    <?php
+                                    foreach ($item->tags as $tag) {
+                                        ?>
+                                        <a
+                                            class="tag col-auto"
+                                            href="/search?search=<?=$tag;?>"
+                                            title="Click to search based on this tag">&#35;<?= $tag; ?></a>
+                                        <?php
+                                    }
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                            ?>
                         </div>
                         <?php
                     }
