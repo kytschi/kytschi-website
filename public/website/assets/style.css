@@ -292,3 +292,19 @@ table td {
     padding: 0;
     vertical-align: top;
 }
+
+#sent {
+    background-color: #008FFA;
+    color: #fff;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 1) 20px 20px 0px;
+    margin-bottom: 50px;
+}
+
+#error {
+    background-color: #FF3B15;
+    color: #fff;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 1) 20px 20px 0px;
+    margin-bottom: 50px;
+}

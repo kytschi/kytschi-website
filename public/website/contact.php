@@ -84,7 +84,7 @@ if (isset($_POST['send'])) {
                             </div>
                         </div>
                         <div class="card-footer py-3">
-                            <button type="submit">Send</button>
+                            <button type="submit" name="send">Send</button>
                         </div>
                     </form>
                     <div class="col-6">
