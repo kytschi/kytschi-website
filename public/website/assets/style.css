@@ -1,0 +1,285 @@
+@font-face {
+    font-family: 'body';
+    src: url("./Roboto.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'heading';
+    src: url("./CarterOne.ttf") format("truetype");
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    min-height: 900px;
+    font-family: 'body', sans-serif;
+    color:#000;
+    overflow-x: hidden;
+    font-size: 12pt;
+}
+body {
+    background-image: url("./bk.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+}
+#page-with-children {
+    background-image: url("./page-with-children.jpg");
+}
+
+a, a:visited {
+    color:#000;
+    text-decoration: underline !important;
+}
+
+button, .button {
+    background-color: #FEE100;
+    color: #000;
+    padding: 10px;
+    font-size: 16pt;
+    border: 0;
+}
+.button {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none !important;
+    font-size: 12pt;
+    box-shadow: rgba(0, 0, 0, 1) 10px 10px 0px;
+}
+.card {
+    background-color: #000;
+    color: #fff;
+    border-radius: 0;
+    border: none;
+}
+.card-body, .card-footer {
+    padding: 0;
+}
+footer {
+    margin: 0;
+    background-color:#F561D5;
+    padding: 40px 0;
+    border-top: 2px solid #000;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#contact {
+    background-color: #fff;
+    border-top: 2px solid #000;
+    background-image: url("./contact.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: 80px 0 100px 0;
+}
+.dd-captcha-img {
+    background-color: #fff;
+}
+.dd-captcha-input {
+    width: 100%;
+    margin-top: 5px;
+}
+.form-control {
+    border: 0;
+    border-radius: 0;
+}
+
+#contact .card {
+    width: 450px;
+}
+
+h1, h2, h3, h4, h5, .card-header {
+    font-family: 'heading', sans-serif;           
+}
+h1 {
+    color: #000;
+    font-size: 48pt;
+    margin: 0 0 40px 0;
+}
+h1 a {
+    text-decoration: none !important;
+}
+h1::first-letter {
+    font-weight: bold;
+    color: #F561D5;
+}
+.card-header {
+    padding: 0;
+}
+h2, h3, h5, .card-header {
+    color: #fff;
+    font-size: 36pt;
+    margin: 0;
+}
+h4 {    
+    font-size: 36pt;
+    margin: 0 0 100px 0;
+}
+h2 span, h3 span {
+    background-color: #008FFA;
+}
+
+h2 span, h3 span, h5 span {
+    padding: 0 20px;
+    box-shadow: rgba(0, 0, 0, 1) 20px 20px 0px;
+}
+
+h4 span {
+    background-color: #fff;
+    padding: 0 20px;
+    box-shadow: rgba(0, 0, 0, 1) 20px 20px 0px;
+}
+.tags, .images {
+    width: 100%;
+}
+.tag, .image {
+    background-color: #F561D5;
+    color: #fff;
+    padding: 10px;
+    font-size: 16pt;
+    box-shadow: rgba(0, 0, 0, 1) 15px 15px 0px;
+    margin: 10px 10px 10px 10px;
+}
+#page-with-children .tags, #page-with-children .images {
+    width: 100%;
+}
+.image {
+    height: 240px;
+    width: 360px;
+    background-color: #FF3B15;
+}
+.image img {
+    min-height: 100%;
+}
+.image span {
+    display: block;
+    height: 220px;
+    width: 340px;
+    overflow: hidden;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 100px;
+}
+section .text {
+    background-color: #008FFA;
+    color: #fff;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 1) 20px 20px 0px;
+}
+section .text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+section img {
+    position: relative;
+}
+#section-1 .box-image {
+    width: 450px;
+    margin-top: -100px;
+    margin-left: -280px;
+}
+#section-1 .text {
+    padding-right: 260px !important;
+    margin-bottom: 100px;
+}
+#section-2 img {
+    width: 450px;
+    margin-left: -80px;
+    margin-top: -100px;
+    z-index: 10;
+}
+#section-2 .text {
+    z-index: 9;
+    position: relative;
+    margin-left: -120px;
+    margin-bottom: 50px;
+}
+#section-2 h3 {
+    padding-left: 300px;
+}
+#section-3 img {
+    width: 450px;
+    margin-top: -100px;
+    margin-left: -280px;
+}
+#section-3 .text {
+    padding-right: 240px !important;
+    margin-bottom: 50px;
+}
+#section-4 img {
+    width: 450px;
+    margin-left: -80px;
+    margin-top: -100px;
+    z-index: 10;
+}
+#section-4 .text {
+    z-index: 9;
+    position: relative;
+    margin-left: -120px;
+    padding-left: 80px !important;
+    margin-bottom: 50px;
+}
+#section-4 h5 {
+    padding-left: 300px;
+}
+#section-5 img {
+    width: 450px;
+    margin-top: -100px;
+    margin-left: -280px;
+}
+#section-5 .text {
+    padding-right: 240px !important;
+    margin-bottom: 50px;
+}
+
+section a, .card a {
+    color: #fff;
+}
+#projects {
+    background-image: url("./projects.jpg");
+    background-repeat: repeat-y;
+    background-position: top center;
+    padding: 80px 0px;
+    border-top: 2px solid #000;
+}
+#projects .tags {
+    width: 80%;
+}
+.container {
+    max-width: 1240px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
+#page-contact-image {
+    width: 100%;
+}
+
+.child .tags, .child .images {
+    margin-top: 50px;
+}
+.child .text, .child h3 span, .child h5 span {
+    background-color: #FEE100;
+    color: #000;
+}
+.child .text a, .child .text a:visited {
+    color: #000;
+}
+
+main {
+    padding: 0;
+}
+table {
+    width: 100%;
+}
+table td {
+    padding: 0;
+    vertical-align: top;
+}

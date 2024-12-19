@@ -10,3 +10,4 @@ comms.php
 dump
 .dumbdog.json
 files
+*.kra
