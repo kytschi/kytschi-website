@@ -57,7 +57,7 @@ if ($DUMBDOG->page->name != "contact") {
                     <?= $DUMBDOG->site->name; ?>
                 </div>
                 <div class="powered-by">
-                    <a href="https://dumbdog.kytschi.com" target="_blank">
+                    <a href="https://dumb-dog.kytschi.com" target="_blank">
                         Powered by Dumb Dog
                     </a>
                 </div>
