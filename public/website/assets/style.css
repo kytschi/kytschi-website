@@ -134,6 +134,9 @@ h4 span {
 .tags, .images {
     width: 100%;
 }
+.images {
+    margin-bottom: 50px;
+}
 .tag, .image {
     background-color: #F561D5;
     color: #fff;
@@ -170,7 +173,7 @@ section .text {
     padding: 40px;
     box-shadow: rgba(0, 0, 0, 1) 20px 20px 0px;
 }
-section .text h3 {
+section .text h3, section .text h4 {
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
@@ -185,6 +188,9 @@ section img {
 #section-1 .text {
     padding-right: 260px !important;
     margin-bottom: 100px;
+}
+#search #section-1 .text {
+    margin-bottom: 10px;
 }
 #section-2 img {
     width: 450px;
@@ -267,6 +273,9 @@ section a, .card a {
 }
 .child .text, .child h3 span, .child h5 span {
     background-color: #FEE100;
+    color: #000;
+}
+section .text h4 {
     color: #000;
 }
 .child .text a, .child .text a:visited {
