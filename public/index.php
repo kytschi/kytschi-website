@@ -4,10 +4,10 @@
  * Main index.
  *
  * @author      Mike Welsh
- * @copyright   2024 Mike Welsh
+ * @copyright   2025 Mike Welsh
  * @version     0.0.1
  *
- * Copyright 2024 Mike Welsh
+ * Copyright 2025 Mike Welsh
  */
 
 use DumbDog\DumbDog;

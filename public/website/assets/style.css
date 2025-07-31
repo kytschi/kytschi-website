@@ -168,10 +168,16 @@ section {
     margin-bottom: 100px;
 }
 section .text {
+    display: flex;
+    flex-direction: column;
     background-color: #008FFA;
     color: #fff;
     padding: 40px;
     box-shadow: rgba(0, 0, 0, 1) 20px 20px 0px;
+}
+section .text p {
+    flex: 1;
+    width: 100%;
 }
 section .text h3, section .text h4 {
     font-size: 1.2rem;
@@ -307,4 +313,145 @@ table td {
     padding: 40px;
     box-shadow: rgba(0, 0, 0, 1) 20px 20px 0px;
     margin-bottom: 50px;
+}
+
+@media (min-width:320px) {
+    section {
+        margin-top: 40px !important;
+    }
+    #section-1 .text, #section-2 .text, #section-3 .text, #section-4 .text, #section-5 .text {
+        padding: 20px !important;
+    }
+    #section-1 .box-image {
+        margin-left: 0px !important;
+    }
+    #section-2 h3, #section-4 h5 {
+        padding-left: 12px !important;
+        z-index: 10 !important;
+        padding-top: 435px !important;
+    }
+    #section-2 .text, #section-4 .text {
+        position: relative;
+        margin-left: 0px !important;
+        margin-top: -20px !important;
+        z-index: 11 !important;
+    }
+    #section-2 img {
+        margin-left: -80px;
+        margin-top: -405px !important;
+        z-index: 9 !important;
+    }
+    #section-3 img {
+        margin-left: 0px;
+        margin-top: 15px !important;
+        margin-bottom: 290px;
+        z-index: 9 !important;
+    }
+    #section-4 img {
+        margin-left: 0px;
+        margin-top: -515px !important;
+        z-index: 9 !important;
+    }
+    #section-5 img {
+        margin-left: 0px;
+        margin-top: 15px !important;
+        margin-bottom: 290px;
+        z-index: 9 !important;
+    }
+    h2, h3, h5, .card-header, h4 {
+        font-size: 16pt;
+    }
+    h4 {
+        margin-bottom: 50px;
+    }
+    .card {
+        width: 100% !important;
+    }
+    .image {
+        overflow: hidden;
+    }
+    .image img {
+        width: calc(100% - 38px) !important;
+    }
+    .box-image {
+        margin-left: 0px !important;
+        margin-top: 15px !important;
+        z-index: 9 !important;
+    }
+}
+@media (min-width:480px) {
+    section {
+        margin-top: 40px !important;
+    }
+    #section-1 .text, #section-2 .text, #section-3 .text, #section-4 .text, #section-5 .text {
+        padding: 20px !important;
+    }
+    #section-1 .box-image {
+        margin-left: 0px !important;
+    }
+    #section-2 h3, #section-4 h5 {
+        padding-left: 12px !important;
+        z-index: 10 !important;
+        padding-top: 435px !important;
+    }
+    #section-2 .text, #section-4 .text {
+        position: relative;
+        margin-left: 0px !important;
+        margin-top: -20px !important;
+        z-index: 11 !important;
+    }
+    #section-2 img {
+        margin-left: -80px;
+        margin-top: -405px !important;
+        z-index: 9 !important;
+    }
+    #section-3 img {
+        margin-left: 0px;
+        margin-top: 15px !important;
+        margin-bottom: 290px;
+        z-index: 9 !important;
+    }
+    #section-4 img {
+        margin-left: 0px;
+        margin-top: -515px !important;
+        z-index: 9 !important;
+    }
+    #section-5 img {
+        margin-left: 0px;
+        margin-top: 15px !important;
+        margin-bottom: 290px;
+        z-index: 9 !important;
+    }
+    h2, h3, h5, .card-header, h4 {
+        font-size: 16pt;
+    }
+    h4 {
+        margin-bottom: 50px;
+    }
+    .card {
+        width: 100% !important;
+    }
+    .image {
+        overflow: hidden;
+    }
+    .image img {
+        width: calc(100% - 38px) !important;
+    }
+    .box-image {
+        margin-left: 0px !important;
+        margin-top: 15px !important;
+        z-index: 9 !important;
+    }
+}
+@media (min-width:600px) {
+
+}
+@media (min-width:801px) {
+
+}
+@media (min-width:1025px) {
+
+}
+@media (min-width:1281px) {
+
 }
