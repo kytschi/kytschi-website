@@ -315,7 +315,7 @@ table td {
     margin-bottom: 50px;
 }
 
-@media (min-width:320px) {
+@media (max-width:320px) {
     section {
         margin-top: 40px !important;
     }
@@ -379,7 +379,7 @@ table td {
         z-index: 9 !important;
     }
 }
-@media (min-width:480px) {
+@media (max-width:480px) {
     section {
         margin-top: 40px !important;
     }
@@ -443,15 +443,15 @@ table td {
         z-index: 9 !important;
     }
 }
-@media (min-width:600px) {
+@media (max-width:600px) {
 
 }
-@media (min-width:801px) {
+@media (max-width:801px) {
 
 }
-@media (min-width:1025px) {
+@media (max-width:1025px) {
 
 }
-@media (min-width:1281px) {
+@media (max-width:1281px) {
 
 }
